@@ -7,13 +7,9 @@ export const jobs = [{
     start: "September 2023",
     end: "Current",
 
-
     description: "Studied the resistances and vulnerabilities of different election schemes via computational complexity approaches. Critiqued published papers claiming to resolve the P=NP problem in order to improve professional writing techniques.",
+    skills: ["Algorithm Analysis", "Problem-Solving", "Computational Complexity", "Research"],
 
-    skills: ["Algorithm Analysis", "Problem Solving", "Computational Complexity"],
-    theme: {
-        image: "none"
-    }
 },
 {
     id: "1",
@@ -23,12 +19,9 @@ export const jobs = [{
     start: "May 2023",
     end: "December 2023",
 
-    description: "Created and investigated the ability of classifiers built from CFA based methods on identifying artificially generated images vs genuinely captured images. Researched the effectiveness of CFA based classifiers vs deep learning classifiers on this task.",
+    description: "Created and investigated the ability of classifiers built from CFA based methods on identifying artificially generated images vs genuinely captured images. Researched the effectiveness of CFA-based classifiers vs deep learning classifiers on this task.",
+    skills: ["Deep Learning", "Computer Vision", "Formal Writing", "Research"],
 
-    skills: ["Deep Learning", "Formal Writting"],
-    theme: {
-        image: "none"
-    }
 },
 {
     id: "2",
@@ -38,13 +31,8 @@ export const jobs = [{
     start: "January 2023",
     end: "May 2023",
 
-
     description: "this is a bio about the job",
-
     skills: ["skill2", "skill_3"],
-    theme: {
-        image: "none"
-    }
 },
 {
     id: "3",
@@ -55,12 +43,10 @@ export const jobs = [{
     end: "December 2022",
 
 
-    description: "this is a bio about the job",
+    description: "Created and executed lesson plans to improve student comprehension and engagement. Fostered an environment where students worked to answer sample questions as a group to improve their problem solving abilities. Additionally investigated the impact of recall questions on student performance.",
 
-    skills: ["skill2"],
-    theme: {
-        image: "none"
-    }
+    skills: ["Communication", "Organization"],
+
 }]
 
 export const Projects = [
@@ -82,7 +68,7 @@ export const Projects = [
     {
         title: "Catan",
         image: "catan.png",
-        description: "blah blah ",
+        description: "An implementation of the classic board game Catan! Play with other people over a local network to see who can build the most prosperous settlement! Created using Python and Pygame, as well as web sockets to connect players over a local connection. Designed using Figma.",
         skills:["Python", "Pygame", "Web Sockets", "Networking","Figma"],
         link:"https://github.com/notred27/Catan"
     },
@@ -103,7 +89,7 @@ export const Projects = [
     {
         title: "2-Tris",
         image: "2tris.png",
-        description: "As a reimagining of Tetris as a two-person shooter, 2-Tris brings a new twist to a classic game! Play with a friend and try to time your shots to push and rotate the pieces into place! This game was created using Python using the pygame library, and fully scored using MuseScore. This game was created by myself and my friends Tiago Davies, Cole Henslee, and Alvin Jiang for DandyHacks '22. Won 1st place in the entertainment track, as well as Best UI/UX.",
+        description: "As a reimagining of Tetris as a two-person shooter, 2-Tris brings a new twist to a classic game! Play with a friend and try to time your shots to push and rotate the pieces into place! This game was created using Python using the Pygame library, and fully scored using MuseScore. This game was created by myself and my friends Tiago Davies, Cole Henslee, and Alvin Jiang for DandyHacks '22. Won 1st place in the entertainment track, as well as Best UI/UX.",
         skills:["Python", "Pygame", "Game Design"],
         link:"https://devpost.com/software/2-tris"
     },
@@ -116,7 +102,9 @@ export const Papers = [
         title:"On Czerwinski's \"P≠NP relative to a P‑complete oracle\"",
         image:"paper2.png",
         link:"https://arxiv.org/abs/2312.04395",
-        description:[""]
+        description:["In this paper, we critique a paper by Reiner Czerwinski that (perhaps unknowingly) claims to give an oracle where P=NP.",
+                    "We argue that Czerwinski's Corollary 1 is provably false through Turing reductions, and thus we disprove the author's separation argument.",
+                    "Additionally, we rework some of Czerwinski's original proofs to show that despite technical flaws in the paper, the author's underlying idea cannot prove the separation."]
     },
     {
         title:"Investigating the Effectiveness of Deep Learning and CFA Interpolation Based Classifiers on Identifying AIGC",
@@ -131,6 +119,8 @@ export const Papers = [
         title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\"",
         image:"paper3.png",
         link:"",
-        description:[""]
+        description:["In this paper, we critique a paper by Yangjun Chen that claims to give an algorithm that solves an NP‑complete problem in polynomially-bounded time.",
+                    "We give 4 counterexamples where the author's algorithm fails to give proper solutions to 2-MAXSAT to prove that the algorithm is invalid.",
+                    "We also point out concerns that the definitions the author creates for their algorithm are ambiguous and inconsistent."]
     },
 ]
