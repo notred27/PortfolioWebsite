@@ -66,7 +66,7 @@ export const jobs = [{
 export const Projects = [
     {
         title: "You're Ready",
-        image: "urready.PNG",
+        image: "urready.png",
         description: "A public class selector and schedule creator for students at the University of Rochester. Many students have expressed their dissatisfaction with the university's current scheduling applications, and how different resources (such as schedule builders, class availability checkers, and class time offerings) are disconnected from each other. This project connects all of these tasks together in one easy-to-use app!",
         skills:["Python","Tkinter", "Data Scraping","Data Organization"],
         link:"https://github.com/notred27/youre-ready"
@@ -81,7 +81,7 @@ export const Projects = [
     
     {
         title: "Catan",
-        image: "catan.PNG",
+        image: "catan.png",
         description: "blah blah ",
         skills:["Python", "Pygame", "Web Sockets", "Networking","Figma"],
         link:"https://github.com/notred27/Catan"
@@ -95,14 +95,14 @@ export const Projects = [
     },
     {
         title: "Turing Trouble",
-        image: "c1.PNG",
+        image: "c1.png",
         description: "A game about defining functions to guide a Turing Machine to the end of a tape! Coded by Me and my friends Tiago Davies and Anu Kumar in C# using Unity. We created a modular design (using Scriptable Objects) to dynamically load level information into the GameObjects that appear on your screen! Won 1st place in entertainment track during DandyHacks '23.",
         skills:["C#", "Unity","Game Design", "Turing Machines"],
         link:"https://devpost.com/software/turing-trouble#updates"
     },
     {
         title: "2-Tris",
-        image: "2tris.PNG",
+        image: "2tris.png",
         description: "As a reimagining of Tetris as a two-person shooter, 2-Tris brings a new twist to a classic game! Play with a friend and try to time your shots to push and rotate the pieces into place! This game was created using Python using the pygame library, and fully scored using MuseScore. This game was created by myself and my friends Tiago Davies, Cole Henslee, and Alvin Jiang for DandyHacks '22. Won 1st place in the entertainment track, as well as Best UI/UX.",
         skills:["Python", "Pygame", "Game Design"],
         link:"https://devpost.com/software/2-tris"

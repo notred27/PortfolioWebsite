@@ -50,7 +50,7 @@ export default function Carousel() {
                 {Projects.map((project, index) => (
                     <motion.img
                         key = {index}
-                        src = {require('./' + project.image)}
+                        src = {require('./images/' + project.image)}
                         className="Carousel-item"
                         initial = "center"
                         animate = {positions[positionIndex[index]]}

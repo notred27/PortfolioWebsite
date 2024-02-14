@@ -5,14 +5,12 @@ import './index.css';
 import Bio from './Bio';
 import Jobs from './Jobs';
 import Carousel from './Carousel';
-
 import Paper from './Paper.js';
 
+import reportWebVitals from './reportWebVitals.js';
 
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 
 root.render(
   <React.StrictMode>
