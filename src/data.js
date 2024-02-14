@@ -31,8 +31,8 @@ export const jobs = [{
     start: "January 2023",
     end: "May 2023",
 
-    description: "this is a bio about the job",
-    skills: ["skill2", "skill_3"],
+    description: "Aided students in transitioning from a theoretical understanding of data structures to practical implementations. Helped students understand both course concepts and good coding practices. Performed various organizational tasks such as grading and proctoring. ",
+    skills: ["Teaching", "Organization", "Practical Implementation"],
 },
 {
     id: "3",
@@ -45,7 +45,7 @@ export const jobs = [{
 
     description: "Created and executed lesson plans to improve student comprehension and engagement. Fostered an environment where students worked to answer sample questions as a group to improve their problem solving abilities. Additionally investigated the impact of recall questions on student performance.",
 
-    skills: ["Communication", "Organization"],
+    skills: ["Teaching", "Communication", "Organization"],
 
 }]
 
