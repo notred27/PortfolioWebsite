@@ -17,14 +17,14 @@ export default function Paper() {
   );
 
     const papers = Papers.map(paper =>
-      <div className="Paper" style={{}}>
+      <div className="Paper">
 
           <a href={paper.link}>
             <img className="Paper-Img" alt = "paper image" src={require('./images/' + paper.image)} style={{borderRadius:"10px"}}></img>
           </a>
 
           <div className="Paper-text">
-            <b2  style={{fontWeight:"bold", color:"white", fontSize:"1.3vw"}}>{paper.title}</b2>
+            <b2  style={{fontWeight:"bold", color:"white"}}>{paper.title}</b2>
             <Items items = {paper.description} />
           </div>
 
