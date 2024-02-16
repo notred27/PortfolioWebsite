@@ -7,7 +7,7 @@ import './Paper.css';
 
 export default function Paper() {
   const Items = ({items}) => (
-    <div style={{color:"white", marginTop:"15px", fontSize:"1vw"}}> 
+    <div style={{color:"white", marginBottom:"15px", fontSize:"1vw"}}> 
     {
       items.map(item =>(
         <li>{item}</li>
@@ -24,7 +24,7 @@ export default function Paper() {
           </a>
 
           <div className="Paper-text">
-            <b2  style={{fontWeight:"bold", color:"white"}}>{paper.title}</b2>
+            <p  style={{fontWeight:"bold", color:"white", fontSize:"1.4vw", margin:"0px"}}>{paper.title}</p>
             <Items items = {paper.description} />
           </div>
 

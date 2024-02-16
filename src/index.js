@@ -24,7 +24,7 @@ root.render(
     </div>
 
     <div style={{textAlign:"center", width:"100%", borderTop:"10px solid #BB8A89", margin:"0px"}}>
-      <b3 style={{color:"white", fontSize:"max(3vw, 2em)", position:"relative", fontWeight:"bold"}}>Publications</b3>
+      <b3 style={{color:"white", fontSize:"max(3vw, 2em)", position:"relative", fontWeight:"bold"}}>Papers & Publications</b3>
    
       <Paper/>
    

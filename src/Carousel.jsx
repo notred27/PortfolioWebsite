@@ -34,12 +34,12 @@ export default function Carousel() {
                     ];
 
     const Positions = {
-        center: {x: "45%", y:"35%", scale: 1, zIndex: 5},
-        left_f: {x: "5%", y:"10%", scale: 0.7, zIndex: 3, opacity:0.9},
-        left_b: {x: "17%", y:"-10%", scale: 0.5, zIndex: 1, opacity:0.75},
-        right_f: {x: "85%", y:"10%", scale: 0.7, zIndex: 3, opacity:0.9},
-        right_b: {x: "73%", y:"-10%",  scale: 0.5, zIndex: 2, opacity:0.75},
-        back: {x: "45%", y:"-20%",  scale: 0.4, zIndex: 0, opacity:0.6},
+        center: {x: "45%", y:"25%", scale: 1, zIndex: 5},
+        left_f: {x: "5%", y:"0%", scale: 0.7, zIndex: 3, opacity:0.9},
+        left_b: {x: "17%", y:"-20%", scale: 0.5, zIndex: 1, opacity:0.75},
+        right_f: {x: "85%", y:"0%", scale: 0.7, zIndex: 3, opacity:0.9},
+        right_b: {x: "73%", y:"-20%",  scale: 0.5, zIndex: 2, opacity:0.75},
+        back: {x: "45%", y:"-30%",  scale: 0.4, zIndex: 0, opacity:0.6},
     };
 
     return (
@@ -66,7 +66,7 @@ export default function Carousel() {
 
             <div className= "Carousel-desc-container">
                 <a className="Carousel-link" href={Projects[center].link}>{Projects[center].title}</a>
-                <p style = {{textAlign:"center", marginLeft:"5%", marginRight:"5%", textAlign:"center", fontSize:"0.8em"}}>{Projects[center].description}</p>
+                <p style = {{textAlign:"center", marginLeft:"5%", marginRight:"5%", textAlign:"center", fontSize:"2vmin"}}>{Projects[center].description}</p>
                 <Skill skills={Projects[center].skills}/>
             </div>
 

@@ -99,7 +99,7 @@ export const Projects = [
 
 export const Papers = [
     {
-        title:"On Czerwinski's \"P≠NP relative to a P‑complete oracle\"",
+        title:"On Czerwinski's \"P≠NP relative to a P‑complete oracle\" [arXiv]",
         image:"paper2.png",
         link:"https://arxiv.org/abs/2312.04395",
         description:["In this paper, we critique a paper by Reiner Czerwinski that (perhaps unknowingly) claims to give an oracle where P=NP.",
@@ -107,7 +107,7 @@ export const Papers = [
                     "Additionally, we rework some of Czerwinski's original proofs to show that despite technical flaws in the paper, the author's underlying idea cannot prove the separation."]
     },
     {
-        title:"Investigating the Effectiveness of Deep Learning and CFA Interpolation Based Classifiers on Identifying AIGC",
+        title:"Investigating the Effectiveness of Deep Learning and CFA Interpolation Based Classifiers on Identifying AIGC [IEEE BigData2023]",
         image:"paper1.png",
         link:"https://ieeexplore.ieee.org/document/10386096",
         description:["In this paper, we propose novel shallow classifiers for identifying AI‑generated content (AIGC) that are based on Bayer arrays found in physical cameras.",
@@ -116,7 +116,7 @@ export const Papers = [
     },
     
     {
-        title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\"",
+        title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\" [arXiv]",
         image:"paper3.png",
         link:"",
         description:["In this paper, we critique a paper by Yangjun Chen that claims to give an algorithm that solves an NP‑complete problem in polynomially-bounded time.",
