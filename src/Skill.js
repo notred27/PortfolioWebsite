@@ -1,8 +1,8 @@
 
 
-export default function Skill({skills}) {
+export default function Skill({skills, color}) {
     const listItems = skills.map(skill =>
-        <div className="Skill">
+        <div className="Skill" style={{backgroundColor:`${color}`}}>
             <p>{skill}</p>
         </div>
         );

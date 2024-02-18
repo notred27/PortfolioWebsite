@@ -7,7 +7,7 @@ import './Paper.css';
 
 export default function Paper() {
   const Items = ({items}) => (
-    <div style={{color:"white", marginBottom:"15px", fontSize:"1vw"}}> 
+    <div style={{marginBottom:"15px", fontSize:"1vw", padding:"1%", paddingLeft:"5%"}}> 
     {
       items.map(item =>(
         <li>{item}</li>
@@ -19,12 +19,19 @@ export default function Paper() {
     const papers = Papers.map(paper =>
       <div className="Paper">
 
-          <a href={paper.link}>
-            <img className="Paper-Img" alt = "paper" src={require('./images/' + paper.image)} style={{borderRadius:"10px"}}></img>
-          </a>
+          <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
+            <div style={{width:"100%", height:"100%", position:"relative"}}>
+              <a href={paper.link}>
+                <img className="Paper-Img" alt = "paper image" src={require('./images/' + paper.image)} style={{borderRadius:"10px", border:"10px solid #EE4266", float:"left"}}></img>
+              </a>
+            </div>
+
+            <div style={{width:"100%", height:"100%", position:"relative", margin:"0px"}}>
+              <a href={paper.link} className="Paper-title" style={{width:"100%", position:"absolute", bottom:"0", fontWeight:"bold", fontSize:"1.3vmax",textAlign:"left", padding:"5px", color:"#1E1E1E", transform:"translate(-60%, -10%)"}}>{paper.title}</a>
+            </div>
+          </div>
 
           <div className="Paper-text">
-            <p  style={{fontWeight:"bold", color:"white", fontSize:"1.4vw", margin:"0px"}}>{paper.title}</p>
             <Items items = {paper.description} />
           </div>
 

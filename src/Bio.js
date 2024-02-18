@@ -15,31 +15,27 @@ export default function Bio() {
 
 
   return (
-    <div className="Bio-header">
-     
-        <div className='Bio-pic-container'>
-          {/* <img src={pic} className="Bio-pic" alt="me" />
-          <img src={b1} className="Bio-pic-overlay1" alt="me" />
-          <img src={b2} className="Bio-pic-overlay2" alt="me" /> */}
 
+      <div style={{display:"flex", flexDirection:"row"}}>
+      
+          <div >
+            <img src={pic} alt="me" style={{ position:"absolute", height:"25vmin", bottom:"0", paddingLeft:"5vmin"}}/>
+          </div>
+          
 
-          {images}
-        </div>
+          
+
+          <div className='Bio-text'>
+            <h1 className='Bio-text'> Michael Reidy</h1>
         
-        <div className='Bio-text'>
-            <h1 style={{fontSize:"max(5vw, 2em)", margin:"0%"}}> Michael Reidy</h1>
-   
-            <h6 style={{marginTop:"0em", marginBottom:"1em", fontSize:"max(0.8em, 1vw)"}}> CS Undergraduate | U of R class of 2025 | mreidy3@u.rochester.edu | <a className='Bio-link' href = "https://www.linkedin.com/in/michael-reidy-122024254/">LinkedIn</a> | <a className='Bio-link' href = "https://github.com/notred27">GitHub</a></h6>
+            <h6 className='Bio-text'>mreidy3@u.rochester.edu | <a className='Bio-link' href = "https://www.linkedin.com/in/michael-reidy-122024254/">LinkedIn</a> | <a className='Bio-link' href = "https://github.com/notred27">GitHub</a></h6>
+            <h6 className='Bio-text'> CS Undergraduate, U of R class of 2025</h6>
 
-            <p>
-                Hi! My name's Michael and I'm currently an undergraduate pursuing a B.S. in Computer Science, with a minor in Mathematics.
-                My main areas of interest are computer vision and complexity theory.
-            </p>
-            
-        </div>
 
-    </div>
-    
+          </div>
+
+      </div>
+
     
   );
 }

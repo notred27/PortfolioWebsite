@@ -3,6 +3,9 @@ import { useState } from 'react';
 import {motion} from 'framer-motion'
 import {Projects} from "./data.js"
 import Skill from "./Skill.js"
+import button_r from "./images/button_r.png"
+import button_l from "./images/button_l.png"
+
 
 
 export default function Carousel() {
@@ -42,6 +45,7 @@ export default function Carousel() {
         back: {x: "45%", y:"-30%",  scale: 0.4, zIndex: 0, opacity:0.6},
     };
 
+    
     return (
 
         <div className="Carousel-container"> 
@@ -56,19 +60,34 @@ export default function Carousel() {
                         animate = {positions[positionIndex[index]]}
                         variants = {Positions}
                         transition = {{duration:0.8, ease:"easeInOut"}}
-                        style={{ position: 'absolute', width:"50%", borderRadius: "10px", border: "4px solid #0D160B", backgroundColor:"#0D160B"}}
+                        style={{ position: 'absolute', width:"50%", borderRadius: "10px", border: "6px solid #1E1E1E", backgroundColor:"#1E1E1E"}}
                     />
                 ))}
 
-                <button className="Carousel-btn" style={{left:"5%"}} onClick={handleLast}>Last</button>
-                <button className="Carousel-btn" style={{right:"5%"}} onClick={handleNext}>Next</button>
+                {/* <button className="Carousel-btn" style={{left:"5%"}} onClick={handleLast} src = {button_l}><img src={button_l}></img></button>
+                <button className="Carousel-btn" style={{right:"5%"}} onClick={handleNext}><img src={button_r}></img></button> */}
+
+                <div style={{position:"absolute", left:"4.5%", backgroundColor:"#BB4BE4", width:"13%",top:"15.5vw", height:"16%", transform:"rotate(22deg)", borderRadius:"10px"}}></div>
+                <div style={{position:"absolute", right:"7%", backgroundColor:"#BB4BE4", width:"13%",top:"16vw", height:"16%", transform:"rotate(-22deg)", borderRadius:"10px"}}></div>
+                
+                <img className="Carousel-btn" src={button_l} onClick={handleLast} style={{left:"5%"}}></img>
+
+                <img className="Carousel-btn" src={button_r} onClick={handleNext} style={{right:"5%"}}></img>
             </div>
 
-            <div className= "Carousel-desc-container">
+
+
+
+      
+            <div  className= "Carousel-desc-container">
                 <a className="Carousel-link" href={Projects[center].link}>{Projects[center].title}</a>
-                <p style = {{marginLeft:"5%", marginRight:"5%", textAlign:"center", fontSize:"2vmin"}}>{Projects[center].description}</p>
+                <p style = {{textAlign:"left", marginLeft:"5%", marginRight:"5%", fontSize:"1em"}}>{Projects[center].description}</p>
                 <Skill skills={Projects[center].skills}/>
+
+
             </div>
+
+
 
         </div>
     );
