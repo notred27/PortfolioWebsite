@@ -20,7 +20,7 @@ export default function Paper() {
       <div className="Paper">
 
           <a href={paper.link}>
-            <img className="Paper-Img" alt = "paper image" src={require('./images/' + paper.image)} style={{borderRadius:"10px"}}></img>
+            <img className="Paper-Img" alt = "paper" src={require('./images/' + paper.image)} style={{borderRadius:"10px"}}></img>
           </a>
 
           <div className="Paper-text">

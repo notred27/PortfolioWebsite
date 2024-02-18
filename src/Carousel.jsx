@@ -66,7 +66,7 @@ export default function Carousel() {
 
             <div className= "Carousel-desc-container">
                 <a className="Carousel-link" href={Projects[center].link}>{Projects[center].title}</a>
-                <p style = {{textAlign:"center", marginLeft:"5%", marginRight:"5%", textAlign:"center", fontSize:"2vmin"}}>{Projects[center].description}</p>
+                <p style = {{marginLeft:"5%", marginRight:"5%", textAlign:"center", fontSize:"2vmin"}}>{Projects[center].description}</p>
                 <Skill skills={Projects[center].skills}/>
             </div>
 

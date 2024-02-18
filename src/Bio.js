@@ -6,12 +6,7 @@ import b2 from './images/b2.png';
 import './App.css';
 
 export default function Bio() {
-  const Positions ={
-    0 : {offset: "0%"},
-    1 : {offset: "5%"},
-    2 : {offset: "10%"},
 
-  }
   const images = [pic, b1, b2].map( (image, i) =>
     // Fix the animation on this (for when website is visited)
     <img src={image} alt="me" style={{zIndex:`${3-i}`, transform:`translate(-${i*4}%,-${i*4}%)`, position:"absolute", height:"30vh"}}/>
