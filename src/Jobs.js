@@ -12,7 +12,7 @@ export default function Job() {
               {job.description}
           </p>
 
-          <Skill skills={job.skills}/>
+          <Skill skills={job.skills} color={"#AFC6FF"}/>
 
         </div>
 

@@ -6,70 +6,33 @@
   color:lightblue;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 
-
-.Bio-header {
-  background-color: #0D160B;
-  MIN-height: 30vh;
-  display: flex;
-  color: white;
-  position:relative;
-  margin-top: 0px;
-  margin-left: 0px;
-  
-}
-
-
-.Bio-pic-container{
-  /* margin-right: 1em; */
-  display:inline-block;
-  width: 35vh;
-  height: 30vh;
-  overflow:hidden;
+.Background-banner{
+  z-index: -5;
   position: absolute;
-  bottom: 0;
-  
-}
-
-.Bio-text{
-  display:absolute;
-  height: 30vh;
-  width: 70vw;
-  margin-left:33vh;
-  text-align: center;
-  height:fit-content;
-
+  width:110%;
+  margin:0%;
 }
 
 
 
-/* 
-.Bio-pic-overlay1{
-  z-index: 1; 
-  position: absolute; 
-  height: 30vh;
-  transform: translate(-5%, -5%);
-  --x: -5%;
+div.Bio-text{
+  position:absolute;
+  color:white; 
+  left:35vmin;
 }
 
-.Bio-pic-overlay2{
-  z-index: 0; 
-  position: absolute; 
-  height: 30vh;
+h1.Bio-text {
+  font-size: 9vmin;
+  margin: 0px
+}
 
-  transform: translate(-10%, -10%);
-  --x: -10%;
-
-} */
+h6.Bio-text{
+  margin: 0em;
+  margin-bottom:0.5em;
+  font-size:2vmin;
+}
 
 
 
@@ -83,14 +46,13 @@
   color: white;
   text-align: center;
   box-sizing: border-box; 
-  /* border: 5px solid #3b2049;  */
-  background-color:#785589;
-  /* width: 25%; */
+  box-shadow: -15px 15px #9BA2FF;
+  background-color:#1E1E1E;
+
   width: 40vw;
   border-radius: 10px; 
   margin:5px;
-  /* opacity:0.5; */
-  /* line-height: 30%; */
+
 }
 
 .Job-container{
@@ -120,7 +82,7 @@
 
 .Skill{
   box-sizing: border-box; 
-  background-color:#BB8A89;
+  background-color:#C375DF;
   color: white;
 
   border-radius: 10px; 
@@ -144,42 +106,48 @@
 
 .Carousel-container{
   display:flex;
-  width:90vw;
-  height: auto;
+  width:100%;
   position:relative;
-  margin: 0 auto;
   margin-top: 5vh;
+  margin-bottom: 10vh;
+  justify-content: center;
+
+  /* This height may cause problems at lower viewport widths */
+  min-height:55vmin;
+  height:55vmin;
 }
 
 .Carousel-item{
   position: absolute;
   border-radius: 10px;
-  border: 4px solid #0D160B;
-  background-color:#0D160B;
+  border: 4px solid #1E1E1E;
+  background-color:#1E1E1E;
   width: 50%;
 }
 
 .Carousel-desc-container{
-  width:80vmin;
+  width:90vmin;
   height: fit-content;
   padding-top: 10px;
-  text-align: center;
-  
 
-  border: 4px solid #0D160B;
-  background-color: #0D160B;
+  border: 4px solid #1E1E1E;
+  background-color: #1E1E1E;
   border-radius: 10px;
   color:white;
-
+  right:0;
+  box-shadow: -15px 15px #BB4BE4;
+  transform: translate(0%, -10%)
 }
 
 
 .Carousel-link{
+  margin-left:5%;  
+
   color:white;
   margin-top: 0.5em;
   padding-bottom: 1em;
   font-weight:bold;
-   font-size:1.5em
+   font-size:2em
 }
 
 .Carousel-link:hover{
@@ -188,21 +156,32 @@
 
 .Carousel-btn{
   position:absolute;
-  top:13vw;
-  width:50px;
-  height:25px;
+  top:14vw;
+  width:15%;
+  /* height:29%; */
+  /* height:0px; */
   text-align: center;
   color:white;
-  background: #0D160B;
-  border: 2px solid black;
+  /* background: #0D160B; */
+  /* border: 2px solid black; */
   border-radius: 10px;
 }
 
 
 
-
-.show-border{
-  border: 2px solid white;
+.About-info{
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  box-shadow: -15px 15px #9BA2FF;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 3vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  width:60%; 
+  height:fit-content;
+  min-width: 200px;
 }
 
 @keyframes slideInFromLeft {
