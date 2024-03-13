@@ -52,43 +52,76 @@ class Device extends React.Component {
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const addedFiles = []
+const ids = []
+for(let i = 0; i < 10; i++) {
+  ids.push(`element_${i}`);
+}
+
 
 function log(files){
-  console.log('dropped', files)
+  console.log('added', files)
+
+  for(let i = 0; i < files.length; i++) {
+    if (addedFiles.length + i < 10) {
+      addedFiles.push(files[i]);
+    }
+  }
 
   const src = ReactDOM.createRoot(document.getElementById('file_children'));
-
-  const a = files.map( file => (
-    // <li>{file.name}</li>
-    <div style={{width:"20%", height:"30%"}}>    <ImageDisplay file = {file}></ImageDisplay>
-    </div>
-
-    
-    ));
-    // src.appendChild(a);
+  
 
   src.render(
-    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"left"}}>{a}</div>
-    
-      
-    
+    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"left", alignItems:"center", width:"100%", height:"100%"}}>
+
+      {addedFiles.map( (file, i) => (
+        <div id = {ids[i]} style={{position:"relative", width:"calc(100% / 5 - 20px)", height:"calc(100% / 3 - 20px)", border:"solid green 1px"}} key={i}> 
+          <ImageDisplay file = {file}></ImageDisplay>
+          {/* <div style = {{position:"absolute", top:"0", left:"0", width:"100%", height:"100%", backgroundColor:"rgba(100,0,0,0.5)", textAlign:"center", color:"white"}}><span>Fake</span></div> */}
+        </div>
+      ))}
+    </div>
     
   )
+}
+
+
+function decideFiles() {
+
+  for(let i = 0; i < addedFiles.length; i++) {
+    const src = ReactDOM.createRoot(document.getElementById(`element_${i}`));
+
+    const classification = [] //Alternatively, turn this into an array outside of this loop to somehow keep track of states
+    if(Math.random() < 0.5){  //Fake
+      classification.push(<div style = {{position:"absolute", top:"0", left:"0", width:"100%", height:"100%", backgroundColor:"rgba(100,0,0,0.5)", textAlign:"center", color:"white"}}><span>Fake</span></div>)
+
+    } else {  //Real
+      classification.push(<div style = {{position:"absolute", top:"0", left:"0", width:"100%", height:"100%", backgroundColor:"rgba(0,100,0,0.5)", textAlign:"center", color:"white"}}><span>Real</span></div>)
+    }
+
+    src.render(
+      <div>
+        <ImageDisplay file = {addedFiles[1]}/>
+        {classification[0]}
+      </div>
+      
+    )
+  }
 }
 
 root.render(
   <React.StrictMode>
 
-<div style = {{display:"flex", flexDirection:"row"}}>
-<FileUpload onUpload={log}>
-<div style={{display:"flex", width:"300px", height:"300px", border:"dashed gray 5px", borderRadius:"50px", alignItems:"center",justifyContent:"center", margin:"20px"}}>
-<span >Drop Image Files Here!</span>
-</div>
-</FileUpload>
+  {/* <div style = {{display:"flex", flexDirection:"row", alignItems:"center"}}>
+    <FileUpload onUpload={log}>
+      <div style={{display:"flex", width:"300px", height:"300px", border:"dashed gray 5px", borderRadius:"50px", alignItems:"center",justifyContent:"center", margin:"20px"}}>
+        <span >Drop Image Files Here!</span>
+      </div>
+    </FileUpload>
 
-
-<div id="file_children" style={{margin:"20px", border:"2px solid red", width:"calc(90% - 340px)", height:"300px"}}></div>
-</div>
+    <div id="file_children" style={{display:"relative", margin:"20px", border:"2px solid red", width:"calc(90% - 340px)", height:"fit-content", minWidth:"600px"}}></div>
+  </div>
+  <button onClick={decideFiles}>Click me</button> */}
 
   <Device/>
 

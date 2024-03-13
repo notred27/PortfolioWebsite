@@ -21,7 +21,7 @@ const ImageDisplay = ({ file }) => {
   return (
     <div>
       {imageUrl && (
-        <img src={imageUrl} alt="Uploaded" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+        <img src={imageUrl} alt="Uploaded" style={{ width: '100%', height: '100%' }} />
       )}
     </div>
   );
