@@ -8,6 +8,10 @@ import reportWebVitals from './reportWebVitals.js';
 import Desktop from './Desktop.js';
 import Mobile from './Mobile.js';
 
+import FileUpload from './FileUpload.js';
+import ImageDisplay from './Drop2.js';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 class Device extends React.Component {
   constructor() {
@@ -31,7 +35,6 @@ class Device extends React.Component {
   
   
     render() {
-      const root = ReactDOM.createRoot(document.getElementById('root'));
   
       const { width } = this.state;
       const isMobile = width <= 600;
@@ -47,17 +50,47 @@ class Device extends React.Component {
   }
   
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+function log(files){
+  console.log('dropped', files)
+
+  const src = ReactDOM.createRoot(document.getElementById('file_children'));
+
+  const a = files.map( file => (
+    // <li>{file.name}</li>
+    <div style={{width:"20%", height:"30%"}}>    <ImageDisplay file = {file}></ImageDisplay>
+    </div>
+
+    
+    ));
+    // src.appendChild(a);
+
+  src.render(
+    <div style={{display:"flex", flexWrap:"wrap", justifyContent:"left"}}>{a}</div>
+    
+      
+    
+    
+  )
+}
 
 root.render(
   <React.StrictMode>
 
+<div style = {{display:"flex", flexDirection:"row"}}>
+<FileUpload onUpload={log}>
+<div style={{display:"flex", width:"300px", height:"300px", border:"dashed gray 5px", borderRadius:"50px", alignItems:"center",justifyContent:"center", margin:"20px"}}>
+<span >Drop Image Files Here!</span>
+</div>
+</FileUpload>
+
+
+<div id="file_children" style={{margin:"20px", border:"2px solid red", width:"calc(90% - 340px)", height:"300px"}}></div>
+</div>
+
   <Device/>
-
-
-  
-
-
 
 
   </React.StrictMode>
