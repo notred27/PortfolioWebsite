@@ -26,7 +26,7 @@ export default function Paper() {
 
             <div style={{display:"flex", flexDirection:"column"}}>
               <div style={{width:"100%", height:"100%", position:"relative", margin:"0px"}}>
-                <a href={paper.link} className="Paper-title" style={{display:"block", width:"95%", position:"absolute", bottom:"0", fontWeight:"bold", fontSize:"2.4vmin",textAlign:"left", marginLeft:"15px", marginBottom:"0px", padding:"5px",paddingBottom:"0px",  color:"#1E1E1E"}}>{paper.title}</a>
+                <a href={paper.link} className="Paper-title" style={{display:"block", width:"95%", position:"absolute", bottom:"0", fontWeight:"bold", fontSize:"2.8vmin",textAlign:"left", marginLeft:"15px", marginBottom:"0px", padding:"5px",paddingBottom:"0px",  color:"#1E1E1E"}}>{paper.title}</a>
               </div>
 
               <div className="Paper-text" >

@@ -8,7 +8,7 @@ export default function About(){
 
             <h1 className='About-item' style={{fontSize:"1.5em"}}>Hi, my name's Michael, <br></br>and I'm a <span style={{color:"#BB4BE4"}}>Software Engineer</span>!</h1>
 
-            <h4 className='About-item'>I'm an undergraduate at <span style={{color:"#9BA2FF"}}>The University of Rochester</span> thats pursuing a <span style={{color:"#EE4266"}}>B.S. in Computer Science</span> and minoring in <span style={{color:"#EE4266"}}>Mathematics</span>.</h4>
+            <h4 className='About-item'>I'm an undergraduate at the <span style={{color:"#9BA2FF"}}>University of Rochester</span> thats pursuing a <span style={{color:"#EE4266"}}>B.S. in Computer Science</span> and minoring in <span style={{color:"#EE4266"}}>Mathematics</span>.</h4>
 
             <h4 className='About-item2'>My main areas of interest are:</h4>
             <ul style={{marginTop:"0px"}}>
