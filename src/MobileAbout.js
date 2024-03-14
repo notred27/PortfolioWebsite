@@ -6,7 +6,7 @@ export default function About(){
         <div style={{marginBottom:"5%"}}>
             <div className='About-info' style={{width:"80%", marginLeft:"10%", marginBottom:"10%"}}>
 
-            <h1 className='About-item'>Hi, my name's Michael, <br></br>and I'm a <span style={{color:"#BB4BE4"}}>Software Engineer</span>!</h1>
+            <h1 className='About-item' style={{fontSize:"1.5em"}}>Hi, my name's Michael, <br></br>and I'm a <span style={{color:"#BB4BE4"}}>Software Engineer</span>!</h1>
 
             <h4 className='About-item'>I'm an undergraduate at <span style={{color:"#9BA2FF"}}>The University of Rochester</span> thats pursuing a <span style={{color:"#EE4266"}}>B.S. in Computer Science</span> and minoring in <span style={{color:"#EE4266"}}>Mathematics</span>.</h4>
 

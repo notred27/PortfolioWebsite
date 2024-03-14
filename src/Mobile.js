@@ -20,6 +20,13 @@ export default function Desktop() {
         <div style={{zIndex:"0",position:"relative",backgroundColor:"#BB4BE4", width:"96%", height:"50px", top:"-30px", borderBottomRightRadius:"30px"}} ></div>
         </div>
 
+        <div style={{width:"100%", textAlign:"center", marginBottom:"25px"}}>
+            <a href ="#About"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #9BA2FF"}}>About</span></a>
+            <a href ="#Projects"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>Projects</span></a>
+            <a href ="#Papers"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px",margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #EE4266"}}>Papers</span></a>
+            <a href ="#Jobs"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",borderRadius:"7px", boxShadow:"-3px 3px #9BA2FF"}}>Jobs</span></a>
+            <a href ="#AI"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>AI Classifier</span></a>
+        </div>
 
         <div style={{position:"relative"}}> 
         <div style={{overflow:"hidden"}}> 
@@ -27,7 +34,7 @@ export default function Desktop() {
         </div>
         </div>
 
-
+        <a name = "About"></a>
         <Header title = {"Who am I?"} color = {"#9BA2FF"} side = {"right"}/>
         <About style={{zIndex:"0"}} />
 
@@ -37,7 +44,7 @@ export default function Desktop() {
         </div>
         </div>
 
-
+        <a name = "Projects"></a>
         <Header title = {"Projects!"} color = {"#BB4BE4"} side = {"left"}/>
         <Carousel/>
 
@@ -47,6 +54,7 @@ export default function Desktop() {
         </div>
         </div>
 
+        <a name = "Papers"></a>
         <Header title = {"Papers and Publications!"} color = {"#EE4266"} side={"right"}/>
         <Paper/>
 
@@ -56,7 +64,7 @@ export default function Desktop() {
         </div>
         </div>
 
-
+        <a name = "Jobs"></a>
         <Header title = {"Work Experience!"} color = {"#9BA2FF"} side = {"left"}/>
         {/* <Jobs/> */}
 

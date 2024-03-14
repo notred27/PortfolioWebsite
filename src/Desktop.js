@@ -20,6 +20,8 @@ export default function Desktop() {
         <div style={{zIndex:"0",position:"relative",backgroundColor:"#BB4BE4", width:"96%", height:"60px", top:"-30px", borderBottomRightRadius:"30px"}} ></div>
         </div>
 
+        
+
 
         <div style={{position:"relative"}}> 
         <div style={{overflow:"hidden"}}> 
