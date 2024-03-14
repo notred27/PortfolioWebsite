@@ -111,8 +111,13 @@ function decideFiles() {
 
 root.render(
   <React.StrictMode>
+  
+  <Device/>
 
-  {/* <div style = {{display:"flex", flexDirection:"row", alignItems:"center"}}>
+
+
+
+  <div style = {{display:"flex", flexDirection:"row", alignItems:"center"}}>
     <FileUpload onUpload={log}>
       <div style={{display:"flex", width:"300px", height:"300px", border:"dashed gray 5px", borderRadius:"50px", alignItems:"center",justifyContent:"center", margin:"20px"}}>
         <span >Drop Image Files Here!</span>
@@ -121,9 +126,8 @@ root.render(
 
     <div id="file_children" style={{display:"relative", margin:"20px", border:"2px solid red", width:"calc(90% - 340px)", height:"fit-content", minWidth:"600px"}}></div>
   </div>
-  <button onClick={decideFiles}>Click me</button> */}
+  <button onClick={decideFiles}>Click me</button>
 
-  <Device/>
 
 
   </React.StrictMode>

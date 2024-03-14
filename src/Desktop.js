@@ -27,7 +27,7 @@ export default function Desktop() {
         </div>
         </div>
 
-
+        <a name = "About"></a>
         <Header title = {"Who am I?"} color = {"#9BA2FF"} side = {"right"}/>
         <About style={{zIndex:"0"}} />
 
@@ -37,7 +37,7 @@ export default function Desktop() {
         </div>
         </div>
 
-
+        <a name = "Projects"></a>
         <Header title = {"Projects!"} color = {"#BB4BE4"} side = {"left"}/>
         <Carousel/>
 
@@ -47,6 +47,7 @@ export default function Desktop() {
         </div>
         </div>
 
+        <a name = "Papers"></a>
         <Header title = {"Papers and Publications!"} color = {"#EE4266"} side={"right"}/>
         <Paper/>
 
@@ -56,7 +57,7 @@ export default function Desktop() {
         </div>
         </div>
 
-
+        <a name = "Jobs"></a>
         <Header title = {"Work Experience!"} color = {"#9BA2FF"} side = {"left"}/>
         <Jobs/>
 
@@ -65,6 +66,9 @@ export default function Desktop() {
         <div className="Background-banner" style={{height:"40vh", backgroundColor:"#C9D8FF", transform:"translate(-5%, -130%) rotate(-5deg)"}}/>
         </div>
         </div>
+
+        <a name = "AI"></a>
+        <Header title = {"AI Classifier!"} color = {"#BB4BE4"} side = {"right"}/>
 
     
     </div>

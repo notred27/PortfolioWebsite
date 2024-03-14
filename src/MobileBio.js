@@ -26,7 +26,7 @@ export default function Bio() {
           
 
           <div className='Bio-text'>
-            <h1 className='Bio-text' style={{fontSize:"3em"}}> Michael Reidy</h1>
+            <h1 className='Bio-text' style={{fontSize:"2.5em"}}> Michael Reidy</h1>
         
             <h6 className='Bio-text'>mreidy3@u.rochester.edu | <a className='Bio-link' href = "https://www.linkedin.com/in/michael-reidy-122024254/">LinkedIn</a> | <a className='Bio-link' href = "https://github.com/notred27">GitHub</a></h6>
             <h6 className='Bio-text'> CS Undergraduate, U of R Class of 2025</h6>

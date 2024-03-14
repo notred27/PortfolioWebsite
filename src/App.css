@@ -212,10 +212,24 @@ h6.Bio-text{
   font-size: 3vh;
   margin-left: 5%;
   margin-right: 5%;
-  width:60%; 
+  width:100%; 
   height:fit-content;
   min-width: 200px;
+  text-align: left;
+  margin-bottom: 25px;
 }
+
+.About-item{
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+.About-item2{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px;
+}
+
 
 .About-info-mobile{
   background-color: #1E1E1E;

@@ -126,7 +126,5 @@ export const Papers = [
 ]
 
 export const Info = {
-        description:"Hi! My name's Michael and I'm currently an undergraduate at the University of Rochester, where I'm pursuing a B.S. in Computer Science, with a minor in Mathematics. My main areas of interest are computer vision, complexity theory, and algorithmic analysis. On campus, I'm a part of both the Music Interest Floor and UX design club. In my spare time, I also enjoy drawing, hanging out with friends, listening to music (especially jazz/alternative), and reading sci-fi books.",
         images:["people.png", "hackathon.png", "snowman.png", "galla.png"]
-
     }
