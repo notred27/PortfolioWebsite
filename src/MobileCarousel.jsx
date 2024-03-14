@@ -80,7 +80,7 @@ export default function Carousel() {
 
       
             <div  className= "Carousel-desc-container-mobile">
-                <a className="Carousel-link" href={Projects[center].link}>{Projects[center].title}</a>
+                <a className="Carousel-link" href={Projects[center].link} style={{display:"block", paddingBottom:"0px"}}>{Projects[center].title}</a>
                 <p style = {{textAlign:"left", marginLeft:"5%", marginRight:"5%", fontSize:"1em"}}>{Projects[center].description}</p>
                 <Skill skills={Projects[center].skills}/>
 

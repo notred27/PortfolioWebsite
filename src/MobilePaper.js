@@ -1,13 +1,13 @@
 
 import { Papers } from "./data";
-import './Paper.css';
+import './MobilePaper.css';
 
 
 
 
 export default function Paper() {
   const Items = ({items}) => (
-    <div style={{marginBottom:"15px", fontSize:"1vw", padding:"1%", paddingLeft:"5%"}}> 
+    <div style={{marginBottom:"15px", fontSize:"2vmin", padding:"1%", paddingLeft:"5%"}}> 
     {
       items.map(item =>(
         <li>{item}</li>
@@ -16,27 +16,29 @@ export default function Paper() {
     </div>
   );
 
+  // Maybe do something based on indexing to alternate these paper pages / info
     const papers = Papers.map(paper =>
-      <div className="Paper">
+      <div className="mPaper">
 
-          <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
-            <div style={{width:"100%", height:"100%", position:"relative"}}>
-              <a href={paper.link}>
-                <img className="Paper-Img" alt = "paper image" src={require('./images/' + paper.image)} style={{borderRadius:"10px", border:"10px solid #EE4266", float:"left"}}></img>
-              </a>
+        <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
+ 
+            <img className="mPaper-Img" alt = "paper image" src={require('./images/' + paper.image)} style={{borderRadius:"10px", border:"5px solid #EE4266", float:"left", width:"40vw"}}></img>
+
+            <div style={{display:"flex", flexDirection:"column"}}>
+              <div style={{width:"100%", height:"100%", position:"relative", margin:"0px"}}>
+                <a href={paper.link} className="Paper-title" style={{display:"block", width:"95%", position:"absolute", bottom:"0", fontWeight:"bold", fontSize:"2.4vmin",textAlign:"left", marginLeft:"15px", marginBottom:"0px", padding:"5px",paddingBottom:"0px",  color:"#1E1E1E"}}>{paper.title}</a>
+              </div>
+
+              <div className="Paper-text" >
+                {paper.description.map(item =>(
+                    <li>{item}</li>
+                  ))}
+              </div>
             </div>
 
-            <div style={{width:"100%", height:"100%", position:"relative", margin:"0px"}}>
-              <a href={paper.link} className="Paper-title" style={{width:"100%", position:"absolute", bottom:"0", fontWeight:"bold", fontSize:"1.3vmax",textAlign:"left", padding:"5px", color:"#1E1E1E", transform:"translate(-60%, -10%)"}}>{paper.title}</a>
-            </div>
-          </div>
-
-          <div className="Paper-text">
-            <Items items = {paper.description} />
-          </div>
+        </div>
 
       </div>
-
     );
 
     return (

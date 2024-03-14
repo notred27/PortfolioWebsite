@@ -168,7 +168,8 @@ h6.Bio-text{
   margin-top: 0.5em;
   padding-bottom: 1em;
   font-weight:bold;
-   font-size:2em
+   font-size:2em;
+   display:"block";
 }
 
 .Carousel-link:hover{

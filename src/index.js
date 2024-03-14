@@ -18,6 +18,7 @@ class Device extends React.Component {
     super();
     this.state = {
       width: window.innerWidth,
+      height: window.innerHeight
     };
   }
   
@@ -30,14 +31,14 @@ class Device extends React.Component {
   }
   
   handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
+    this.setState({ width: window.innerWidth, height: window.innerHeight});
   };
   
   
     render() {
   
-      const { width } = this.state;
-      const isMobile = width <= 600;
+      const { width, height } = this.state;
+      const isMobile = width <= height * 1.4;
         // if (isMobile) {}
       if(isMobile) {
         return <Mobile/>

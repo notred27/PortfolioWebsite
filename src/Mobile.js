@@ -1,4 +1,4 @@
-import Bio from './MobileBio.js';
+import Bio from './Bio.js';
 import Jobs from './Jobs';
 import Carousel from './MobileCarousel';
 import Paper from './MobilePaper.js';
@@ -20,13 +20,7 @@ export default function Desktop() {
         <div style={{zIndex:"0",position:"relative",backgroundColor:"#BB4BE4", width:"96%", height:"50px", top:"-30px", borderBottomRightRadius:"30px"}} ></div>
         </div>
 
-        <div style={{width:"100%", textAlign:"center", marginBottom:"25px"}}>
-            <a href ="#About"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #9BA2FF"}}>About</span></a>
-            <a href ="#Projects"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>Projects</span></a>
-            <a href ="#Papers"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px",margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #EE4266"}}>Papers</span></a>
-            <a href ="#Jobs"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",borderRadius:"7px", boxShadow:"-3px 3px #9BA2FF"}}>Jobs</span></a>
-            <a href ="#AI"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>AI Classifier</span></a>
-        </div>
+   
 
         <div style={{position:"relative"}}> 
         <div style={{overflow:"hidden"}}> 
