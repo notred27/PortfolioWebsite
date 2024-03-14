@@ -4,7 +4,7 @@ import {Info} from './data.js'
 export default function About(){
     return (
         <div style={{marginBottom:"5%"}}>
-            <div className='About-info' style={{width:"80%", marginLeft:"10%", marginBottom:"10%"}}>
+            <div className='About-info' style={{width:"80%", marginLeft:"10%", marginBottom:"10%", borderRadius:"20px", boxShadow:"-20px 20px #9BA2FF" }}>
 
             <h1 className='About-item' style={{fontSize:"1.5em"}}>Hi, my name's Michael, <br></br>and I'm a <span style={{color:"#BB4BE4"}}>Software Engineer</span>!</h1>
 
@@ -36,7 +36,7 @@ export default function About(){
             {/* <p className='About-info-mobile'>{Info.description} </p> */}
 
             
-            <div className='About-info' style={{boxShadow:"-15px 15px #EE4266", marginLeft:"10%", marginTop:"5%", width:"80%"}}>
+            <div className='About-info' style={{boxShadow:"-20px 20px #EE4266", marginLeft:"10%", marginTop:"5%", width:"80%", borderRadius:"20px"}}>
 
                 <h4 className='About-item'>On campus, I'm part of the <span style={{color:"#BB4BE4"}}>Music Interest Floor</span> and <span style={{color:"#9BA2FF"}}>UX Design Club</span>.</h4>
 

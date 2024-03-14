@@ -67,8 +67,8 @@ export default function Carousel() {
                 {/* <button className="Carousel-btn" style={{left:"5%"}} onClick={handleLast} src = {button_l}><img src={button_l}></img></button>
                 <button className="Carousel-btn" style={{right:"5%"}} onClick={handleNext}><img src={button_r}></img></button> */}
 
-                <div style={{position:"absolute", left:"3.5%", backgroundColor:"#BB4BE4", width:"13%",top:"18vh", height:"38px", transform:"rotate(22deg)", borderRadius:"10px"}}></div>
-                <div style={{position:"absolute", right:"7%", backgroundColor:"#BB4BE4", width:"13%",top:"18.8vh", height:"38px", transform:"rotate(-22deg)", borderRadius:"10px"}}></div>
+                <div style={{position:"absolute", left:"3.5%", backgroundColor:"#BB4BE4", width:"13%",top:"18vh", height:"20%", transform:"rotate(22deg)", borderRadius:"10px"}}></div>
+                <div style={{position:"absolute", right:"7%", backgroundColor:"#BB4BE4", width:"13%",top:"18.8vh", height:"20%", transform:"rotate(-22deg)", borderRadius:"10px"}}></div>
                 
                 <img className="Carousel-btn-mobile" src={button_l} onClick={handleLast} style={{left:"5%"}}></img>
 
@@ -80,8 +80,8 @@ export default function Carousel() {
 
       
             <div  className= "Carousel-desc-container-mobile">
-                <a className="Carousel-link" href={Projects[center].link} style={{display:"block", paddingBottom:"0px"}}>{Projects[center].title}</a>
-                <p style = {{textAlign:"left", marginLeft:"5%", marginRight:"5%", fontSize:"1em"}}>{Projects[center].description}</p>
+                <a className="Carousel-link" href={Projects[center].link} style={{display:"block", paddingBottom:"0px", fontSize:"3vh"}}>{Projects[center].title}</a>
+                <p style = {{textAlign:"left", marginLeft:"5%", marginRight:"5%", fontSize:"2.5vh"}}>{Projects[center].description}</p>
                 <Skill skills={Projects[center].skills}/>
 
 
