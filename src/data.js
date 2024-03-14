@@ -60,7 +60,7 @@ export const Projects = [
     {
         title: "CFA Interpolation Classifiers on AIGC",
         image: "AIGC.png",
-        description: "Created novel classifiers to identify AI-generated content (AIGC) based on Color Filter Array interpolation methods. This was done by estimating the amount of error in an image's RGB channels by converting the image to a raw image and re-interpolating (based on standard interpolation algorithms). By creating both a thresholding classifier and a 3-dimensional feature for use in neural networks, my classifiers were able to achieve higher than human levels of accuracy (73.55%). Resulted in a publication in the 2023 IEEE International Conference on Big Data.",
+        description: "Created novel classifiers to identify AI-generated content (AIGC) based on Color Filter Array interpolation methods. This was done by estimating the amount of error in an image's RGB channels by converting the image to a raw image and re-interpolating (based on standard interpolation algorithms). By creating both a thresholding classifier and a 3-dimensional feature for use in neural networks, my classifiers were able to achieve higher than human levels of accuracy (73.55%).",
         skills:["Research", "MATLAB", "Deep Learning", "Bayer Arrays", "Computer Vision"],
         link:"https://github.com/notred27/CFA-Interpolation-Classifiers-on-Identifying-AIGC"
     },
@@ -75,7 +75,7 @@ export const Projects = [
     {
         title: "This website!",
         image: "breakdance2.gif",
-        description: "This website was created using React (as well as standard JS and CSS) to showcase my portfolio and career history. I've had fun creating this website and tried to structure it using a cohesive and stylish UI. Thank you for visiting my site!",
+        description: "This website was created using React (as well as standard JS and CSS) to showcase my portfolio and career history. Additionally, it is hosted using AWS Amplify. I've had fun creating this website and tried to structure it using a cohesive and stylish UI. Thank you for visiting my site!",
         skills:["React", "JavaScript", "CSS", "HTML", "UI Design"],
         link:""
     },
@@ -102,26 +102,26 @@ export const Papers = [
         title:"On Czerwinski's \"P≠NP relative to a P‑complete oracle\" [arXiv]",
         image:"paper2.png",
         link:"https://arxiv.org/abs/2312.04395",
-        description:["In this paper, we critique a paper by Reiner Czerwinski that (perhaps unknowingly) claims to give an oracle where P=NP.",
-                    "We argue that Czerwinski's Corollary 1 is provably false through Turing reductions, and thus we disprove the author's separation argument.",
-                    "Additionally, we rework some of Czerwinski's original proofs to show that despite technical flaws in the paper, the author's underlying idea cannot prove the separation."]
+        description:["A critique of a paper by Reiner Czerwinski that (perhaps unknowingly) claims to give an oracle where P=NP.",
+                    "We argue that Czerwinski's Corollary 1 is false through Turing reductions, and thus disprove the author's separation argument.",
+                    "We rework some of Czerwinski's original proofs to show that despite their technical flaws, the author's underlying idea cannot prove the separation."]
     },
     {
         title:"Investigating the Effectiveness of Deep Learning and CFA Interpolation Based Classifiers on Identifying AIGC [IEEE BigData2023]",
         image:"paper1.png",
         link:"https://ieeexplore.ieee.org/document/10386096",
-        description:["In this paper, we propose novel shallow classifiers for identifying AI‑generated content (AIGC) that are based on Bayer arrays found in physical cameras.",
-                     "Tested our models on a sparse dataset (1,289 images) of human faces, and a diverse dataset (2,800 images) of faces, cats, and dogs to test generalizability.",
-                     "Our best deep learning CNN and CFA thresholding models achieved a respective 83.15% and 73.55% accuracy on the diverse dataset."]
+        description:["Proposed two novel shallow classifiers for identifying AI‑generated content (AIGC) based on the structure of Bayer arrays found in physical cameras.",
+                     "Tested our models on a sparse dataset of human faces and a diverse dataset of faces, cats, and dogs to test model generalizability.",
+                     "When tested on our diverse dataset, our CNN's achieved an accuracy of 83.15%, and our shallow CFA thresholding models achieved an accuracy of 73.55%."]
     },
     
     {
         title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\" [arXiv]",
         image:"paper3.png",
         link:"",
-        description:["In this paper, we critique a paper by Yangjun Chen that claims to give an algorithm that solves an NP‑complete problem in polynomially-bounded time.",
-                    "We give 4 counterexamples where the author's algorithm fails to give proper solutions to 2-MAXSAT to prove that the algorithm is invalid.",
-                    "We also point out concerns that the definitions the author creates for their algorithm are ambiguous and inconsistent."]
+        description:["A critique of a paper by Yangjun Chen that claims to give an algorithm to solve an NP‑complete problem (2-MAXSAT) in polynomially-bounded time.",
+                    "Provide 4 counterexamples where the author's algorithm fails to give proper solutions, thus proving that their algorithm is invalid.",
+                    "Point out concerns that the author's definitions are ambiguous and inconsistent."]
     },
 ]
 

@@ -10,6 +10,7 @@ import Mobile from './Mobile.js';
 
 import FileUpload from './FileUpload.js';
 import ImageDisplay from './Drop2.js';
+import ImageUpload from './ImageUpload.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -111,7 +112,10 @@ function decideFiles() {
 }
 
 root.render(
+
   <React.StrictMode>
+
+  <ImageUpload/>
   
   <Device/>
 
