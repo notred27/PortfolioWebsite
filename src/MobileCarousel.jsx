@@ -11,19 +11,38 @@ import button_l from "./images/button_l.png"
 export default function Carousel() {
     const num_projects = Projects.length
     const [positionIndex, setPositionIndex] = useState([0,1,2,3,4,5]);
+    const [animationPlaying, setanimationPlaying] = useState(false);
+
 
     const handleNext = () => {
+        if (animationPlaying){
+            return
+        }
+
         setPositionIndex((prevIndicies) =>
         {
-            return prevIndicies.map((prevIndex) => ((prevIndex - 1) + num_projects)% num_projects);;
+            return prevIndicies.map((prevIndex) => ((prevIndex - 1) + num_projects)% num_projects);
         });
+
+        setTimeout(() => {
+            setanimationPlaying(false);
+            console.log("jeepers")
+          }, 600);
     }
 
     const handleLast = () => {
+        if (animationPlaying){
+            return
+        }
+
         setPositionIndex((prevIndicies) =>
         {
             return prevIndicies.map((prevIndex) => (prevIndex + 1) % num_projects);
         });
+
+        setTimeout(() => {
+            setanimationPlaying(false);
+          }, 600);
     }
 
     const center = positionIndex.indexOf(0);
@@ -50,7 +69,7 @@ export default function Carousel() {
 
         <div style={{height:"80vh"}}> 
 
-            <div className="Carousel-mobile">
+            <div className="Carousel-mobile" >
                 {Projects.map((project, index) => (
                     <motion.img
                         key = {index}
@@ -64,15 +83,14 @@ export default function Carousel() {
                     />
                 ))}
 
-                {/* <button className="Carousel-btn" style={{left:"5%"}} onClick={handleLast} src = {button_l}><img src={button_l}></img></button>
-                <button className="Carousel-btn" style={{right:"5%"}} onClick={handleNext}><img src={button_r}></img></button> */}
-
-                <div style={{position:"absolute", left:"3.5%", backgroundColor:"#BB4BE4", width:"13%",top:"18vh", height:"10%", transform:"rotate(22deg)", borderRadius:"10px"}}></div>
-                <div style={{position:"absolute", right:"7%", backgroundColor:"#BB4BE4", width:"13%",top:"18.8vh", height:"10%", transform:"rotate(-22deg)", borderRadius:"10px"}}></div>
                 
-                <img className="Carousel-btn-mobile" src={button_l} onClick={handleLast} style={{left:"5%"}}></img>
 
-                <img className="Carousel-btn-mobile" src={button_r} onClick={handleNext} style={{right:"5%"}}></img>
+                {/* <div style={{position:"absolute", left:"3.5%", backgroundColor:"#BB4BE4", width:"13%",top:"18vh", height:"10%", transform:"rotate(22deg)", borderRadius:"10px"}}></div>
+                <div style={{position:"absolute", right:"7%", backgroundColor:"#BB4BE4", width:"13%",top:"18.8vh", height:"10%", transform:"rotate(-22deg)", borderRadius:"10px"}}></div> */}
+                
+                <img className="Carousel-btn-mobile" src={button_l} onClick={() => {setanimationPlaying(true); handleLast()}} style={{left:"5%"}}></img>
+
+                <img className="Carousel-btn-mobile" src={button_r} onClick={() => {setanimationPlaying(true); handleNext()}} style={{right:"5%"}}></img>
             </div>
 
 
@@ -81,7 +99,7 @@ export default function Carousel() {
       
             <div  className= "Carousel-desc-container-mobile">
                 <a className="Carousel-link" href={Projects[center].link} style={{display:"block", paddingBottom:"0px", fontSize:"3vh"}}>{Projects[center].title}</a>
-                <p style = {{textAlign:"left", marginLeft:"5%", marginRight:"5%", fontSize:"2vh"}}>{Projects[center].description}</p>
+                <p style = {{textAlign:"center", marginLeft:"5%", marginRight:"5%", fontSize:"2vmax"}}>{Projects[center].description}</p>
                 <Skill skills={Projects[center].skills}/>
 
 

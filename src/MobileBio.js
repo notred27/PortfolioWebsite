@@ -31,9 +31,17 @@ export default function Bio() {
             <h6 className='Bio-text'>mreidy3@u.rochester.edu | <a className='Bio-link' href = "https://www.linkedin.com/in/michael-reidy-122024254/">LinkedIn</a> | <a className='Bio-link' href = "https://github.com/notred27">GitHub</a></h6>
             <h6 className='Bio-text'> CS Undergraduate, U of R Class of 2025</h6>
 
-           
+            <div style = {{ marginTop:"20px", display:"flex", flexWrap:"wrap"}}>
+            <a href ="#About" style={{marginBottom:"20px"}}><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",  borderRadius:"7px", boxShadow:"-3px 3px #9BA2FF"}}>About</span></a>
+            <a href ="#Projects" style={{marginBottom:"20px"}}><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",  borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>Projects</span></a>
+            <a href ="#Papers" style={{marginBottom:"20px"}}><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px",margin:"5px",  borderRadius:"7px", boxShadow:"-3px 3px #EE4266"}}>Papers</span></a>
+            <a href ="#Jobs" style={{marginBottom:"20px"}}><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",  borderRadius:"7px", boxShadow:"-3px 3px #9BA2FF"}}>Jobs</span></a>
+            <a href ="#AI" style={{marginBottom:"20px"}}><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>AI Classifier</span></a>
+          </div>
 
           </div>
+
+         
 
       </div>
 

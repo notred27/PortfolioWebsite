@@ -75,19 +75,20 @@ h6.Bio-text{
 
 .Skill-container{
   display: flex;
-  align-items: center;
+  text-align: center;
   width:100%;
   margin: 0 auto;
   justify-content: center;
 }
 
 .Skill{
+  
   box-sizing: border-box; 
   background-color:#C375DF;
   color: white;
 
   border-radius: 10px; 
-  font-size: 0.65em;
+  font-size: 0.9em;
   font-weight: bold;
   margin:5px;
 
@@ -107,7 +108,8 @@ h6.Bio-text{
 .Carousel-mobile {
   position: relative; 
   width: 100vw;
-  height: 25vh;
+  height: 34vw;
+  margin-bottom: 4vw;
 } 
 
 
@@ -116,12 +118,11 @@ h6.Bio-text{
   width:100%;
   position:relative;
   margin-top: 5vh;
-  margin-bottom: 10vh;
   justify-content: center;
-
+  
   /* This height may cause problems at lower viewport widths */
-  min-height:55vmin;
-  height:55vmin;
+  /* min-height:55vmin; */
+  /* height:55vmin; */
 }
 
 .Carousel-item{
@@ -168,8 +169,9 @@ h6.Bio-text{
   margin-top: 0.5em;
   padding-bottom: 1em;
   font-weight:bold;
-   font-size:2em;
-   display:"block";
+  font-size:2em;
+  display:"block";
+  text-align: center;
 }
 
 .Carousel-link:hover{
@@ -191,7 +193,7 @@ h6.Bio-text{
 
 .Carousel-btn-mobile{
   position:absolute;
-  top:16vh;
+  top:24vw;
   width:15%;
   /* height:29%; */
   /* height:0px; */
@@ -210,7 +212,7 @@ h6.Bio-text{
   color: white;
   padding: 10px;
   text-align: center;
-  font-size: 3vh;
+  font-size: 1.4vmax;
   margin-left: 5%;
   margin-right: 5%;
   width:100%; 

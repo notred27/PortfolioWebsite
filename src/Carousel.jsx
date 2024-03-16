@@ -11,19 +11,38 @@ import button_l from "./images/button_l.png"
 export default function Carousel() {
     const num_projects = Projects.length
     const [positionIndex, setPositionIndex] = useState([0,1,2,3,4,5]);
+    const [animationPlaying, setanimationPlaying] = useState(false);
+
 
     const handleNext = () => {
+        if (animationPlaying){
+            return
+        }
+
         setPositionIndex((prevIndicies) =>
         {
-            return prevIndicies.map((prevIndex) => ((prevIndex - 1) + num_projects)% num_projects);;
+            return prevIndicies.map((prevIndex) => ((prevIndex - 1) + num_projects)% num_projects);
         });
+
+        setTimeout(() => {
+            setanimationPlaying(false);
+            console.log("jeepers")
+          }, 600);
     }
 
     const handleLast = () => {
+        if (animationPlaying){
+            return
+        }
+
         setPositionIndex((prevIndicies) =>
         {
             return prevIndicies.map((prevIndex) => (prevIndex + 1) % num_projects);
         });
+
+        setTimeout(() => {
+            setanimationPlaying(false);
+          }, 600);
     }
 
     const center = positionIndex.indexOf(0);
@@ -70,9 +89,9 @@ export default function Carousel() {
                 <div style={{position:"absolute", left:"4.5%", backgroundColor:"#BB4BE4", width:"13%",top:"15.5vw", height:"16%", transform:"rotate(22deg)", borderRadius:"10px"}}></div>
                 <div style={{position:"absolute", right:"7%", backgroundColor:"#BB4BE4", width:"13%",top:"16vw", height:"16%", transform:"rotate(-22deg)", borderRadius:"10px"}}></div>
                 
-                <img className="Carousel-btn" src={button_l} onClick={handleLast} style={{left:"5%"}}></img>
+                <img className="Carousel-btn" src={button_l} onClick={() => {setanimationPlaying(true); handleLast()}} style={{left:"5%"}}></img>
 
-                <img className="Carousel-btn" src={button_r} onClick={handleNext} style={{right:"5%"}}></img>
+                <img className="Carousel-btn" src={button_r} onClick={() => {setanimationPlaying(true); handleNext()}} style={{right:"5%"}}></img>
             </div>
 
 
@@ -81,7 +100,7 @@ export default function Carousel() {
       
             <div  className= "Carousel-desc-container">
                 <a className="Carousel-link" href={Projects[center].link}>{Projects[center].title}</a>
-                <p style = {{textAlign:"left", marginLeft:"5%", marginRight:"5%", fontSize:"1em"}}>{Projects[center].description}</p>
+                <p style = {{textAlign:"center", marginLeft:"5%", marginRight:"5%", fontSize:"1vmax"}}>{Projects[center].description}</p>
                 <Skill skills={Projects[center].skills}/>
 
 

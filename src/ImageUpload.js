@@ -3,12 +3,12 @@ import React, { useState} from 'react';
 
 function ImageUpload() {
     const [picture, setPicture] = useState(0);
-    const [result, setResult] = useState(0);
 
     const handleImageChange = (e) => {
         setPicture({
             image : URL.createObjectURL(e.target.files[0]),
-            file : e.target.files[0]
+            file : e.target.files[0],
+            verification: "not verified"
         })
     }
 
@@ -21,9 +21,26 @@ function ImageUpload() {
             method: 'POST',
             body: formData,
         })
-            .then((res) => res.json())
-            .then((data) => setResult(data.format))
-            .catch((error) =>setResult("Upload a valid image file (.jpg/.png/.tiff)"))
+            .then((res) => {
+                if (res.status == 418) {    //Teapot for non-image files
+                    setPicture({verification: "Please upload a valid image file format (.jpg/.png/.tiff)"})
+                    return null;
+
+                } else if (!res.ok){
+                    setPicture({verification: "Error uploading file"})
+                    return null;
+                }
+
+                return res.json()
+            })
+
+            .then((data) => {
+                if(data != null) {
+                    setPicture({verification: data.format})
+                }
+            })
+
+            .catch((error) => console.log(error))
            
     };
 
@@ -35,7 +52,7 @@ function ImageUpload() {
           <input type="file" name="image" onChange={handleImageChange}/>
           <br></br>
           <button onClick={uploadPicture}>Upload</button>
-          <p>File extension: {result}</p>
+          <p>File extension: {picture.verification}</p>
 
         </div>
       );
