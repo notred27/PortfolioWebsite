@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+import ImageDisplay from './Drop2.js';
 
 
 function ImageUpload() {
@@ -53,6 +54,9 @@ function ImageUpload() {
           <br></br>
           <button onClick={uploadPicture}>Upload</button>
           <p>File extension: {picture.verification}</p>
+          <div style={{width:"100px"}}>         
+            <ImageDisplay file = {picture.file} ></ImageDisplay>
+            </div>
 
         </div>
       );
