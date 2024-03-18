@@ -1,10 +1,8 @@
 import React from 'react';
 
 
-export default function FileUpload({onUpload, children, count, formats}) {
+export default function FileUpload({onUpload, children, formats}) {
     
-    
-      
       const handleDragOver = (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -18,12 +16,6 @@ export default function FileUpload({onUpload, children, count, formats}) {
         // this is required to convert FileList object to array
         const files = [...e.dataTransfer.files];
 
-      
-        // check if the provided count prop is less than uploaded count of files
-        if (count && count < files.length) {
-          console.log(`Only ${count} file${count !== 1 ? 's' : ''} can be uploaded at a time`);
-          return;
-        }
       
         // check if some uploaded file is not in one of the allowed formats
         if (formats && files.some((file) => !formats.some((format) => file.name.toLowerCase().endsWith(format.toLowerCase())))) {
@@ -52,10 +44,7 @@ export default function FileUpload({onUpload, children, count, formats}) {
 
 
       return (
-        <div
-          ref={drop}
-          className='FilesDragAndDrop'
-        >
+        <div ref={drop} style={{width:"100%", height:"100%"}}>
           {children}
         </div>
       );

@@ -11,6 +11,8 @@ import Mobile from './Mobile.js';
 import FileUpload from './FileUpload.js';
 import ImageDisplay from './Drop2.js';
 import ImageUpload from './ImageUpload.js'
+import ImageUploader from './ImageUploader.js'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -118,10 +120,10 @@ root.render(
   
   <Device/>
 
+  <ImageUploader/>
 
 
-
-  <div style = {{display:"flex", flexDirection:"row", alignItems:"center"}}>
+  {/* <div style = {{display:"flex", flexDirection:"row", alignItems:"center"}}>
     <FileUpload onUpload={log}>
       <div style={{display:"flex", width:"300px", height:"300px", border:"dashed gray 5px", borderRadius:"50px", alignItems:"center",justifyContent:"center", margin:"20px"}}>
         <span >Drop Image Files Here!</span>
@@ -132,7 +134,7 @@ root.render(
   </div>
   <button onClick={decideFiles}>Click me</button>
 
-  <ImageUpload/>
+  <ImageUpload/> */}
 
 
   </React.StrictMode>
