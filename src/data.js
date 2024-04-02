@@ -118,7 +118,7 @@ export const Papers = [
     {
         title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\" [arXiv]",
         image:"paper3.png",
-        link:"",
+        link:"https://arxiv.org/abs/2404.00006",
         description:["A critique of a paper by Yangjun Chen that claims to give an algorithm to solve an NP‑complete problem (2-MAXSAT) in polynomially-bounded time.",
                     "Provide 4 counterexamples where the author's algorithm fails to give proper solutions, thus proving that their algorithm is invalid.",
                     "Point out concerns that the author's definitions are ambiguous and inconsistent."]

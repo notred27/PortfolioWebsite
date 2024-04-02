@@ -120,7 +120,8 @@ root.render(
   
   <Device/>
 
-  <ImageUploader/>
+  <ImageUploader maxImgs={15}/>
+  <div style = {{height:"60vh"}}></div>
 
 
   {/* <div style = {{display:"flex", flexDirection:"row", alignItems:"center"}}>
