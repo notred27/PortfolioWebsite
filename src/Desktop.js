@@ -12,12 +12,12 @@ export default function Desktop() {
         // {/* Make this structure into it's own class */}
 
     <div style={{overflow:"hidden"}}>
-        <div style={{height:"fit-content", display:"flex", flexDirection:"column", width:"95%"}}>
-        <div style={{zIndex:"1", position:"relative", backgroundColor:"#1E1E1E", width:"100%", height:"100%", minHeight:"25vmin", borderBottomRightRadius:"30px"}}> 
+        <div style={{height:"30vmin", display:"flex", flexDirection:"column", width:"95%", paddingBottom:"30px"}}>
+        <div style={{zIndex:"1", position:"relative", backgroundColor:"#1E1E1E", width:"100%", height:"100%", minHeight:"25vmin", borderBottomRightRadius:"30px", boxShadow:"-15px 15px #BB4BE4"}}> 
             <Bio/>
 
         </div>
-        <div style={{zIndex:"0",position:"relative",backgroundColor:"#BB4BE4", width:"96%", height:"60px", top:"-30px", borderBottomRightRadius:"30px"}} ></div>
+        {/* <div style={{zIndex:"0",position:"relative",backgroundColor:"#BB4BE4", width:"96%", height:"60px", top:"-30px", borderBottomRightRadius:"30px"}} ></div> */}
         </div>
 
         
@@ -69,8 +69,8 @@ export default function Desktop() {
         </div>
         </div>
 
-        <a name = "AI"></a>
-        <Header title = {"AI Classifier!"} color = {"#BB4BE4"} side = {"right"}/>
+        {/* <a name = "AI"></a>
+        <Header title = {"AI Classifier!"} color = {"#BB4BE4"} side = {"right"}/> */}
 
     
     </div>

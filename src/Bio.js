@@ -1,17 +1,17 @@
 import pic from './images/picture2.png';
-import b1 from './images/b1.png';
-import b2 from './images/b2.png';
+// import b1 from './images/b1.png';
+// import b2 from './images/b2.png';
 
 
 import './App.css';
 
 export default function Bio() {
 
-  const images = [pic, b1, b2].map( (image, i) =>
-    // Fix the animation on this (for when website is visited)
-    <img src={image} alt="me" style={{zIndex:`${3-i}`, transform:`translate(-${i*4}%,-${i*4}%)`, position:"absolute", height:"30vh"}}/>
+  // const images = [pic, b1, b2].map( (image, i) =>
+  //   // Fix the animation on this (for when website is visited)
+  //   <img src={image} alt="me" style={{zIndex:`${3-i}`, transform:`translate(-${i*4}%,-${i*4}%)`, position:"absolute", height:"30vh"}}/>
 
-  );
+  // );
 
 
   return (
@@ -35,7 +35,7 @@ export default function Bio() {
               <a href ="#Projects"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>Projects</span></a>
               <a href ="#Papers"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px",margin:"5px", borderRadius:"7px", boxShadow:"-3px 3px #EE4266"}}>Papers</span></a>
               <a href ="#Jobs"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",borderRadius:"7px", boxShadow:"-3px 3px #9BA2FF"}}>Jobs</span></a>
-              <a href ="#AI"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>AI Classifier</span></a>
+              {/* <a href ="#AI"><span style={{color:"white", backgroundColor:"#282828", width:"fit-content", padding:"5px", margin:"5px",borderRadius:"7px", boxShadow:"-3px 3px #BB4BE4"}}>AI Classifier</span></a> */}
 
           </div>
 
