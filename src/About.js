@@ -14,13 +14,13 @@ export default function About(){
 
                         <h4 className='About-item'>I'm an undergraduate at the <span style={{color:"#9BA2FF"}}>University of Rochester</span> thats pursuing a <span style={{color:"#EE4266"}}>B.S. in Computer Science</span> and minoring in <span style={{color:"#EE4266"}}>Mathematics</span>.</h4>
 
-                        <h4 className='About-item2'>My main areas of interest are:</h4>
+                        {/* <h4 className='About-item2'>My main areas of interest are:</h4>
                         <ul style={{marginTop:"0px"}}>
                             <li><h4 className='About-item2'>Computer Vision</h4></li>
                             <li><h4 className='About-item2'>Computational Complexity</h4></li>
                             <li><h4 className='About-item2'>Algorithmic Analysis</h4></li>
                             <li><h4 className='About-item2'>Backend Development</h4></li>
-                        </ul>
+                        </ul> */}
                     </div>
 
 
@@ -43,6 +43,20 @@ export default function About(){
 
 
             <div className='About-info' style={{boxShadow:"-15px 15px #EE4266", marginLeft:"50%", width:"40%"}}>
+
+                <h4 className='About-item'>On campus, I'm part of the <span style={{color:"#BB4BE4"}}>Music Interest Floor</span> and <span style={{color:"#9BA2FF"}}>UX Design Club</span>.</h4>
+
+                <h4 className='About-item2'>In my spare time, I enjoy:</h4>
+                <ul style={{marginTop:"0px"}}>
+                    <li><h4 className='About-item2'>Hanging out with friends</h4></li>
+                    <li><h4 className='About-item2'>Listening to music (esp. Jazz/Alternative)</h4></li>
+                    <li><h4 className='About-item2'>Reading Sci-fi books</h4></li>
+                    <li><h4 className='About-item2'>Making side projects</h4></li>
+                </ul>
+            </div>
+
+
+            <div className='About-info' style={{boxShadow:"-15px 15px #EE4266", width:"40%"}}>
 
                 <h4 className='About-item'>On campus, I'm part of the <span style={{color:"#BB4BE4"}}>Music Interest Floor</span> and <span style={{color:"#9BA2FF"}}>UX Design Club</span>.</h4>
 

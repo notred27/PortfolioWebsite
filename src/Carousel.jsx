@@ -67,9 +67,9 @@ export default function Carousel() {
     
     return (
 
-        <div className="Carousel-container"> 
+        <div className="Carousel-container" style={{border:"solid green 2px"}}> 
 
-            <div className="Carousel">
+            <div className="Carousel" style={{border:"solid red 2px"}}>
                 {Projects.map((project, index) => (
                     <motion.img
                         key = {index}
@@ -100,8 +100,12 @@ export default function Carousel() {
       
             <div  className= "Carousel-desc-container">
                 <a className="Carousel-link" href={Projects[center].link}>{Projects[center].title}</a>
-                <p style = {{textAlign:"center", marginLeft:"5%", marginRight:"5%", fontSize:"1vmax"}}>{Projects[center].description}</p>
+                <p style = {{textAlign:"center", marginLeft:"5%", marginRight:"5%", marginBottom:"12%"}}>{Projects[center].description}</p>
+                
+                <span style={{position:"absolute", bottom:"0px"}}>
                 <Skill skills={Projects[center].skills}/>
+
+                </span>
 
 
             </div>

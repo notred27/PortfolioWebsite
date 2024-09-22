@@ -4,6 +4,7 @@ import Carousel from './Carousel';
 import Paper from './Paper.js';
 import Header from './Header.js';
 import About from './About.js';
+import Projects from './Projects.js';
 
 
 
@@ -12,7 +13,7 @@ export default function Desktop() {
         // {/* Make this structure into it's own class */}
 
     <div style={{overflow:"hidden"}}>
-        <div style={{height:"30vmin", display:"flex", flexDirection:"column", width:"95%", paddingBottom:"30px"}}>
+        <div style={{height:"30vmin", display:"flex", flexDirection:"column", width:"100%", paddingBottom:"30px"}}>
         <div style={{zIndex:"1", position:"relative", backgroundColor:"#1E1E1E", width:"100%", height:"100%", minHeight:"25vmin", borderBottomRightRadius:"30px", boxShadow:"-15px 15px #BB4BE4"}}> 
             <Bio/>
 
@@ -41,13 +42,16 @@ export default function Desktop() {
 
         <a name = "Projects"></a>
         <Header title = {"Projects!"} color = {"#BB4BE4"} side = {"left"}/>
-        <Carousel/>
+        {/* <Carousel/> */}
+        <Projects></Projects>
 
-        <div style={{position:"relative"}}> 
+
+        {/* <div style={{position:"relative"}}> 
         <div style={{overflow:"hidden"}}>
         <div className="Background-banner" style={{height:"50vh", backgroundColor:"#DF9FF6",  transform:"translate(-5%, -130%) rotate(-6deg)"}}/>
         </div>
-        </div>
+        </div> */}
+
 
         <a name = "Papers"></a>
         <Header title = {"Papers and Publications!"} color = {"#EE4266"} side={"right"}/>

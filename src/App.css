@@ -102,7 +102,7 @@ h6.Bio-text{
 .Carousel {
   position: relative; 
   width: 50vw;
-  height: 20vw;
+  height: 25vw;
 } 
 
 .Carousel-mobile {
@@ -118,11 +118,11 @@ h6.Bio-text{
   width:100%;
   position:relative;
   margin-top: 5vh;
-  justify-content: center;
+  justify-content:space-evenly;
   
   /* This height may cause problems at lower viewport widths */
   /* min-height:55vmin; */
-  /* height:55vmin; */
+  height:fit-content;
 }
 
 .Carousel-item{
@@ -134,7 +134,8 @@ h6.Bio-text{
 }
 
 .Carousel-desc-container{
-  width:90vmin;
+  position:relative;
+  width:40vw;
   height: fit-content;
   padding-top: 10px;
 
@@ -142,9 +143,8 @@ h6.Bio-text{
   background-color: #1E1E1E;
   border-radius: 10px;
   color:white;
-  right:0;
   box-shadow: -15px 15px #BB4BE4;
-  transform: translate(0%, -10%)
+  /* transform: translate(0%, -10%) */
 }
 
 .Carousel-desc-container-mobile{
