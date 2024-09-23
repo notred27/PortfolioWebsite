@@ -1,0 +1,81 @@
+#BioContainer{
+position:relative;
+height:280px;
+display:flex;
+flex-direction:row;
+overflow:hidden;
+background-color: #1E1E1E;
+margin-bottom: 20px;
+}
+
+
+div.Bio-text{
+    position:absolute;
+    color:white; 
+    left:350px;
+    top: 80px;
+}
+
+h1.Bio-text {
+    font-size: 80px;
+    margin: 0px
+}
+
+h6.Bio-text{
+    margin: 0em;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: normal;
+
+    /* font-size:1em; */
+}
+
+.Bio-link:visited{
+    color:white;
+}
+
+.Bio-link:hover{
+    color:lightblue;
+}
+
+
+.BioNav{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.BioNav a{
+    text-decoration: none;
+}
+
+
+.BioNavItem{
+    /* font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 300; */
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    margin:5px;
+    color:white;
+    border-radius: 3px;
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 3px ;
+
+    /* text-decoration: none;
+    color:white;
+    background-color:#282828;
+    width:fit-content;
+    padding:5px;
+    margin:5px;
+    border-radius:7px;
+    box-shadow:-3px 3px #9BA2FF; */
+}
+
+.BioNavItem:hover{
+    background-color:#454545;
+
+}

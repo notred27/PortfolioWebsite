@@ -68,7 +68,7 @@ function Projects() {
 
             <div className="infoContainer" style={{display:`${selectedIdx === 1 ? "block" : "none"}`}}>
                 <span style={{display:"flex", flexDirection:"row", alignItems:"center"}}>
-                    <h1>AI-Generated Image Classifier</h1> 
+                    <h1>AI Image Classifier</h1> 
                     
                     <a href = "https://github.com/notred27/CFA-Interpolation-Classifiers-on-Identifying-AIGC">
                         <img src = {github} alt = "github" className="githubMark" />

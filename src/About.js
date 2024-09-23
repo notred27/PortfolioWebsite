@@ -1,5 +1,5 @@
 import {Info} from './data.js'
-
+import './About.css'
 
 export default function About(){
     return (
@@ -8,64 +8,45 @@ export default function About(){
 
             <div style = {{display:"flex", flexDirection:"row"}}>
 
-                    <div className='About-info'>
-
-                        <h1 className='About-item'>Hi, my name's Michael, <br></br>and I'm a <span style={{color:"#BB4BE4"}}>Software Engineer</span>!</h1>
-
-                        <h4 className='About-item'>I'm an undergraduate at the <span style={{color:"#9BA2FF"}}>University of Rochester</span> thats pursuing a <span style={{color:"#EE4266"}}>B.S. in Computer Science</span> and minoring in <span style={{color:"#EE4266"}}>Mathematics</span>.</h4>
-
-                        {/* <h4 className='About-item2'>My main areas of interest are:</h4>
-                        <ul style={{marginTop:"0px"}}>
-                            <li><h4 className='About-item2'>Computer Vision</h4></li>
-                            <li><h4 className='About-item2'>Computational Complexity</h4></li>
-                            <li><h4 className='About-item2'>Algorithmic Analysis</h4></li>
-                            <li><h4 className='About-item2'>Backend Development</h4></li>
-                        </ul> */}
-                    </div>
-
-
-                    
-
-
-
-                <img src={require(`./images/${Info.images[3]}`)} alt="me" style={{zIndex:"0", backgroundColor:"#1E1E1E", boxShadow:"-10px 10px #9BA2FF", borderRadius:"10%", width:"18%", height:"60%", transform:"translate(20%, 0%) rotate(-5deg)", minInlineSize:"100px"}}/>
-            
-                <div style = {{display:"flex", flexDirection:"column", alignItems:"center", height:"20%"}}>
-
-                    <img src={require(`./images/${Info.images[1]}`)} alt="me" style={{zIndex:"1", backgroundColor:"#1E1E1E", boxShadow:"-10px 10px #BB4BE4", borderRadius:"10%", width:"60%", height:"20%", transform:"translate(-10%, 0%) rotate(6deg)", marginTop:"5%", minInlineSize:"200px"}}/>
-                
-                    <img src={require(`./images/${Info.images[0]}`)} alt="me" style={{zIndex:"1", backgroundColor:"#1E1E1E", boxShadow:"-10px 10px #EE4266", borderRadius:"10%", width:"30%", height:"20%", transform:"translate(-20%, 10%) rotate(-6deg)", marginTop:"5%", minInlineSize:"100px"}}/>
+                <div className='AboutInfo'>
+                    <h1>Hi, my name's Michael, and I'm a <span style={{color:"#BB4BE4"}}>Software Engineer</span>!</h1>
+                    <h4>I'm an undergraduate at the <span style={{color:"#9BA2FF"}}>University of Rochester</span> who's pursuing a <span style={{color:"#EE4266"}}>B.S. in Computer Science</span> and <span style={{color:"#EE4266"}}>Mathematics Minor</span>.</h4>
                 </div>
-                
-                
-                <img src={require(`./images/${Info.images[2]}`)} alt="me" style={{zIndex:"0", backgroundColor:"#1E1E1E", boxShadow:"-10px 10px #EE4266", borderRadius:"10%", width:"20%", height:"60%", transform:"translate(-50%, 40%) rotate(15deg)", minInlineSize:"100px"}}/>
+
+
+            
+                <div style={{display:"grid", gridTemplateRows:"1fr 1fr", gridTemplateColumns:"1fr 1fr 1fr", width:"40%", height:"300px", gap:"20px"}}>
+                    <img src={require(`./images/${Info.images[3]}`)} alt="me" className="ImageGridItem" style={{gridRow:"1 / span 2"}}/>
+                    <img src={require(`./images/${Info.images[1]}`)} alt="me" className="ImageGridItem" style={{gridRow:"1", gridColumn:"2"}}/>
+                    <img src={require(`./images/${Info.images[0]}`)} alt="me" className="ImageGridItem" style={{gridRow:"2", gridColumn:"2"}}/>
+                    <img src={require(`./images/${Info.images[2]}`)} alt="me" className="ImageGridItem" style={{gridRow:"1 / span 2", gridColumn:"3"}}/>
+                </div>
+
+
             </div>
 
 
-            <div className='About-info' style={{boxShadow:"-15px 15px #EE4266", marginLeft:"50%", width:"40%"}}>
+            <div className='AboutInfo' style={{marginLeft:"45%"}}>
+                <h4>My main areas of interest are:</h4>
+                    <ul style={{marginTop:"0px"}}>
+                        <li><span style={{fontWeight:"bold"}}>Computer Vision:</span> Creating shallow and deep-learning classifiers for detecting AI-generated content.</li>
+                        <li><span style={{fontWeight:"bold"}}>Deep Learning</span></li>
 
-                <h4 className='About-item'>On campus, I'm part of the <span style={{color:"#BB4BE4"}}>Music Interest Floor</span> and <span style={{color:"#9BA2FF"}}>UX Design Club</span>.</h4>
-
-                <h4 className='About-item2'>In my spare time, I enjoy:</h4>
-                <ul style={{marginTop:"0px"}}>
-                    <li><h4 className='About-item2'>Hanging out with friends</h4></li>
-                    <li><h4 className='About-item2'>Listening to music (esp. Jazz/Alternative)</h4></li>
-                    <li><h4 className='About-item2'>Reading Sci-fi books</h4></li>
-                    <li><h4 className='About-item2'>Making side projects</h4></li>
-                </ul>
+                        <li><span style={{fontWeight:"bold"}}>Computational Complexity:</span> Analyzing and classifying the runtime of algorithms.</li>
+                        <li><span style={{fontWeight:"bold"}}>Computational Social Choice (COMSOC):</span> Analyzing the complexity of election systems to detect vulnerabilities.</li>
+                        <li><span style={{fontWeight:"bold"}}>Full Stack Development:</span> Building and deploying powerful applications that are satisfying to use.</li>
+                    </ul>
             </div>
 
 
-            <div className='About-info' style={{boxShadow:"-15px 15px #EE4266", width:"40%"}}>
+            <div className='AboutInfo'>
 
-                <h4 className='About-item'>On campus, I'm part of the <span style={{color:"#BB4BE4"}}>Music Interest Floor</span> and <span style={{color:"#9BA2FF"}}>UX Design Club</span>.</h4>
-
-                <h4 className='About-item2'>In my spare time, I enjoy:</h4>
+                <h4>On campus, I'm part of the <span style={{color:"#BB4BE4"}}>Music Interest Floor</span> and <span style={{color:"#9BA2FF"}}>Rochester Design Hub</span>. In my spare time, I enjoy:</h4>
                 <ul style={{marginTop:"0px"}}>
-                    <li><h4 className='About-item2'>Hanging out with friends</h4></li>
-                    <li><h4 className='About-item2'>Listening to music (esp. Jazz/Alternative)</h4></li>
-                    <li><h4 className='About-item2'>Reading Sci-fi books</h4></li>
-                    <li><h4 className='About-item2'>Making side projects</h4></li>
+                    <li>Hanging out with friends</li>
+                    <li>Listening to music (esp. Jazz/Alternative)</li>
+                    <li>Reading Sci-fi books</li>
+                    <li>Making side projects</li>
                 </ul>
             </div>
         </div>
