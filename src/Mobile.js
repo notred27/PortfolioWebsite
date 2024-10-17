@@ -1,4 +1,4 @@
-import Bio from './MobileBio.js';
+import Bio from './Bio.js';
 import Jobs from './Jobs';
 import Carousel from './MobileCarousel';
 import Paper from './MobilePaper.js';

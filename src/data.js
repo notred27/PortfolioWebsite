@@ -99,25 +99,27 @@ export const Projects = [
 
 export const Papers = [
     {
-        title:"On Czerwinski's \"P≠NP relative to a P‑complete oracle\" [arXiv]",
+        title:"Investigating the Effectiveness of Deep Learning and CFA Interpolation Based Classifiers on Identifying AIGC",
+        image:"paper1.png",
+        authors:["Michael\xA0Reidy", "Henry\xA0Mallon", "Jiebo\xA0Luo"],
+        link:"https://ieeexplore.ieee.org/document/10386096",
+        description:["Proposed two novel shallow classifiers for identifying AI‑generated content (AIGC) based on the structure of Bayer arrays found in physical cameras.",
+                     "Tested our models on a sparse dataset of human faces and a diverse dataset of faces, cats, and dogs to test model generalizability.",
+                     "When tested on our diverse dataset, our CNN's achieved an accuracy of 83.15%, and our shallow CFA thresholding models achieved an accuracy of 73.55%."]
+    },
+    {
+        title:"On Czerwinski's \"P≠NP relative to a P-complete oracle\"",
         image:"paper2.png",
+        authors:["Michael\xA0C.\xA0Chavrimootoo", "Tran\xA0Duy\xA0Ahn\xA0Le", "Michael\xA0Reidy", "Eliot\xA0J.\xA0Smith"],
         link:"https://arxiv.org/abs/2312.04395",
         description:["A critique of a paper by Reiner Czerwinski that (perhaps unknowingly) claims to give an oracle where P=NP.",
                     "We argue that Czerwinski's Corollary 1 is false through Turing reductions, and thus disprove the author's separation argument.",
                     "We rework some of Czerwinski's original proofs to show that despite their technical flaws, the author's underlying idea cannot prove the separation."]
     },
     {
-        title:"Investigating the Effectiveness of Deep Learning and CFA Interpolation Based Classifiers on Identifying AIGC [IEEE BigData2023]",
-        image:"paper1.png",
-        link:"https://ieeexplore.ieee.org/document/10386096",
-        description:["Proposed two novel shallow classifiers for identifying AI‑generated content (AIGC) based on the structure of Bayer arrays found in physical cameras.",
-                     "Tested our models on a sparse dataset of human faces and a diverse dataset of faces, cats, and dogs to test model generalizability.",
-                     "When tested on our diverse dataset, our CNN's achieved an accuracy of 83.15%, and our shallow CFA thresholding models achieved an accuracy of 73.55%."]
-    },
-    
-    {
-        title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\" [arXiv]",
+        title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\"",
         image:"paper3.png",
+        authors:["Tran\xA0Duy\xA0Ahn\xA0Le", "Michael\xA0Reidy", "Eliot\xA0J.\xA0Smith"],
         link:"https://arxiv.org/abs/2404.00006",
         description:["A critique of a paper by Yangjun Chen that claims to give an algorithm to solve an NP‑complete problem (2-MAXSAT) in polynomially-bounded time.",
                     "Provide 4 counterexamples where the author's algorithm fails to give proper solutions, thus proving that their algorithm is invalid.",

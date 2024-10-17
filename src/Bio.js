@@ -17,40 +17,30 @@ export default function Bio() {
 
   return (
 
-      <div id = "BioContainer">
-        {/* Fill this background space with white doodles? */}
+    <div id = "BioContainer">
 
+      <span style={{display:"flex", alignItems:"center", justifyContent:"center", width:"100vw", height:"100%"}}>
+        <div style={{display:"grid", gridTemplateColumns:"1fr 2fr", height:"100%", placeItems:"center"}}>
 
-          <div >
-            <img src={pic} alt="me" style={{ position:"absolute", height:"300px", bottom:"-20px", paddingLeft:"50px"}}/>
-          </div>
+            <img src={pic} alt="me" style={{ gridColumn:"1", height:"300px", }}/>
           
-
-          
-
-          <div className='Bio-text'>
-            <h1 className='Bio-text'> Michael Reidy</h1>
+            <span style={{gridColumn:"2"}}>
+              <h6 className='Bio-text' style={{marginTop:"0px", marginBottom:"-28px"}}>Hi, I'm</h6>
+              <h1 className='Bio-text'> Michael Reidy</h1>
+              <h6 className='Bio-text'>B.S. in Computer Science, University of Rochester '25</h6>
+            </span>
+        </div>
+      </span>
         
-            {/* <h6 className='Bio-text'>mreidy3@u.rochester.edu | <a className='Bio-link' href = "https://www.linkedin.com/in/michael-reidy-122024254/">LinkedIn</a> | <a className='Bio-link' href = "https://github.com/notred27">GitHub</a></h6> */}
-            <h6 className='Bio-text' style={{marginBottom:"15px"}}> CS Undergraduate, University of Rochester '25</h6>
+      <span className='BioNav'>
+        <a href ="#About">    <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'>About Me</span></a>
+        <a href ="#Projects"> <span style={{textDecorationColor: "#cf5ae1"}} className='BioNavItem'>Projects</span></a>
+        <a href ="#Papers">   <span style={{textDecorationColor: "#EE4266"}} className='BioNavItem'>Papers</span></a>
+        <a href ="#Jobs">     <span style={{textDecorationColor: "#32eb48"}} className='BioNavItem'>Professional Experience</span></a>
+        <a ><span style={{textDecorationColor: "white"}} className='BioNavItem'>Contact Me</span></a>
+      </span>
 
-              
-          </div>
-
-
-          <span className='BioNav'>
-            <a href ="#About">    <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'>About Me</span></a>
-            <a href ="#Projects"> <span style={{textDecorationColor: "#cf5ae1"}} className='BioNavItem'>Projects</span></a>
-            <a href ="#Papers">   <span style={{textDecorationColor: "#EE4266"}} className='BioNavItem'>Papers</span></a>
-            <a href ="#Jobs">     <span style={{textDecorationColor: "#32eb48"}} className='BioNavItem'>Professional Experience</span></a>
-            <a >     <span style={{textDecorationColor: "white"}} className='BioNavItem'>Contact Me</span></a>
-
-
-          </span>
-
-      </div>
-
-    
+    </div>
   );
 }
 

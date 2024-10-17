@@ -1,14 +1,33 @@
 
 
 .bannerIcon {
-width:200px;
-min-width:200px;
-height:100px;
-background-color:#E1E1E1;
-border-radius:10px;
-margin:10px;
-border: #1E1E1E solid 2px;
+    width:200px;
+    min-width:200px;
+    height:100px;
+    background-color:#E1E1E1;
+    border-radius:10px;
+    margin:10px;
+    border: #1E1E1E solid 2px;
+   
+    
 }
+
+#bannerIconContainer {
+    /* animation: slidein 3s linear forwards;
+    animation-iteration-count: infinite; */
+    /* animation-delay: 2s; */
+}
+
+@keyframes slidein {
+    from {
+      transform: translateX(200px);
+    }
+  
+    to {
+      transform: translateX(0px);
+    }
+  }
+  
 
 .bannerIcon:hover[style] {
     opacity: 0.9 !important;
@@ -29,9 +48,10 @@ border: #1E1E1E solid 2px;
 }
 
 .infoContainer {
-    max-width: 40vw;
-    width: max-content;
+    max-width: 45vw;
+    width: 45vw;
     padding: 30px;
+    padding-right: 0px;
     margin: 10px;
 
     font-family: "Roboto Condensed", sans-serif;

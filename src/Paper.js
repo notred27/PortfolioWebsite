@@ -1,51 +1,40 @@
 
-import { Papers } from "./data";
 import './Paper.css';
 
 
 
 
-export default function Paper() {
-  const Items = ({items}) => (
-    <div style={{marginBottom:"15px", fontSize:"1vw", padding:"1%", paddingLeft:"5%"}}> 
-    {
-      items.map(item =>(
-        <li>{item}</li>
-      ))
-    }
-    </div>
-  );
+export default function Paper({paper, appearsIn, location}) {
 
 
 
+  return (
+    <div className="Paper">
+      <img loading="lazy" className="PaperImg" alt="paper image" src={require('./images/' + paper.image)} />
 
-    const papers = Papers.map(paper =>
-      <div className="Paper">
 
-          <div style={{display:"flex", flexDirection:"row", width:"100%"}}>
-            <div style={{width:"100%", height:"100%", position:"relative"}}>
-              <a href={paper.link}>
-                <img className="Paper-Img" alt = "paper image" src={require('./images/' + paper.image)} style={{borderRadius:"10px", border:"10px solid #EE4266", float:"left"}}></img>
-              </a>
-            </div>
+      <div className="PaperInfo">
 
-            <div style={{width:"100%", height:"100%", position:"relative", margin:"0px"}}>
-              <a href={paper.link} className="Paper-title" style={{width:"100%", position:"absolute", bottom:"0", fontWeight:"bold", fontSize:"1.3vmax",textAlign:"left", padding:"5px", color:"#1E1E1E", transform:"translate(-60%, -10%)"}}>{paper.title}</a>
-            </div>
-          </div>
+        <h1>{paper.title}</h1>
 
-          <div className="Paper-text">
-            <Items items = {paper.description} />
-          </div>
+        <h4>
+          <span style={{color: "#E90031", backgroundColor: "#FFBECB", borderRadius: "3px", padding: "2px" }}>Authors:</span> 
+          &nbsp;
+        
+          {paper.authors.map((name, idx) => 
+            { return <span style={{fontWeight:`${name === "Michael\xA0Reidy" ? "bold" : "normal"}`}}>
+                        {(idx ? ', ': '')}{name}
+                      </span>})
+            }
+        </h4>
+
+        <h4>{appearsIn} <a href={paper.link}>{location}</a>.</h4>
+
+        <button>Read More Here!</button>
 
       </div>
 
-    );
-
-    return (
-        <div style={{display:"flex", width:"100%", height:"35vw", overflow:"hidden", justifyContent:"center"}}>
-          {papers}
-        </div>
-      );
+    </div>
+  );
 }
 

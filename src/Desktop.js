@@ -6,6 +6,7 @@ import Header from './Header.js';
 import About from './About.js';
 import Projects from './Projects.js';
 
+import { Papers } from "./data";
 
 
 export default function Desktop() {
@@ -54,17 +55,32 @@ export default function Desktop() {
 
 
         <a name = "Papers"></a>
-        <Header title = {"Papers and Publications!"} color = {"#EE4266"} side={"right"}/>
-        <Paper/>
+        <Header title = {"Publications!"} color = {"#EE4266"} side={"right"}/>
+
+        {/* <h1>IEEE 2023 International Conference on Big Data</h1> */}
+        <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly"}}>
+
+            <Paper paper={Papers[0]} appearsIn={"Published in"} location={"IEEE 2023 International Conference on Big Data"}/>
+        </span>
+
+        <Header title = {"Other Papers!"} color = {"#EE4266"} side={"left"}/>
+
+        {/* <h1>arxiv's Computational Complexity Archive</h1> */}
+        <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", flexWrap:"wrap"}}>
+            <Paper paper={Papers[1]} appearsIn={"Located in"} location={"arxiv's Computational Complexity Archive"}/>
+            <Paper paper={Papers[2]} appearsIn={"Located in"} location={"arxiv's Computational Complexity Archive"}/>
+        </span>
+
+
 
         <div style={{position:"relative"}}> 
         <div style={{overflow:"hidden"}}>
-        <div className="Background-banner" style={{height:"50vh", backgroundColor:"#FFA3B6",transform:"translate(-5%, -130%) rotate(3.29deg)"}}/>
+        <div className="Background-banner" style={{height:"30vh", backgroundColor:"#FFA3B6",transform:"translate(-5%, -200%) rotate(3.29deg)"}}/>
         </div>
         </div>
 
         <a name = "Jobs"></a>
-        <Header title = {"Work Experience!"} color = {"#9BA2FF"} side = {"left"}/>
+        <Header title = {"Professional Experience!"} color = {"#9BA2FF"} side = {"right"}/>
         <Jobs/>
 
         <div style={{position:"relative"}}> 

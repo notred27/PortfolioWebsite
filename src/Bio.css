@@ -1,33 +1,32 @@
 #BioContainer{
-position:relative;
-height:280px;
-display:flex;
-flex-direction:row;
-overflow:hidden;
-background-color: #1E1E1E;
-margin-bottom: 20px;
+    position:relative;
+    height:280px;
+    display:flex;
+    flex-direction:row;
+    overflow:hidden;
+    background-color: #1E1E1E;
+    margin-bottom: 20px;
+    background-image: radial-gradient(circle at 20px 20px, rgb(99, 99, 99) 1px, transparent 0);
+    background-size: 40px 40px;
 }
 
 
-div.Bio-text{
-    position:absolute;
+.Bio-text{
     color:white; 
-    left:350px;
-    top: 80px;
+    margin: 0px;
 }
 
 h1.Bio-text {
     font-size: 80px;
-    margin: 0px
 }
 
 h6.Bio-text{
-    margin: 0em;
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: normal;
-
+    color:rgba(255, 255, 255, 0.885); 
+    margin-left: 5px;
+    font-size: 19px;
+    /* font-weight: normal; */
     /* font-size:1em; */
+    margin-top: -20px;
 }
 
 .Bio-link:visited{
@@ -79,3 +78,4 @@ h6.Bio-text{
     background-color:#454545;
 
 }
+
