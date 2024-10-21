@@ -5,9 +5,10 @@
     flex-direction:row;
     overflow:hidden;
     background-color: #1E1E1E;
-    margin-bottom: 20px;
-    background-image: radial-gradient(circle at 20px 20px, rgb(99, 99, 99) 1px, transparent 0);
+    /* margin-bottom: 20px; */
+    background-image: radial-gradient(circle at 20px 0px, rgb(99, 99, 99) 1px, transparent 0);
     background-size: 40px 40px;
+    padding-top: 40px;
 }
 
 

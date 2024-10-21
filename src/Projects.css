@@ -1,4 +1,10 @@
-
+#ProjectContainer {
+    padding-bottom: 40px;
+    background-image:radial-gradient(circle at 20px 20px, #d59aea59 1px, transparent 0);
+    background-size: 40px 40px;
+    padding-top: 0px;
+    color:white;
+}
 
 .bannerIcon {
     width:200px;
@@ -8,8 +14,6 @@
     border-radius:10px;
     margin:10px;
     border: #1E1E1E solid 2px;
-   
-    
 }
 
 #bannerIconContainer {
@@ -38,10 +42,16 @@
     height:35px;
     margin-left: 10px;
     border-radius:50px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.githubMark:hover {
+    background-color: rgb(254, 233, 255);
 }
 
 .infoVideo {
-    background-color: #1E1E1E;
+    background-color: #121212;
     color: white;
     border-radius: 10px;
     box-shadow: -15px 15px #BB4BE4;
@@ -67,6 +77,7 @@
     list-style-position: inside;
     padding-top: 10px;
     font-size: 16px;
+    font-weight:400;
 }
 
 .infoContainer p {
@@ -77,6 +88,8 @@
     margin: 5px;
 }
 
+
+
 .infoContainer h1 {
     font-weight: bold;
     font-style: normal;
@@ -85,6 +98,13 @@
 
 }
 
+.infoContainer a {
+    color: #d893f1;
+}
+
+.infoContainer a:hover {
+    color: #bb57e0;
+}
 
 .tag{
     background-color: #e7c3f6;

@@ -2,10 +2,11 @@
 export const jobs = [{
     id: "0",
     name: "Undergraduate Research Assistant",
-    company: "NSF REU",
+    subtitle:"Advised by Professor Lane Hemaspaandra",
+    company: "National Science Foundation REU",
 
-    start: "September 2023",
-    end: "Current",
+    start: "September\xA02023",
+    end: "June\xA02024",
 
     description: "Studied the resistances and vulnerabilities of different election schemes via computational complexity approaches. Critiqued published papers claiming to resolve the P=NP problem in order to improve professional writing techniques.",
     skills: ["Algorithm Analysis", "Problem-Solving", "Computational Complexity", "Research"],
@@ -14,10 +15,11 @@ export const jobs = [{
 {
     id: "1",
     name: "Undergraduate Researcher",
+    subtitle:"Advised by Professor Jiebo Luo",
     company: "University of Rochester",
 
-    start: "May 2023",
-    end: "December 2023",
+    start: "May\xA02023",
+    end: "December\xA02023",
 
     description: "Created and investigated the ability of classifiers built from CFA based methods on identifying artificially generated images vs genuinely captured images. Researched the effectiveness of CFA-based classifiers vs deep learning classifiers on this task.",
     skills: ["Deep Learning", "Computer Vision", "Formal Writing", "Research"],
@@ -25,22 +27,24 @@ export const jobs = [{
 },
 {
     id: "2",
-    name: "Teaching Assitant (Data Structures and Algorithms)",
+    name: "Teaching Assistant",
+    subtitle:"CSC 172: Data Structures and Algorithms",
     company: "University of Rochester",
 
-    start: "January 2023",
-    end: "May 2023",
+    start: "January\xA02023",
+    end: "May\xA02023",
 
     description: "Aided students in transitioning from a theoretical understanding of data structures to practical implementations. Helped students understand both course concepts and good coding practices. Performed various organizational tasks such as grading and proctoring. ",
     skills: ["Teaching", "Organization", "Practical Implementation"],
 },
 {
     id: "3",
-    name: "Workshop Leader (Data Structures and Algorithms)",
+    name: "Workshop Leader",
+    subtitle:"CSC 172: Data Structures and Algorithms",
     company: "University of Rochester",
 
-    start: "September 2022",
-    end: "December 2022",
+    start: "September\xA02022",
+    end: "December\xA02022",
 
 
     description: "Created and executed lesson plans to improve student comprehension and engagement. Fostered an environment where students worked to answer sample questions as a group to improve their problem solving abilities. Additionally investigated the impact of recall questions on student performance.",
@@ -103,9 +107,11 @@ export const Papers = [
         image:"paper1.png",
         authors:["Michael\xA0Reidy", "Henry\xA0Mallon", "Jiebo\xA0Luo"],
         link:"https://ieeexplore.ieee.org/document/10386096",
-        description:["Proposed two novel shallow classifiers for identifying AI‑generated content (AIGC) based on the structure of Bayer arrays found in physical cameras.",
+        description:["Proposed two novel shallow classifiers for identifying AI-generated content (AIGC) based on the structure of Bayer arrays found in physical cameras.",
                      "Tested our models on a sparse dataset of human faces and a diverse dataset of faces, cats, and dogs to test model generalizability.",
-                     "When tested on our diverse dataset, our CNN's achieved an accuracy of 83.15%, and our shallow CFA thresholding models achieved an accuracy of 73.55%."]
+                     "When tested on our diverse dataset, our CNN's achieved an accuracy of 83.15%, and our shallow CFA thresholding models achieved an accuracy of 73.55%."],
+        appearsIn:"Published in",
+        location:"IEEE 2023 International Conference on Big Data"
     },
     {
         title:"On Czerwinski's \"P≠NP relative to a P-complete oracle\"",
@@ -114,7 +120,9 @@ export const Papers = [
         link:"https://arxiv.org/abs/2312.04395",
         description:["A critique of a paper by Reiner Czerwinski that (perhaps unknowingly) claims to give an oracle where P=NP.",
                     "We argue that Czerwinski's Corollary 1 is false through Turing reductions, and thus disprove the author's separation argument.",
-                    "We rework some of Czerwinski's original proofs to show that despite their technical flaws, the author's underlying idea cannot prove the separation."]
+                    "We rework some of Czerwinski's original proofs to show that despite their technical flaws, the author's underlying idea cannot prove the separation."],
+        appearsIn:"Located in",
+        location:"arxiv's Computational Complexity Archive"
     },
     {
         title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\"",
@@ -123,7 +131,28 @@ export const Papers = [
         link:"https://arxiv.org/abs/2404.00006",
         description:["A critique of a paper by Yangjun Chen that claims to give an algorithm to solve an NP‑complete problem (2-MAXSAT) in polynomially-bounded time.",
                     "Provide 4 counterexamples where the author's algorithm fails to give proper solutions, thus proving that their algorithm is invalid.",
-                    "Point out concerns that the author's definitions are ambiguous and inconsistent."]
+                    "Point out concerns that the author's definitions are ambiguous and inconsistent."],
+        appearsIn:"Located in",
+        location:"arxiv's Computational Complexity Archive"
+    },
+    {
+        title:"More Natural Models of Electoral Control by Partition",
+        image:"paper_placeholder.png",
+        authors:["Multiple Authors"],
+        link:"",
+        description:[],
+        appearsIn:"Currently in progress",
+        location:""
+    },
+
+    {
+        title:"BotOrNot: A Real-Time Bot Detector for X (Formerly Twitter)",
+        image:"paper_placeholder.png",
+        authors:["Michael\xA0Reidy", "Daniel\xA0Reilly"],
+        link:"",
+        description:[],
+        appearsIn:"Currently in progress",
+        location:""
     },
 ]
 

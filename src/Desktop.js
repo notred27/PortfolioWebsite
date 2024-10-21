@@ -1,9 +1,11 @@
-import Bio from './Bio';
-import Jobs from './Jobs';
+import Bio from './Bio/Bio.js';
+import Jobs from './Experience/Jobs.js';
 import Carousel from './Carousel';
-import Paper from './Paper.js';
+// import Paper from './Paper.js';
+import Publications from './Papers/Publications.js';
+
 import Header from './Header.js';
-import About from './About.js';
+import About from './About/About.js';
 import Projects from './Projects.js';
 
 import { Papers } from "./data";
@@ -13,84 +15,58 @@ export default function Desktop() {
     return (
         // {/* Make this structure into it's own class */}
 
-    <div style={{overflow:"hidden"}}>
-        {/* <div style={{height:"30vmin", display:"flex", flexDirection:"column", width:"100%", paddingBottom:"30px"}}>
-        <div style={{zIndex:"1", position:"relative", backgroundColor:"#position:"relative", height:"280px", display:"flex", flexDirection:"row", overflow:"hidden"", width:"100%", height:"100%", minHeight:"25vmin", borderBottomRightRadius:"30px", boxShadow:"-15px 15px #BB4BE4"}}> 
+    <div style={{overflow:"hidden", backgroundColor:"#1e1e1e"}}>
 
-        </div>
-        <div style={{zIndex:"0",position:"relative",backgroundColor:"#BB4BE4", width:"96%", height:"60px", top:"-30px", borderBottomRightRadius:"30px"}} ></div>
-        </div> */}
         <Bio/>
+
+
+        <a name = "About" />
+
+        <div style={{display:"flex", width:"100%", textAlign:"center", color:"white", position:"relative", height:"fit-content", justifyContent:"center", marginTop:"20px", marginBottom:"20px"}}>
+            <div style={{position:"absolute", top:"20px", width:"80vw", height:"10px", backgroundColor:"#9BA2FF",borderRadius:"5px", zIndex:"1"}}></div>
+            <h1 style = {{position:"relative", margin:"0px", padding:"0px", zIndex:"2", backgroundColor:"#1e1e1e", width:"fit-content", paddingLeft:"2vw", paddingRight:"2vw"}}>Who Am I?</h1>
+        </div>
+      
+        <About style={{zIndex:"0"}} />
+
+
+
+
+        <a name = "Projects" />
+
+        <div style={{display:"flex", width:"100%", textAlign:"center", color:"white", position:"relative", height:"fit-content", justifyContent:"center", marginTop:"20px", marginBottom:"20px"}}>
+            <div style={{position:"absolute", top:"20px", width:"80vw", height:"10px", backgroundColor:"#BB4BE4",borderRadius:"5px", zIndex:"1"}}></div>
+            <h1 style = {{position:"relative", margin:"0px", padding:"0px", zIndex:"2", backgroundColor:"#1e1e1e", width:"fit-content", paddingLeft:"2vw", paddingRight:"2vw"}}>Projects</h1>
+        </div>
+
+        
+        <Projects/>
+
+
+
+        <a name = "Papers"/>
+
+        <div style={{display:"flex", width:"100%", textAlign:"center", color:"white", position:"relative", height:"fit-content", justifyContent:"center", marginTop:"20px", marginBottom:"20px"}}>
+            <div style={{position:"absolute", top:"20px", width:"80vw", height:"10px", backgroundColor:"#EE4266",borderRadius:"5px", zIndex:"1"}}></div>
+            <h1 style = {{position:"relative", margin:"0px", padding:"0px", zIndex:"2", backgroundColor:"#1e1e1e", width:"fit-content", paddingLeft:"2vw", paddingRight:"2vw"}}>Papers</h1>
+        </div>
+
+        <Publications />
+
 
         
 
 
-        <div style={{position:"relative"}}> 
-        <div style={{overflow:"hidden"}}> 
-        <div className="Background-banner" style={{height:"50vh", backgroundColor:"#DF9FF6",  transform:"translate(-5%, -90%) rotate(-3deg)"}}/>
-        </div>
-        </div>
-
-        <a name = "About"></a>
-        <Header title = {"Who am I?"} color = {"#9BA2FF"} side = {"right"}/>
-        <About style={{zIndex:"0"}} />
-
-        <div style={{position:"relative"}}> 
-        <div style={{overflow:"hidden"}}>
-        <div className="Background-banner" style={{height:"40vh", backgroundColor:"#C9D8FF", transform:"translate(-5%, -150%) rotate(8deg)"}}/>
-        </div>
-        </div>
-
-        <a name = "Projects"></a>
-        <Header title = {"Projects!"} color = {"#BB4BE4"} side = {"left"}/>
-        {/* <Carousel/> */}
-        <Projects></Projects>
-
-
-        {/* <div style={{position:"relative"}}> 
-        <div style={{overflow:"hidden"}}>
-        <div className="Background-banner" style={{height:"50vh", backgroundColor:"#DF9FF6",  transform:"translate(-5%, -130%) rotate(-6deg)"}}/>
-        </div>
-        </div> */}
-
-
-        <a name = "Papers"></a>
-        <Header title = {"Publications!"} color = {"#EE4266"} side={"right"}/>
-
-        {/* <h1>IEEE 2023 International Conference on Big Data</h1> */}
-        <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly"}}>
-
-            <Paper paper={Papers[0]} appearsIn={"Published in"} location={"IEEE 2023 International Conference on Big Data"}/>
-        </span>
-
-        <Header title = {"Other Papers!"} color = {"#EE4266"} side={"left"}/>
-
-        {/* <h1>arxiv's Computational Complexity Archive</h1> */}
-        <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", flexWrap:"wrap"}}>
-            <Paper paper={Papers[1]} appearsIn={"Located in"} location={"arxiv's Computational Complexity Archive"}/>
-            <Paper paper={Papers[2]} appearsIn={"Located in"} location={"arxiv's Computational Complexity Archive"}/>
-        </span>
-
-
-
-        <div style={{position:"relative"}}> 
-        <div style={{overflow:"hidden"}}>
-        <div className="Background-banner" style={{height:"30vh", backgroundColor:"#FFA3B6",transform:"translate(-5%, -200%) rotate(3.29deg)"}}/>
-        </div>
-        </div>
-
         <a name = "Jobs"></a>
-        <Header title = {"Professional Experience!"} color = {"#9BA2FF"} side = {"right"}/>
+
+        <div style={{display:"flex", width:"100%", textAlign:"center", color:"white", position:"relative", height:"fit-content", justifyContent:"center", marginTop:"20px", marginBottom:"20px"}}>
+            <div style={{position:"absolute", top:"20px", width:"80vw", height:"10px", backgroundColor:"#9BA2FF",borderRadius:"5px", zIndex:"1"}}></div>
+            <h1 style = {{position:"relative", margin:"0px", padding:"0px", zIndex:"2", backgroundColor:"#1e1e1e", width:"fit-content", paddingLeft:"2vw", paddingRight:"2vw"}}>Professional Experience</h1>
+        </div>
+
+        
         <Jobs/>
 
-        <div style={{position:"relative"}}> 
-        <div style={{overflow:"hidden"}}>
-        <div className="Background-banner" style={{height:"40vh", backgroundColor:"#C9D8FF", transform:"translate(-5%, -130%) rotate(-5deg)"}}/>
-        </div>
-        </div>
-
-        {/* <a name = "AI"></a>
-        <Header title = {"AI Classifier!"} color = {"#BB4BE4"} side = {"right"}/> */}
 
     
     </div>

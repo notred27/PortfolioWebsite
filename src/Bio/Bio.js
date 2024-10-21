@@ -1,9 +1,9 @@
-import pic from './images/picture2.png';
+import pic from './../images/picture2.png';
 // import b1 from './images/b1.png';
 // import b2 from './images/b2.png';
 
 
-import './App.css';
+// import './App.css';
 import './Bio.css';
 
 export default function Bio() {

@@ -1,0 +1,60 @@
+#ExperienceContainer{
+    padding-bottom: 40px;
+    background-image:radial-gradient(circle at 20px 20px, #9BA2FF59 1px, transparent 0);
+    background-size: 40px 40px;
+    padding-top: 40px;
+    color:white;
+}
+
+
+.Job{
+    color: white;
+    text-align: left;
+    box-sizing: border-box; 
+    box-shadow: -8px 8px #9BA2FF;
+    background-color:#121212;
+  
+    min-width: 520px;
+    width:42vw;
+    margin:2vw;
+    border-radius: 10px; 
+    margin:20px;
+    padding:0px 20px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+  
+.Job h1{
+    font-size: 30px;
+    margin: 0px;
+}
+
+.Job h3{
+    /* font-size: 30px; */
+    margin: 0px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.jobContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    /* grid-template-columns: repeat(2, 50%); */
+    /* grid-gap: 1vw; */
+}
+
+
+.jobTag{
+    background-color: #b5b9f8;
+    color: #0813ab;
+    border-radius: 3px;
+    padding:3px;
+    margin: 4px;
+    font-weight: 400;
+
+}

@@ -1,3 +1,11 @@
+#PublicationContainer {
+  padding-bottom: 40px;
+  background-image:radial-gradient(circle at 20px 20px, #EE426659 1px, transparent 0);
+  background-size: 40px 40px;
+  padding-top: 40px;
+  color:white;
+}
+
 .Paper{
   min-width: 450px;
   display: flex;

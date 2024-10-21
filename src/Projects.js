@@ -21,8 +21,8 @@ function Projects() {
     }
 
     return (
-        <div>
-            <div style={{ height: "420px", display: "flex", flexDirection: "row", justifyContent: "center" }}>
+        <div id = "ProjectContainer">
+            <div  style={{height:"420px", display:"flex", flexDirection:"row", justifyContent:"center"}}>
 
                 <div className="infoVideo" style={{ height: "80%", width: "40%", alignSelf: "center" }}>
 

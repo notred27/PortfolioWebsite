@@ -44,7 +44,9 @@ class Device extends React.Component {
       const isMobile = width <= height * 1.4;
         // if (isMobile) {}
       if(isMobile) {
-        return <Mobile/>
+        // return <Mobile/>
+        return <Desktop/>
+
       }
       else {
         return <Desktop/>

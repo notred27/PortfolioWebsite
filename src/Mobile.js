@@ -1,5 +1,5 @@
-import Bio from './Bio.js';
-import Jobs from './Jobs';
+import Bio from './Bio/Bio.js';
+import Jobs from './Experience/Jobs.js';
 import Carousel from './MobileCarousel';
 import Paper from './MobilePaper.js';
 import Header from './MobileHeader.js';
