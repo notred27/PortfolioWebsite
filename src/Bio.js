@@ -36,7 +36,8 @@ export default function Bio() {
         <a href ="#About">    <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'>About Me</span></a>
         <a href ="#Projects"> <span style={{textDecorationColor: "#cf5ae1"}} className='BioNavItem'>Projects</span></a>
         <a href ="#Papers">   <span style={{textDecorationColor: "#EE4266"}} className='BioNavItem'>Papers</span></a>
-        <a href ="#Jobs">     <span style={{textDecorationColor: "#32eb48"}} className='BioNavItem'>Professional Experience</span></a>
+        <a href ="#Education">     <span style={{textDecorationColor: "#fdf918"}} className='BioNavItem'>Education</span></a>
+        <a href ="#Jobs">     <span style={{textDecorationColor: "#fdac18"}} className='BioNavItem'>Professional Experience</span></a>
         <a ><span style={{textDecorationColor: "white"}} className='BioNavItem'>Contact Me</span></a>
       </span>
 
