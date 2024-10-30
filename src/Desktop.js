@@ -1,12 +1,10 @@
 import Bio from './Bio/Bio.js';
 import Jobs from './Experience/Jobs.js';
-import Carousel from './Carousel';
-// import Paper from './Paper.js';
 import Publications from './Papers/Publications.js';
 
 import Header from './Header.js';
 import About from './About/About.js';
-import Projects from './Projects.js';
+import Projects from './Projects/Projects.js';
 
 import { Papers } from "./data";
 import Education from './Education/Education.js';

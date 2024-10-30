@@ -1,5 +1,4 @@
 import {jobs} from "../data.js"
-import Skill from "../Skill.js"
 import './Jobs.css'
 import Header from '../Header.js';
 

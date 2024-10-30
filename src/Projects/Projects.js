@@ -1,15 +1,15 @@
 import { useState } from "react";
 import './Projects.css'
 
-import fone from './images/banners/fone.png'
-import aigc from './images/banners/AIGC.png'
+import fone from './../images/banners/fone.png'
+import aigc from './../images/banners/AIGC.png'
 
-import twotris from './images/banners/2tris.png'
-import ttrouble from './images/banners/turingtrouble.png'
-import urready from './images/banners/urready.png'
-import catan from './images/banners/catan.png'
+import twotris from './../images/banners/2tris.png'
+import ttrouble from './../images/banners/turingtrouble.png'
+import urready from './../images/banners/urready.png'
+import catan from './../images/banners/catan.png'
 
-import github from './images/github-mark.svg'
+import github from './../images/github-mark.svg'
 
 function Projects() {
     let [bannerItems, setBannerItems] = useState([{ "img": fone, "idx": 0 }, { "img": aigc, "idx": 1 }, { "img": urready, "idx": 2 }, { "img": catan, "idx": 3 }, { "img": ttrouble, "idx": 4 }, { "img": twotris, "idx": 5 }]);
@@ -83,7 +83,7 @@ function Projects() {
 
                     {/* <br/> */}
 
-                    {/* Paper info here */}
+                    {/* Paper info here? */}
 
 
 
@@ -92,6 +92,8 @@ function Projects() {
                         Tags:
                         <span className="tag">MATLAB</span>
                         <span className="tag">Resnet-50</span>
+                        <span className="tag">Bayer Array</span>
+
                     </div>
                 </div>
 
