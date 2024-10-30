@@ -9,6 +9,7 @@ import About from './About/About.js';
 import Projects from './Projects.js';
 
 import { Papers } from "./data";
+import Education from './Education/Education.js';
 
 
 export default function Desktop() {
@@ -54,7 +55,15 @@ export default function Desktop() {
         <Publications />
 
 
+        <a name = "Education"></a>
+
+        <div style={{display:"flex", width:"100%", textAlign:"center", color:"white", position:"relative", height:"fit-content", justifyContent:"center", marginTop:"20px", marginBottom:"20px"}}>
+            <div style={{position:"absolute", top:"20px", width:"80vw", height:"10px", backgroundColor:"#fdf918",borderRadius:"5px", zIndex:"1"}}></div>
+            <h1 style = {{position:"relative", margin:"0px", padding:"0px", zIndex:"2", backgroundColor:"#1e1e1e", width:"fit-content", paddingLeft:"2vw", paddingRight:"2vw"}}>Education</h1>
+        </div>
+
         
+        <Education/>
 
 
         <a name = "Jobs"></a>

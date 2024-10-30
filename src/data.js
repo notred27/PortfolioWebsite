@@ -125,7 +125,7 @@ export const Papers = [
         location:"arxiv's Computational Complexity Archive"
     },
     {
-        title:"On Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\"",
+        title:"A Critique of Chen's \"The 2-MAXSAT Problem Can Be Solved in Polynomial Time\"",
         image:"paper3.png",
         authors:["Tran\xA0Duy\xA0Ahn\xA0Le", "Michael\xA0Reidy", "Eliot\xA0J.\xA0Smith"],
         link:"https://arxiv.org/abs/2404.00006",
