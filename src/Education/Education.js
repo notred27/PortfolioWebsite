@@ -1,7 +1,7 @@
 
 import './Education.css';
 import Header from '../Header.js';
-
+import logo from './../images/ur_logo.png'
 
 export default function Education() {
 
@@ -9,25 +9,30 @@ export default function Education() {
       
   return (
     <div id = "EducationContainer">
+        <a name = "Education"/>
 
-      <div style={{display:"flex", justifyContent:"center", alignItems:"baseline"}}>
-        <span>
-          <h1>University of Rochester</h1>
-          <h4>Hajim School of Engineering</h4>
+      <Header title = {"Degree"} color = {"#fdf918"} side = {"left"}/>
+
+      <div style={{display:"flex", justifyContent:"space-evenly", alignContent:"center", flexWrap:"wrap"}}>
+        <span style={{textAlign:"center"}}>
+          <img loading='lazy' src={logo} style={{width:"35vw", minWidth:"350px"}}></img>
+          <h4 style={{margin:"0px"}}>Hajim School of Engineering</h4>
         </span>
         
+        
 
-        <span>
-          <h3>B.S. in Computer Science; Mathematics Minor</h3>
+        <span style={{backgroundColor:"#121212", padding:"20px", boxShadow:"-6px 6px #fdf918", borderRadius:"16px", margin:"10px"}}>
+          <h3 style={{margin:"0px"}}>B.S. in Computer Science; Mathematics Minor</h3>
               
           <ul>
             <li>GPA: 3.84 / 4.0</li>
             <li>Anticipated Graduation: May 2025</li>
-            <li>Clusters: Psychology as a Social Science & Knowledge, Mind, and Nature </li>
+            <li>Clusters: Psychology as a Social Science | Knowledge, Mind, and Nature </li>
           </ul>
         </span>
       </div>
        
+      <a name = "Awards"/>
 
       <Header title = {"Awards"} color = {"#fdf918"} side = {"left"}/>
 
@@ -38,11 +43,12 @@ export default function Education() {
       </ul>
 
 
+      <a name = "Coursework"/>
 
       <Header title = {"My Most Relevant Course Work"} color = {"#fdf918"} side = {"left"}/>
 
 
-      <div style={{display:"flex", justifyContent:"center", alignItems:"baseline"}}>
+      <div style={{display:"flex", justifyContent:"center", alignItems:"baseline", flexWrap:"wrap"}}>
       <span>
         <h3 style={{textAlign:"center"}}>CS Courses</h3>
         <ul>

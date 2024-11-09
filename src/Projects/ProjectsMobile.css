@@ -1,0 +1,114 @@
+#ProjectContainer {
+    padding-bottom: 40px;
+    background-image:radial-gradient(circle at 20px 20px, #d59aea59 1px, transparent 0);
+    background-size: 40px 40px;
+    padding-top: 0px;
+    color:white;
+}
+
+.bannerIconm {
+    width:100px;
+    /* min-width:200px; */
+    height:60px;
+    background-color:#E1E1E1;
+    border-radius:10px;
+    margin:10px;
+    border: #1E1E1E solid 2px;
+}
+
+
+@keyframes slidein {
+    from {
+      transform: translateX(200px);
+    }
+  
+    to {
+      transform: translateX(0px);
+    }
+  }
+  
+
+.bannerIcon:hover[style] {
+    opacity: 0.9 !important;
+    /* border: 2px solid black; */
+}
+
+.githubMark {
+    height:35px;
+    margin-left: 10px;
+    border-radius:50px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.githubMark:hover {
+    background-color: rgb(254, 233, 255);
+}
+
+.infoVideo {
+    background-color: #121212;
+    color: white;
+    border-radius: 10px;
+    /* box-shadow: -15px 15px #BB4BE4; */
+}
+
+.infoContainerm {
+    /* min-width: 45vw; */
+    /* width: 95vw; */
+    height: 48vh;
+    padding: 10px;
+    padding-right: 0px;
+    margin: 10px;
+
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+
+    position: relative;
+}
+
+.infoContainerm li {
+    list-style-position: inside;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight:400;
+}
+
+.infoContainerm p {
+    font-weight: 450;
+    font-style: italic;
+    
+    font-size: 15px;
+    margin: 5px;
+}
+
+
+
+.infoContainerm h1 {
+    font-weight: bold;
+    font-style: normal;
+    margin: 0px;
+    font-size: 30px;
+
+}
+
+.infoContainerm a {
+    color: #d893f1;
+}
+
+.infoContainerm a:hover {
+    color: #bb57e0;
+}
+
+.tagm{
+    background-color: #e7c3f6;
+    color: #9011be;
+    border-radius: 3px;
+    padding:3px;
+    margin: 4px;
+    font-size: 10px;
+
+}

@@ -54,12 +54,13 @@
     background-color: #121212;
     color: white;
     border-radius: 10px;
-    box-shadow: -15px 15px #BB4BE4;
+    /* box-shadow: -15px 15px #BB4BE4; */
 }
 
 .infoContainer {
-    max-width: 45vw;
+    /* min-width: 45vw; */
     width: 45vw;
+    max-height: 80%;
     padding: 30px;
     padding-right: 0px;
     margin: 10px;

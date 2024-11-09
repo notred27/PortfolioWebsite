@@ -6,9 +6,9 @@ export default function About(){
         <div id='AboutContainer'>
             
 
-            <div style = {{display:"flex", flexDirection:"row", height:"fit-content"}}>
+            <div style = {{display:"flex", flexDirection:"row", height:"fit-content", justifyContent:"center", alignItems:"center"}}>
 
-                <div className='AboutInfo'>
+                <div className='AboutInfo' style={{width:"40%"}}>
                     <h4>Welcome to my website! I'm Michael, a current undergraduate at the <span style={{color:"#9BA2FF"}}>University of Rochester</span> who's pursuing a <span style={{color:"#EE4266"}}>B.S. in Computer Science</span> and a <span style={{color:"#EE4266"}}>Mathematics Minor</span>.</h4>
                     {/* 
                     <h4>I'm Michael, and I'm a <span style={{color:"#BB4BE4"}}>Software Engineer</span>!</h4>
@@ -45,7 +45,7 @@ export default function About(){
                     </ul>
             </div>
 
-            <div style = {{display:"flex", flexDirection:"row"}}>
+            <div style = {{display:"flex", flexDirection:"row", justifyContent:"center", alignItems:"center"}}>
                 <div className='AboutInfo' style={{width:"40%"}}>
 
                     <h4>On campus, I'm part of the <span style={{color:"#BB4BE4"}}>Music Interest Floor</span> and <span style={{color:"#9BA2FF"}}>Rochester Design Hub</span>. In my spare time, I enjoy:</h4>

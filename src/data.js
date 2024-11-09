@@ -157,6 +157,6 @@ export const Papers = [
 ]
 
 export const Info = {
-        images:["people.png", "hackathon.png", "snowman.png", "galla.png"]
+        images:["people.png", "hackathon.png", "snowman.png", "people2.png"]
     }
 

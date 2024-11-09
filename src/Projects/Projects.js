@@ -9,10 +9,22 @@ import ttrouble from './../images/banners/turingtrouble.png'
 import urready from './../images/banners/urready.png'
 import catan from './../images/banners/catan.png'
 
+import button_l from './../images/button_l.png'
+import button_r from './../images/button_r.png'
+
+
+
 import github from './../images/github-mark.svg'
 
+import turingVideo from './../images/videos/turing.mp4'
+import foneVideo from './../images/videos/fone.mp4'
+import catanVideo from './../images/videos/catan.mp4'
+
+
+
+
 function Projects() {
-    let [bannerItems, setBannerItems] = useState([{ "img": fone, "idx": 0 }, { "img": aigc, "idx": 1 }, { "img": urready, "idx": 2 }, { "img": catan, "idx": 3 }, { "img": ttrouble, "idx": 4 }, { "img": twotris, "idx": 5 }]);
+    let [bannerItems, setBannerItems] = useState([{ "img": fone, "idx": 0, "video":foneVideo }, { "img": aigc, "idx": 1, "video":"noneYet" }, { "img": urready, "idx": 2, "video":"noneYet"  }, { "img": catan, "idx": 3, "video":catanVideo  }, { "img": ttrouble, "idx": 4, "video":turingVideo }, { "img": twotris, "idx": 5, "video":"noneYet"  }]);
     let [selectedIdx, setSelectedIdx] = useState(0);
 
 
@@ -20,11 +32,20 @@ function Projects() {
         setBannerItems((prevItems) => [...prevItems.slice(1), prevItems[0]])
     }
 
+    function shiftItemsBack() {
+        setBannerItems((prevItems) => [prevItems[prevItems.length - 1], ...prevItems.slice(0, -1)])
+    }
+
     return (
         <div id = "ProjectContainer">
-            <div  style={{height:"420px", display:"flex", flexDirection:"row", justifyContent:"center"}}>
+            <div  style={{ display:"flex", flexDirection:"row", justifyContent:"center", flexWrap:"wrap"}}>
 
-                <div className="infoVideo" style={{ height: "80%", width: "40%", alignSelf: "center" }}>
+                <div className="infoVideo" style={{ height:"420px", width: "auto", alignSelf: "center" }}>
+
+                <video style={{borderRadius:"20px"}} width="100%" height="100%" autoPlay muted loop src={bannerItems[selectedIdx]["video"]} type="video/mp4" />
+            
+       
+
 
                 </div>
 
@@ -226,12 +247,21 @@ function Projects() {
 
             </span>
 
-            <button onClick={shiftItems}>Click</button>
+
+            <div style={{width:"100vw", display:"grid", gridTemplateColumns:"1fr 1fr 1fr", justifyItems:"center", alignItems:"center"}}>
+                <img src = {button_l} onClick={shiftItems}/>
+                <span></span>
+                <img  src = {button_r} onClick={shiftItemsBack}/>
+
+
+            </div>
+            
+
 
 
             <br />
 
-            I also create smaller side projects, which can be seen here
+            {/* I also create smaller side projects, which can be seen here */}
         </div>)
 }
 

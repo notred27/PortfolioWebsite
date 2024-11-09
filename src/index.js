@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
-
-
 import reportWebVitals from './reportWebVitals.js';
 import Desktop from './Desktop.js';
+
 
 
 
@@ -15,10 +13,7 @@ root.render(
 
   <React.StrictMode>
 
-  
-    <Desktop/>
-
-
+    <Desktop />
 
   </React.StrictMode>
 );

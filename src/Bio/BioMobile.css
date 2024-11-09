@@ -1,0 +1,101 @@
+#BioContainerm{
+    position:relative;
+    /* height:280px; */
+    display:flex;
+    flex-direction:row;
+    overflow:hidden;
+    background-color: #1E1E1E;
+    /* margin-bottom: 20px; */
+    background-image: radial-gradient(circle at 20px 0px, rgb(99, 99, 99) 1px, transparent 0);
+    background-size: 40px 40px;
+    padding-top: 40px;
+}
+
+
+.Bio-textm{
+    color:white; 
+    margin: 0px;
+}
+
+h1.Bio-textm {
+    font-size: 45px;
+}
+
+h6.Bio-textm{
+    color:rgba(255, 255, 255, 0.885); 
+    margin-left: 0px;
+    font-size: 12px;
+    /* font-weight: normal; */
+    /* font-size:1em; */
+    margin-top: 0px;
+    width: 80vw;
+}
+
+.Bio-linkm:visited{
+    color:white;
+}
+
+.Bio-linkm:hover{
+    color:lightblue;
+}
+
+
+.BioNavm{
+    position: absolute; /* Possibly Fixed */
+    display: flex;
+    top: 10px;
+    right: 10px;
+    flex-wrap: wrap;
+    /* z-index: 200; */
+
+}
+
+.BioNavm a{
+    text-decoration: none;
+}
+
+.dropdownContentm {
+    display: none;
+    text-align: left;
+
+}
+
+.dropdownm:hover {
+    background-color: black;
+  }
+
+
+.dropdownm:hover .dropdownContentm {
+    display: block;
+}
+
+.BioNavItemm{
+    /* font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 300; */
+    font-weight: bold;
+    font-size: 10px;
+    padding: 5px;
+    margin:5px;
+    color:white;
+    border-radius: 3px;
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 3px ;
+
+    /* text-decoration: none;
+    color:white;
+    background-color:#282828;
+    width:fit-content;
+    padding:5px;
+    margin:5px;
+    border-radius:7px;
+    box-shadow:-3px 3px #9BA2FF; */
+}
+
+.BioNavItemm:hover{
+    background-color:#454545;
+
+}
+
