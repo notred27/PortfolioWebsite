@@ -2,8 +2,8 @@
 
 Hi, welcome to my website! It is currently still under construction, with the following goals:
 
-- [ ] Refactor navigation bar at the top of the page (for both desktop and mobile) to improve user's experience
-- [ ] Add more information to the contact me page
+- [x] Refactor navigation bar at the top of the page (for both desktop and mobile) to improve user's experience
+- [x] Add more information to the contact me page
 - [ ] Finish implementing the "Education" subsection
 - [ ] Update the professional experience section with new information, and clarify positions
 - [ ] Add react-router for the "More Info" buttons found in the "Papers" section
