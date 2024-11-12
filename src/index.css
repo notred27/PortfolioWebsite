@@ -20,3 +20,8 @@ html {
   scrollbar-color: #fa4f63 #1e1e1e;
   scrollbar-width:auto;
 }
+
+
+body:has(.requires-no-scroll) {
+  overflow: hidden;
+}

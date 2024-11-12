@@ -1,14 +1,22 @@
+import { useState } from 'react';
 import pic from './../images/picture2.png';
 import pdf from "./../MR_Resume.pdf";
 import './Bio.css';
+import PopupWrapper from './../PopupWrapper.js';
+
+import me from './../images/galla.png';
+
 
 export default function Bio() {
-
+  const [showContact, toggleShowContact] = useState(false);
 
 
   return (
 
     <div id = "BioContainer">
+
+
+      
 
       <span style={{display:"flex", alignItems:"center", justifyContent:"center", width:"100vw", height:"100%"}}>
         <div style={{display:"grid", gridTemplateColumns:"1fr 2fr", height:"100%", placeItems:"center"}}>
@@ -22,65 +30,63 @@ export default function Bio() {
             </span>
         </div>
       </span>
+
+
         
       <span className='BioNav'>
-        <a href ="#About"><span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'>About Me</span></a>
-        <a href ="#Projects"> <span style={{textDecorationColor: "#cf5ae1"}} className='BioNavItem'>Projects</span></a>
-
-        <div className='dropdown'>   
-          <span style={{textDecorationColor: "#EE4266"}} className='BioNavItem'>Papers</span>
-            
-          <div className='dropdownContent'>
-            <a href ="#Publications">Publications</a>
-            <br/>
-            <a href ="#OtherPaper">Other Papers</a>
-            <br/>
-            <a href ="#WipPaper">In Progress...</a>
-
-          </div>
-        </div>
+        <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'><a href ="#About">About Me</a></span>
+        <span style={{textDecorationColor: "#cf5ae1"}} className='BioNavItem'><a href ="#Projects">Projects</a></span>
+        <span style={{textDecorationColor: "#EE4266"}} className='BioNavItem'><a href ="#Publications">Papers</a></span>
+        <span style={{textDecorationColor: "#fdf918"}} className='BioNavItem'><a href ="#Education">Education</a></span>
+        <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'><a href ="#Jobs">Professional Experience</a></span>
         
+        <span style={{textDecorationColor: "white"}} className='BioNavItem' onClick={() => (toggleShowContact(true))}>Contact Me</span>
 
 
-        
-
-        <div className='dropdown'>   
-          
-          <a href ="#Education"><span style={{textDecorationColor: "#fdf918"}} className='BioNavItem'>Education</span></a>
-            
-          <div className='dropdownContent'>
-            <a href ="#Education">Degree</a>
-            <br/>
-            <a href ="#Awards">Awards</a>
-            <br/>
-            <a href ="#Coursework">Coursework</a>
-
-          </div>
-        </div>
-
-
-        <a href ="#Jobs"><span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'>Professional Experience</span></a>
-        
-
-
-        <div className='dropdown'>   
-          
-          <a><span style={{textDecorationColor: "white"}} className='BioNavItem'>Contact Me</span></a>
-            
-            
-          <div className='dropdownContent'>
-            <a href = {pdf}>Resume</a>
-            <br/>
-
-            <a href ="mailto:mreidy3@u.rochester.edu">Email</a>
-            <br/>
-            <a href ="https://github.com/notred27">GitHub</a>
-            <br/>
-            <a href ="https://linkedin.com/in/michael-reidy-122024254">LinkedIn</a>
-
-          </div>
-        </div>
       </span>
+
+      {/* Pop-up contact me page */}
+      {showContact && 
+        <PopupWrapper>
+          <div id = "PopupThanks">
+            <img src = {me} />
+
+            <div>
+              <h2>Thank you for your interest!</h2>
+
+              The best way to contact me is through either my email or cell number:
+              <br/>
+              &nbsp;&nbsp;<b>Email:</b> <a href ="mailto:mreidy3@u.rochester.edu">mreidy3@u.rochester.edu</a>
+              <br/>
+              &nbsp;&nbsp;<b>Mobile Cell:</b> <a href ="tel:+1-781-422-1367">(781) 422-1367</a>
+              <br/>
+              <br/>
+
+
+              Additionally, you can find a current copy of my resume here: 
+              <br/>
+              &nbsp;&nbsp;<b>Resume: </b><a href = {pdf}><i>Michael Reidy's Resume</i></a>
+              <br/>
+              &nbsp;&nbsp;<i>Last updated Nov 12, 2024</i>
+              <br/>
+
+              <br/>
+
+
+              Finally, you can also reach me at any of these socials:
+              <br/>
+
+              &nbsp;&nbsp;<b>GitHub: </b><a href ="https://github.com/notred27">github.com/notred27</a>
+              <br/>
+              &nbsp;&nbsp;<b>LinkedIn: </b><a href ="https://linkedin.com/in/michael-reidy-122024254">in/michael-reidy-122024254</a>
+
+              <br/>
+              <br/>
+
+              <button onClick={() => (toggleShowContact(false))}>Back to Main Page</button>
+            </div>
+          </div>
+        </PopupWrapper>}
 
     </div>
   );

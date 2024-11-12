@@ -4,19 +4,18 @@ import BioMobile from './Bio/BioMobile.js';
 import About from './About/About.js';
 import AboutMobile from './About/AboutMobile.js';
 
+import Projects from './Projects/Projects.js';
+import ProjectsMobile from './Projects/ProjectsMobile.js';
 
-import Jobs from './Experience/Jobs.js';
 import Publications from './Papers/Publications.js';
 import PublicationsMobile from './Papers/PublicationsMobile.js';
 
 
-import Projects from './Projects/Projects.js';
-
+import Jobs from './Experience/Jobs.js';
 
 import Education from './Education/Education.js';
-import ProjectsMobile from './Projects/ProjectsMobile.js';
 
-console.log(window.screen.width <= 500)
+// console.log(window.screen.width <= 500)
 const isMobile = window.screen.width <= 500;
 
 export default function Desktop() {
@@ -26,7 +25,6 @@ export default function Desktop() {
     <div style={{overflow:"hidden", backgroundColor:"#1e1e1e"}}>
 
         {isMobile ? <BioMobile/> : <Bio/>}
-        
         
 
 
@@ -56,6 +54,7 @@ export default function Desktop() {
 
 
 
+        <a name = "Publications" />
         
 
         <div style={{display:"flex", width:"100%", textAlign:"center", color:"white", position:"relative", height:"fit-content", justifyContent:"center", marginTop:"20px", marginBottom:"20px"}}>

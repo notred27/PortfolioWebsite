@@ -62,9 +62,9 @@
     /* min-width: 45vw; */
     width: 45vw;
     max-height: 80%;
-    padding: 30px;
+    padding: 10px;
     padding-right: 0px;
-    margin: 10px;
+    margin-left: 10px;
 
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;

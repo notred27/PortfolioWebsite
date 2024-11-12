@@ -39,7 +39,7 @@ export default function Publications() {
 
   return (
     <div id = "PublicationContainer">
-      <a name = "Publications"/>
+      {/* <a name = "Publications"/> */}
       <Header title = {"Publications!"} color = {"#EE4266"} side={"left"}/>
 
 
@@ -48,7 +48,7 @@ export default function Publications() {
           {Items[0]}
       </span>
 
-      <a name = "OtherPaper"/>
+      {/* <a name = "OtherPaper"/> */}
       <Header title = {"Other Papers!"} color = {"#EE4266"} side={"left"}/>
 
 
@@ -57,7 +57,7 @@ export default function Publications() {
         {Items[2]}
       </span> 
 
-      <a name = "WipPaper"/>
+      {/* <a name = "WipPaper"/> */}
       <Header title = {"In Progress..."} color = {"#EE4266"} side={"left"}/>
 
 

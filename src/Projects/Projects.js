@@ -49,9 +49,9 @@ function Projects() {
         <div id = "ProjectContainer">
             <div  style={{ display:"flex", flexDirection:"row", justifyContent:"center", flexWrap:"wrap"}}>
 
-                <div className="infoVideo" style={{ height:"420px", width: "auto", alignSelf: "center" }}>
+                <div className="infoVideo" style={{ alignSelf: "center", height:"auto" }}>
 
-                <video style={{borderRadius:"20px"}} width="auto" height="420px" autoPlay muted loop src={getVideo(selectedIdx)} type="video/mp4" />
+                <video style={{borderRadius:"20px"}} width="auto" height="300px" autoPlay muted loop src={getVideo(selectedIdx)} type="video/mp4" />
             
        
 
@@ -81,7 +81,7 @@ function Projects() {
 
 
                     {/* Tags: React, AWS, Firestore, Google Auth, Figma */}
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
+                    <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
                         Tags:
                         <span className="tag">React</span>
                         <span className="tag">AWS Amplify</span>
@@ -118,7 +118,7 @@ function Projects() {
 
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
+                    <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
                         Tags:
                         <span className="tag">MATLAB</span>
                         <span className="tag">Resnet-50</span>
@@ -147,7 +147,7 @@ function Projects() {
 
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
+                    <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
                         Tags:
                         <span className="tag">Python</span>
                         <span className="tag">Selenium</span>
@@ -175,7 +175,7 @@ function Projects() {
                     <li>This project is still in development, with a few game features (such as development cards and a win condition) left to be added.</li>
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
+                    <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
                         Tags:
                         <span className="tag">Python</span>
                         <span className="tag">Figma</span>
@@ -207,7 +207,7 @@ function Projects() {
 
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
+                    <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
                         Tags:
                         <span className="tag">C#</span>
                         <span className="tag">Unity</span>
@@ -237,7 +237,7 @@ function Projects() {
 
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
+                    <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
                         Tags:
                         <span className="tag">Python</span>
                         <span className="tag">Pygame</span>
