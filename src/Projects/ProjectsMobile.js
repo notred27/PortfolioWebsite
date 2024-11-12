@@ -36,18 +36,44 @@ function ProjectsMobile() {
         setBannerItems((prevItems) => [prevItems[prevItems.length - 1], ...prevItems.slice(0, -1)])
     }
 
+    function getVideo(idx) {
+        for(let i = 0; i < bannerItems.length; i++) {
+            if(idx === bannerItems[i]["idx"]) {
+                return bannerItems[i]["video"]
+            }
+        }
+    }
+
     return (
         <div id = "ProjectContainer">
             <div  style={{ display:"flex", flexDirection:"row", justifyContent:"center", flexWrap:"wrap"}}>
 
                 <div className="infoVideo" style={{width: "70vw", height:"20vh", alignSelf: "center" }}>
 
-                <video style={{borderRadius:"20px"}} width="100%" height="100%" autoPlay muted loop src={bannerItems[selectedIdx]["video"]} type="video/mp4" />
+                <video style={{borderRadius:"20px"}} width="100%" height="100%" autoPlay muted loop src={getVideo(selectedIdx)} type="video/mp4" />
             
        
 
 
                 </div>
+
+
+                <span id = "bannerIconContainerm" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} onAnimationIteration={shiftItems}>
+                    {bannerItems.map(item =>
+                        <img loading="lazy" src={item.img} className="bannerIconm" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
+                    )}
+
+                </span>
+
+
+                <div style={{width:"100vw", display:"grid", gridTemplateColumns:"1fr 1fr 1fr", justifyItems:"center", alignItems:"center", marginTop:"5px"}}>
+                    <img style = {{height:"30px", transform:"rotate(20deg)"}} src = {button_l} onClick={shiftItemsBack}/>
+                    <span></span>
+                    <img style = {{height:"30px", transform:"rotate(-20deg)"}} src = {button_r} onClick={shiftItems}/>
+                </div>
+
+
+
 
                 <div className="infoContainerm" style={{ display: `${selectedIdx === 0 ? "block" : "none"}` }}>
                     <span style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
@@ -72,8 +98,8 @@ function ProjectsMobile() {
 
 
                     {/* tagms: React, AWS, Firestore, Google Auth, Figma */}
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
-                        tagms:
+                    <div style={{ position: "absolute", bottom: "-20px", left: "20px" }}>
+                        Tags:
                         <span className="tagm">React</span>
                         <span className="tagm">AWS Amplify</span>
                         <span className="tagm">Firestore</span>
@@ -109,8 +135,8 @@ function ProjectsMobile() {
 
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
-                        tagms:
+                    <div style={{ position: "absolute", bottom: "-20px", left: "20px" }}>
+                        Tags:
                         <span className="tagm">MATLAB</span>
                         <span className="tagm">Resnet-50</span>
                         <span className="tagm">Bayer Array</span>
@@ -138,8 +164,8 @@ function ProjectsMobile() {
 
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
-                        tagms:
+                    <div style={{ position: "absolute", bottom: "-20px", left: "20px" }}>
+                        Tags:
                         <span className="tagm">Python</span>
                         <span className="tagm">Selenium</span>
                         <span className="tagm">Tkinter</span>
@@ -166,8 +192,8 @@ function ProjectsMobile() {
                     <li>This project is still in development, with a few game features (such as development cards and a win condition) left to be added.</li>
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
-                        tagms:
+                    <div style={{ position: "absolute", bottom: "-20px", left: "20px" }}>
+                        Tags:
                         <span className="tagm">Python</span>
                         <span className="tagm">Figma</span>
                         <span className="tagm">Web sockets</span>
@@ -198,8 +224,8 @@ function ProjectsMobile() {
 
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
-                        tagms:
+                    <div style={{ position: "absolute", bottom: "-20px", left: "20px" }}>
+                        Tags:
                         <span className="tagm">C#</span>
                         <span className="tagm">Unity</span>
                         <span className="tagm">Hackathon</span>
@@ -228,8 +254,8 @@ function ProjectsMobile() {
 
 
 
-                    <div style={{ position: "absolute", bottom: "20px", left: "20px" }}>
-                        tagms:
+                    <div style={{ position: "absolute", bottom: "-20px", left: "20px" }}>
+                        Tags:
                         <span className="tagm">Python</span>
                         <span className="tagm">Pygame</span>
                         <span className="tagm">Hackathon</span>
@@ -240,21 +266,7 @@ function ProjectsMobile() {
             </div>
 
 
-            <span id = "bannerIconContainerm" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} onAnimationIteration={shiftItems}>
-                {bannerItems.map(item =>
-                    <img loading="lazy" src={item.img} className="bannerIconm" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
-                )}
-
-            </span>
-
-
-            <div style={{width:"100vw", display:"grid", gridTemplateColumns:"1fr 1fr 1fr", justifyItems:"center", alignItems:"center"}}>
-                <img src = {button_l} onClick={shiftItems}/>
-                <span></span>
-                <img  src = {button_r} onClick={shiftItemsBack}/>
-
-
-            </div>
+            
             
 
 

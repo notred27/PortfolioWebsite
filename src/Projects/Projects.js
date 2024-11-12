@@ -30,10 +30,19 @@ function Projects() {
 
     function shiftItems() {
         setBannerItems((prevItems) => [...prevItems.slice(1), prevItems[0]])
+        // setSelectedIdx((prevIdx) => (prevIdx + 1));
     }
 
     function shiftItemsBack() {
         setBannerItems((prevItems) => [prevItems[prevItems.length - 1], ...prevItems.slice(0, -1)])
+    }
+
+    function getVideo(idx) {
+        for(let i = 0; i < bannerItems.length; i++) {
+            if(idx === bannerItems[i]["idx"]) {
+                return bannerItems[i]["video"]
+            }
+        }
     }
 
     return (
@@ -42,7 +51,7 @@ function Projects() {
 
                 <div className="infoVideo" style={{ height:"420px", width: "auto", alignSelf: "center" }}>
 
-                <video style={{borderRadius:"20px"}} width="100%" height="100%" autoPlay muted loop src={bannerItems[selectedIdx]["video"]} type="video/mp4" />
+                <video style={{borderRadius:"20px"}} width="auto" height="420px" autoPlay muted loop src={getVideo(selectedIdx)} type="video/mp4" />
             
        
 
@@ -240,7 +249,7 @@ function Projects() {
             </div>
 
 
-            <span id = "bannerIconContainer" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} onAnimationIteration={shiftItems}>
+            <span id = "bannerIconContainer" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} >
                 {bannerItems.map(item =>
                     <img loading="lazy" src={item.img} className="bannerIcon" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
                 )}
@@ -248,10 +257,10 @@ function Projects() {
             </span>
 
 
-            <div style={{width:"100vw", display:"grid", gridTemplateColumns:"1fr 1fr 1fr", justifyItems:"center", alignItems:"center"}}>
-                <img src = {button_l} onClick={shiftItems}/>
+            <div style={{width:"100vw", display:"grid", gridTemplateColumns:"1fr 1fr 1fr", justifyItems:"center", alignItems:"center", marginTop:"14px"}}>
+                <img style={{transform:"rotate(20deg)", boxShadow:"-10px 10px #bb57e0", borderRadius:"10px"}} src = {button_l} onClick={shiftItemsBack}/>
                 <span></span>
-                <img  src = {button_r} onClick={shiftItemsBack}/>
+                <img style={{transform:"rotate(-20deg)", boxShadow:"-10px 10px #bb57e0", borderRadius:"10px"}} src = {button_r} onClick={shiftItems}/>
 
 
             </div>

@@ -22,12 +22,6 @@ export default function About(){
                 
                 </div>
             
-                {/* <div style={{display:"grid", gridTemplateRows:"1fr 1fr", gridTemplateColumns:"1fr 1fr 1fr", width:"40%", height:"300px", gap:"20px"}}>
-                    <img src={require(`./images/${Info.images[3]}`)} alt="me" className="ImageGridItem" style={{gridRow:"1 / span 2"}}/>
-                    <img src={require(`./images/${Info.images[1]}`)} alt="me" className="ImageGridItem" style={{gridRow:"1", gridColumn:"2"}}/>
-                    <img src={require(`./images/${Info.images[0]}`)} alt="me" className="ImageGridItem" style={{gridRow:"2", gridColumn:"2"}}/>
-                    <img src={require(`./images/${Info.images[2]}`)} alt="me" className="ImageGridItem" style={{gridRow:"1 / span 2", gridColumn:"3"}}/>
-                </div> */}
 
 
             </div>
@@ -59,9 +53,9 @@ export default function About(){
 
 
                 <div style={{display:"grid", gridTemplateRows:"1fr 1fr", gridTemplateColumns:"1fr 1fr 1fr", width:"50%", height:"300px", gap:"20px"}}>
-                    <img src={require(`./../images/${Info.images[3]}`)} alt="suit" className="ImageGridItem" style={{gridRow:"1 / span 2", transform:"rotate(-5deg)"}}/>
+                    <img src={require(`./../images/${Info.images[3]}`)} alt="friends" className="ImageGridItem" style={{gridRow:"1 / span 2", transform:"rotate(-5deg)", maxWidth:"220px", width:"100%"}}/>
                     <img src={require(`./../images/${Info.images[1]}`)} alt="dandyhacks" className="ImageGridItem" style={{gridRow:"1", gridColumn:"2"}}/>
-                    <img src={require(`./../images/${Info.images[0]}`)} alt="friends" className="ImageGridItem" style={{gridRow:"2", gridColumn:"2", transform:"rotate(-20deg)", maxWidth:"120%", maxHeight:"120%"}}/>
+                    <img src={require(`./../images/${Info.images[0]}`)} alt="friends_snow" className="ImageGridItem" style={{gridRow:"2", gridColumn:"2", transform:"rotate(-20deg)", maxWidth:"220px", width:"100%", maxHeight:"120%"}}/>
                     <img src={require(`./../images/${Info.images[2]}`)} alt="snowman" className="ImageGridItem" style={{gridRow:"1 / span 2", gridColumn:"3"}}/>
                 </div>
             </div>

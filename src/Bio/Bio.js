@@ -1,18 +1,9 @@
 import pic from './../images/picture2.png';
-// import b1 from './images/b1.png';
-// import b2 from './images/b2.png';
-
-
-// import './App.css';
+import pdf from "./../MR_Resume.pdf";
 import './Bio.css';
 
 export default function Bio() {
 
-  // const images = [pic, b1, b2].map( (image, i) =>
-  //   // Fix the animation on this (for when website is visited)
-  //   <img src={image} alt="me" style={{zIndex:`${3-i}`, transform:`translate(-${i*4}%,-${i*4}%)`, position:"absolute", height:"30vh"}}/>
-
-  // );
 
 
   return (
@@ -78,6 +69,9 @@ export default function Bio() {
             
             
           <div className='dropdownContent'>
+            <a href = {pdf}>Resume</a>
+            <br/>
+
             <a href ="mailto:mreidy3@u.rochester.edu">Email</a>
             <br/>
             <a href ="https://github.com/notred27">GitHub</a>

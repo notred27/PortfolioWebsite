@@ -17,6 +17,7 @@
 }
 
 #bannerIconContainer {
+    margin-top: 5px;
     /* animation: slidein 3s linear forwards;
     animation-iteration-count: infinite; */
     /* animation-delay: 2s; */

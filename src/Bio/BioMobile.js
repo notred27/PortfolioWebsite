@@ -1,14 +1,8 @@
 import pic from './../images/picture2.png';
-
+import pdf from "./../MR_Resume.pdf";
 import './BioMobile.css';
 
 export default function BioMobile() {
-
-  // const images = [pic, b1, b2].map( (image, i) =>
-  //   // Fix the animation on this (for when website is visited)
-  //   <img src={image} alt="me" style={{zIndex:`${3-i}`, transform:`translate(-${i*4}%,-${i*4}%)`, position:"absolute", height:"30vh"}}/>
-
-  // );
 
 
   return (
@@ -74,6 +68,8 @@ export default function BioMobile() {
             
             
           <div className='dropdownContent'>
+            <a href = {pdf}>Resume</a>
+            <br/>
             <a href ="mailto:mreidy3@u.rochester.edu">Email</a>
             <br/>
             <a href ="https://github.com/notred27">GitHub</a>
