@@ -66,6 +66,7 @@ export default function Desktop() {
         {isMobile ? <PublicationsMobile /> : <Publications />}
 
 
+        <a name = "Education"/>
 
         <div style={{display:"flex", width:"100%", textAlign:"center", color:"white", position:"relative", height:"fit-content", justifyContent:"center", marginTop:"20px", marginBottom:"20px"}}>
             <div style={{position:"absolute", top:"20px", width:"80vw", height:"10px", backgroundColor:"#fdf918",borderRadius:"5px", zIndex:"1"}}></div>

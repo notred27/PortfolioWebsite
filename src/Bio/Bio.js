@@ -79,7 +79,8 @@ export default function Bio() {
               &nbsp;&nbsp;<b>GitHub: </b><a href ="https://github.com/notred27">github.com/notred27</a>
               <br/>
               &nbsp;&nbsp;<b>LinkedIn: </b><a href ="https://linkedin.com/in/michael-reidy-122024254">in/michael-reidy-122024254</a>
-
+              <br/>
+              &nbsp;&nbsp;<b>arXiv: </b><a href ="https://arxiv.org/search/cs?searchtype=author&query=Reidy,+M+P">Michael P. Reidy</a>
               <br/>
               <br/>
 

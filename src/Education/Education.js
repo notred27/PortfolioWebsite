@@ -9,7 +9,7 @@ export default function Education() {
       
   return (
     <div id = "EducationContainer">
-        <a name = "Education"/>
+        {/* <a name = "Education"/> */}
 
       <Header title = {"Degree"} color = {"#fdf918"} side = {"left"}/>
 
@@ -32,20 +32,20 @@ export default function Education() {
         </span>
       </div>
        
-      <a name = "Awards"/>
+      {/* <a name = "Awards"/> */}
 
       <Header title = {"Awards"} color = {"#fdf918"} side = {"left"}/>
 
        <ul>
        <li>Xerox Technology Scholarship</li>
-        <li>Dean's List (all 8 semesters)</li>
+        <li>Dean's List (6 semesters)</li>
         <li>Undergraduate Research Grant</li>
       </ul>
 
 
-      <a name = "Coursework"/>
+      {/* <a name = "Coursework"/> */}
 
-      <Header title = {"My Most Relevant Course Work"} color = {"#fdf918"} side = {"left"}/>
+      <Header title = {"Relevant Coursework"} color = {"#fdf918"} side = {"left"}/>
 
 
       <div style={{display:"flex", justifyContent:"center", alignItems:"baseline", flexWrap:"wrap"}}>

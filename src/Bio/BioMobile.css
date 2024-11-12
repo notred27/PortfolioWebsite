@@ -47,7 +47,7 @@ h6.Bio-textm{
     right: 10px;
     flex-wrap: wrap;
     /* z-index: 200; */
-
+    
 }
 
 .BioNavm a{
@@ -57,11 +57,16 @@ h6.Bio-textm{
 .dropdownContentm {
     display: none;
     text-align: left;
+}
 
+.dropdownContentm span{
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .dropdownm:hover {
-    background-color: black;
+    background-color: rgb(84, 84, 84);
+    border-radius: 10px;
   }
 
 
@@ -74,7 +79,7 @@ h6.Bio-textm{
     font-style: normal;
     font-weight: 300; */
     font-weight: bold;
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px;
     margin:5px;
     color:white;
@@ -94,8 +99,26 @@ h6.Bio-textm{
     box-shadow:-3px 3px #9BA2FF; */
 }
 
-.BioNavItemm:hover{
+.BioNavItemm a {
+    color: white;
+}
+
+
+#PopupThanksm {
+    width: 80vw;
+    height: auto;
+    background-color: #302d30;
+    color: white;
+    border-radius: 20px;
+    box-shadow: -10px 10px #b420d1;
+    padding: 10px;
+}
+
+#PopupThanksm a {
+    color: #ce79ea;
+}
+/* .BioNavItemm:hover{
     background-color:#454545;
 
-}
+} */
 
