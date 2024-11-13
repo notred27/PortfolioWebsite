@@ -251,18 +251,16 @@ function Projects() {
 
             <span id = "bannerIconContainer" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} >
                 {bannerItems.map(item =>
-                    <img loading="lazy" src={item.img} className="bannerIcon" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
+                    <img loading="lazy" src={item.img} className="bannerIcon" alt="project_banner" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
                 )}
 
             </span>
 
 
             <div style={{width:"100vw", display:"grid", gridTemplateColumns:"1fr 1fr 1fr", justifyItems:"center", alignItems:"center", marginTop:"14px"}}>
-                <img style={{transform:"rotate(20deg)", boxShadow:"-10px 10px #bb57e0", borderRadius:"10px"}} src = {button_l} onClick={shiftItemsBack}/>
+                <img alt="shift_left_button" style={{transform:"rotate(20deg)", boxShadow:"-10px 10px #bb57e0", borderRadius:"10px"}} src = {button_l} onClick={shiftItemsBack}/>
                 <span></span>
-                <img style={{transform:"rotate(-20deg)", boxShadow:"-10px 10px #bb57e0", borderRadius:"10px"}} src = {button_r} onClick={shiftItems}/>
-
-
+                <img alt="shift_right_button" style={{transform:"rotate(-20deg)", boxShadow:"-10px 10px #bb57e0", borderRadius:"10px"}} src = {button_r} onClick={shiftItems}/>
             </div>
             
 

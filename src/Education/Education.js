@@ -15,7 +15,7 @@ export default function Education() {
 
       <div style={{display:"flex", justifyContent:"space-evenly", alignContent:"center", flexWrap:"wrap"}}>
         <span style={{textAlign:"center"}}>
-          <img loading='lazy' src={logo} style={{width:"35vw", minWidth:"350px"}}></img>
+          <img loading='lazy' src={logo} style={{width:"35vw", minWidth:"350px"}} alt = "UR_logo"/>
           <h4 style={{margin:"0px"}}>Hajim School of Engineering</h4>
         </span>
         

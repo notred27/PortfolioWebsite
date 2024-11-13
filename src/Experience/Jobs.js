@@ -3,31 +3,30 @@ import './Jobs.css'
 import Header from '../Header.js';
 
 export default function Job() {
-    const listItems = jobs.map(job =>
-      <div key={job.id} className="Job">
-        <span>
-          <span style={{display:"flex", flexDirection:"row", alignItems:"center", margin:"0px", justifyContent:"space-between", width:"100%"}}>
+    const listItems = jobs.map((job, key) =>
+      <div key={key} className="Job">
+        <div>
+          <span className="jobHeader">
             <h2>{job.name}</h2>
-            <h4 style={{color:"rgb(210, 210, 210)", margin:"0px"}} >{job.start} • {job.end}</h4>
+            <h4>{job.start} • {job.end}</h4>
 
           </span>
 
-          <h3 style={{paddingBottom:"5px", color:"rgb(210, 210, 210)"}}>{job.company}; {job.subtitle}</h3>
-        </span>
-        
-
-
-        <p style={{padding:"5px"}}>
-            {job.description}
-        </p>
-
-        <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
-          { job.skills.map(skill => <span className="jobTag" > {skill} </span> )}
+          <h3>{job.company}; {job.subtitle}</h3>
         </div>
         
 
-      </div>
 
+        <ul style={{padding:"5px", marginLeft:"10px"}}>
+          {job.description.map(item => <li style={{marginBottom:"10px"}}>{item}</li>)}
+            
+        </ul>
+
+        <div className="tagContainer">
+          {job.skills.map(skill => <span className="jobTag" >{skill} </span>)}
+        </div>
+        
+      </div>
     );
 
     return (

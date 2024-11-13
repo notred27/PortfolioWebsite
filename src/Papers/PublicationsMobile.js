@@ -8,7 +8,7 @@ export default function PublicationsMobile() {
   const Items = Papers.map(paper => (
       
       <div className="Paperm">
-      <img loading="lazy" className="PaperImgm" alt="paper image" src={require('./../images/' + paper.image)} />
+      <img loading="lazy" className="PaperImgm" alt="paper_preview" src={require('./../images/' + paper.image)} />
 
 
       <div className="PaperInfom">

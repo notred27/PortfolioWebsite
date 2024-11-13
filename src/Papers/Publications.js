@@ -8,7 +8,7 @@ export default function Publications() {
   const Items = Papers.map(paper => (
       
       <div className="Paper">
-      <img loading="lazy" className="PaperImg" alt="paper image" src={require('./../images/' + paper.image)} />
+      <img loading="lazy" className="PaperImg" alt="paper_preview" src={require('./../images/' + paper.image)} />
 
 
       <div className="PaperInfo">
@@ -39,27 +39,24 @@ export default function Publications() {
 
   return (
     <div id = "PublicationContainer">
-      {/* <a name = "Publications"/> */}
+
+
       <Header title = {"Publications!"} color = {"#EE4266"} side={"left"}/>
 
-
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly"}}>
-
-          {Items[0]}
+        {Items[0]}
       </span>
 
-      {/* <a name = "OtherPaper"/> */}
-      <Header title = {"Other Papers!"} color = {"#EE4266"} side={"left"}/>
 
+      <Header title = {"Other Papers!"} color = {"#EE4266"} side={"left"}/>
 
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", flexWrap:"wrap"}}>
         {Items[1]}
         {Items[2]}
       </span> 
 
-      {/* <a name = "WipPaper"/> */}
-      <Header title = {"In Progress..."} color = {"#EE4266"} side={"left"}/>
 
+      <Header title = {"In Progress..."} color = {"#EE4266"} side={"left"}/>
 
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", flexWrap:"wrap"}}>
         {Items[3]}

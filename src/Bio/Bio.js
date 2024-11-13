@@ -49,7 +49,7 @@ export default function Bio() {
       {showContact && 
         <PopupWrapper>
           <div id = "PopupThanks">
-            <img src = {me} />
+            <img src = {me} alt = "michael_thanks"/>
 
             <div>
               <h2>Thank you for your interest!</h2>

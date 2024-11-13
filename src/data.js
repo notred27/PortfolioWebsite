@@ -1,53 +1,73 @@
 
-export const jobs = [{
-    id: "0",
+export const jobs = [
+    
+    {
+        name: "MFCS 2024 Conference Reviewer",
+        subtitle:"",
+        company: "49th International Symposium on Mathematical Foundations of Computer Science",
+    
+        start: "May\xA02024",
+        end: "June\xA02024",
+    
+        description: ["Served as a referee for 2 computational focused papers for MFCS 2024, providing detailed feedback and making acceptance recommendations"],
+        skills: ["Communication", "Research"],
+    
+    },
+    {
     name: "Undergraduate Research Assistant",
     subtitle:"Advised by Professor Lane Hemaspaandra",
     company: "National Science Foundation REU",
 
-    start: "September\xA02023",
+    start: "Sept\xA02023",
     end: "June\xA02024",
 
-    description: "Studied the resistances and vulnerabilities of different election schemes via computational complexity approaches. Critiqued published papers claiming to resolve the P=NP problem in order to improve professional writing techniques.",
+    description: ["Formalized 11 polynomial-time algorithms and 3 NP-completeness proofs, expanding research into a more natural representation of modeling electoral control by partitioning with fixed set limitations",
+                  "Analyzed the algorithmic accuracy and Big-Oh complexity of 2 papers that claimed to resolve the P vs NP problem, resulting in 2 critiques that were reviewed and uploaded to arXiv.org"
+    ],
     skills: ["Algorithm Analysis", "Problem-Solving", "Computational Complexity", "Research"],
 
 },
 {
-    id: "1",
     name: "Undergraduate Researcher",
     subtitle:"Advised by Professor Jiebo Luo",
     company: "University of Rochester",
 
     start: "May\xA02023",
-    end: "December\xA02023",
+    end: "Dec\xA02023",
 
-    description: "Created and investigated the ability of classifiers built from CFA based methods on identifying artificially generated images vs genuinely captured images. Researched the effectiveness of CFA-based classifiers vs deep learning classifiers on this task.",
+    description: ["Designed and implemented 5 deep-learning classifiers to detected AI-generated images, including 3 fine-tuned Convolutional Neural Networks (CNNs) and 2 feature extractors based on Bayer arrays artifacts",
+                  "Achieved above-human performance (ranging from 73% to 86% accuracy) on a composite dataset containing 1,460 genuinely captured images and 1,340 AI-generated images",
+                  "Primary author of a paper published in the IEEE International Conference on Big Data 2023, which includes the findings of these models"],
+
     skills: ["Deep Learning", "Computer Vision", "Formal Writing", "Research"],
 
 },
 {
-    id: "2",
     name: "Teaching Assistant",
     subtitle:"CSC 172: Data Structures and Algorithms",
     company: "University of Rochester",
 
-    start: "January\xA02023",
+    start: "Jan\xA02023",
     end: "May\xA02023",
 
-    description: "Aided students in transitioning from a theoretical understanding of data structures to practical implementations. Helped students understand both course concepts and good coding practices. Performed various organizational tasks such as grading and proctoring. ",
+    description: ["Led a workshop twice a week which helped students transition from a theoretical understanding of data structures to their practical implementations in Java",
+                    "Assisted students in understanding both core course concepts and effective coding practices",
+                    "Performed various organizational tasks such as grading and proctoring"],
+
     skills: ["Teaching", "Organization", "Practical Implementation"],
 },
 {
-    id: "3",
     name: "Workshop Leader",
     subtitle:"CSC 172: Data Structures and Algorithms",
     company: "University of Rochester",
 
-    start: "September\xA02022",
-    end: "December\xA02022",
+    start: "Sept\xA02022",
+    end: "Dec\xA02022",
 
 
-    description: "Created and executed lesson plans to improve student comprehension and engagement. Fostered an environment where students worked to answer sample questions as a group to improve their problem solving abilities. Additionally investigated the impact of recall questions on student performance.",
+    description: ["Taught 17 undergraduates both theoretical concepts of data structures, including their benefits and drawbacks",
+                  "Developed and led 11 lesson plans on core data structures, including  linked-lists, stacks, queues, trees, heaps, graphs",
+                  "Investigated the effect of recall questions on students' academic performance to inform teaching strategies, resulting in over 64.7% of students reporting higher engagement during lessons"],
 
     skills: ["Teaching", "Communication", "Organization"],
 

@@ -25,3 +25,37 @@ html {
 body:has(.requires-no-scroll) {
   overflow: hidden;
 }
+
+
+
+.sectionTitle {
+  display:flex;
+  width:100%;
+  text-align:center;
+  color:white;
+  position:relative;
+  height:fit-content;
+  justify-content:center;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.sectionTitle div{
+  position:absolute;
+  top:18px;
+  width:88vw;
+  height:10px;
+  border-radius:5px;
+  z-index:1;
+}
+
+.sectionTitle h1{
+  position:relative;
+  margin:0px;
+  padding:0px;
+  z-index:2;
+  background-color:#1e1e1e;
+  width:fit-content;
+  padding-left:2vw;
+  padding-right:2vw;
+}

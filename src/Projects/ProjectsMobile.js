@@ -60,16 +60,16 @@ function ProjectsMobile() {
 
                 <span id = "bannerIconContainerm" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} onAnimationIteration={shiftItems}>
                     {bannerItems.map(item =>
-                        <img loading="lazy" src={item.img} className="bannerIconm" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
+                        <img loading="lazy" src={item.img} className="bannerIconm" alt = "project_banner" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
                     )}
 
                 </span>
 
 
                 <div style={{width:"100vw", display:"grid", gridTemplateColumns:"1fr 1fr 1fr", justifyItems:"center", alignItems:"center", marginTop:"5px"}}>
-                    <img style = {{height:"30px", transform:"rotate(20deg)"}} src = {button_l} onClick={shiftItemsBack}/>
+                    <img alt="shift_left_button" style = {{height:"30px", transform:"rotate(20deg)"}} src = {button_l} onClick={shiftItemsBack}/>
                     <span></span>
-                    <img style = {{height:"30px", transform:"rotate(-20deg)"}} src = {button_r} onClick={shiftItems}/>
+                    <img alt="shift_right_button" style = {{height:"30px", transform:"rotate(-20deg)"}} src = {button_r} onClick={shiftItems}/>
                 </div>
 
 
