@@ -8,6 +8,8 @@ import twotris from './../images/banners/2tris.png'
 import ttrouble from './../images/banners/turingtrouble.png'
 import urready from './../images/banners/urready.png'
 import catan from './../images/banners/catan.png'
+import pressure from './../images/banners/pressure.png'
+
 
 import button_l from './../images/button_l.png'
 import button_r from './../images/button_r.png'
@@ -19,12 +21,13 @@ import github from './../images/github-mark.svg'
 import turingVideo from './../images/videos/turing.mp4'
 import foneVideo from './../images/videos/fone.mp4'
 import catanVideo from './../images/videos/catan.mp4'
+import pressureVideo from './../images/videos/underpressure.mp4'
 
 
 
 
 function ProjectsMobile() {
-    let [bannerItems, setBannerItems] = useState([{ "img": fone, "idx": 0, "video":foneVideo }, { "img": aigc, "idx": 1, "video":"noneYet" }, { "img": urready, "idx": 2, "video":"noneYet"  }, { "img": catan, "idx": 3, "video":catanVideo  }, { "img": ttrouble, "idx": 4, "video":turingVideo }, { "img": twotris, "idx": 5, "video":"noneYet"  }]);
+    let [bannerItems, setBannerItems] = useState([{ "img": fone, "idx": 0, "video":foneVideo }, { "img": pressure, "idx": 7, "video":pressureVideo },{ "img": aigc, "idx": 1, "video":"noneYet" }, { "img": urready, "idx": 2, "video":"noneYet"  }, { "img": catan, "idx": 3, "video":catanVideo  }, { "img": ttrouble, "idx": 4, "video":turingVideo }, { "img": twotris, "idx": 5, "video":"noneYet"  }]);
     let [selectedIdx, setSelectedIdx] = useState(0);
 
 
@@ -109,6 +112,46 @@ function ProjectsMobile() {
 
 
                 </div>
+
+                <div className="infoContainerm" style={{ display: `${selectedIdx === 7 ? "block" : "none"}` }}>
+                    <span style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                        <h1>Under Pressure!</h1>
+
+                        <a href="https://github.com/YAGOTAGO/DandyHacks24">
+                            <img loading="lazy" src={github} alt="github" className="githubMark" />
+                        </a>
+
+                    </span>
+
+                    <p>Reach the surface, but don't crack from the pressure!</p>
+
+                    <li><i>Under Pressure</i> is a 3D game that was created for U of R's DandyHacks 2024 by myself, Tiago Davies, Caroline Li, and Rae Zhang</li>
+                    <li>There are 6 unique components that may break at any time, so keep an eye out so you don't sink</li>
+
+                    <li>All of our 3D assets, animations, and logic was created by our team, and we used public domain sound effects</li>
+                    {/* <li>Implemented a variety of objects that can be added and customized in the chatroom, such as timestamps, images, headers, and read receipts.</li>
+                    <li>Created a full-stack application using React for the front end, and Google Firestore for the backend database.</li>
+                    <li>Satisfied Progressive Web App <a href="https://web.dev/explore/progressive-web-apps">(PWA)</a> requirements so Fone can be downloaded as an application, and integrated Google Authentication for users. </li> */}
+
+                    <br />
+                    You can download a build of the game&nbsp;<a href="https://tdavies.itch.io/under-pressure">here</a>!
+
+
+                    {/* Tags: React, AWS, Firestore, Google Auth, Figma */}
+                    <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
+                        Tags:
+                        <span className="tag">GoDot</span>
+                        <span className="tag">Unity</span>
+                        <span className="tag">3D Animation</span>
+
+                        {/* <span className="tag">Firestore</span>
+                        <span className="tag">Google Auth</span>
+                        <span className="tag">Figma</span> */}
+                    </div>
+
+
+                </div>
+
 
 
                 <div className="infoContainerm" style={{ display: `${selectedIdx === 1 ? "block" : "none"}` }}>
