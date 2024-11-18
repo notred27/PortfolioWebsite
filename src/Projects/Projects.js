@@ -22,19 +22,38 @@ import turingVideo from './../images/videos/turing.mp4'
 import foneVideo from './../images/videos/fone.mp4'
 import catanVideo from './../images/videos/catan.mp4'
 import pressureVideo from './../images/videos/underpressure.mp4'
+import trisVideo from './../images/videos/2tris.mp4'
+
 
 
 
 
 
 function Projects() {
-    let [bannerItems, setBannerItems] = useState([{ "img": fone, "idx": 0, "video":foneVideo }, { "img": pressure, "idx": 7, "video":pressureVideo },{ "img": aigc, "idx": 1, "video":"noneYet" }, { "img": urready, "idx": 2, "video":"noneYet"  }, { "img": catan, "idx": 3, "video":catanVideo  }, { "img": ttrouble, "idx": 4, "video":turingVideo }, { "img": twotris, "idx": 5, "video":"noneYet"  }]);
+    let [bannerItems, setBannerItems] = useState([{ "img": catan, "idx": 3, "video":catanVideo  },{ "img": ttrouble, "idx": 4, "video":turingVideo }, { "img": twotris, "idx": 5, "video": trisVideo }, { "img": fone, "idx": 0, "video":foneVideo }, { "img": pressure, "idx": 7, "video":pressureVideo },{ "img": aigc, "idx": 1, "video":"noneYet" }, { "img": urready, "idx": 2, "video":"noneYet"  }]);
     let [selectedIdx, setSelectedIdx] = useState(0);
 
+
+    const center = Math.floor(bannerItems.length / 2)
+    // console.log(center))
 
     function shiftItems() {
         setBannerItems((prevItems) => [...prevItems.slice(1), prevItems[0]])
         // setSelectedIdx((prevIdx) => (prevIdx + 1));
+    }
+
+    function selectItem(idx) {
+        // let curIdx = -1
+        // for(let i = 0; i < bannerItems.length; i++) {
+        //     if(idx === bannerItems[i]["idx"]) {
+        //         curIdx = i
+        //     }
+        // }
+
+        // console.log(curIdx)
+        setSelectedIdx(idx)
+
+
     }
 
     function shiftItemsBack() {
@@ -74,23 +93,22 @@ function Projects() {
 
                     <p>Reach the surface, but don't crack from the pressure!</p>
 
-                    <li><i>Under Pressure</i> is a 3D game that was created for U of R's DandyHacks 2024 by myself, Tiago Davies, Caroline Li, and Rae Zhang</li>
-                    <li>There are 6 unique components that may break at any time, so keep an eye out so you don't sink</li>
+                    <li><i>Under Pressure</i> is a 3D game by myself, Tiago Davies, Caroline Li, and Rae Zhang for U of R's DandyHacks 2024</li>
+                    <li>There are 6 unique components that may break at any time, so keep an eye for things you need to fix.</li>
 
-                    <li>All of our 3D assets, animations, and logic was created by our team, and we used public domain sound effects</li>
-                    {/* <li>Implemented a variety of objects that can be added and customized in the chatroom, such as timestamps, images, headers, and read receipts.</li>
-                    <li>Created a full-stack application using React for the front end, and Google Firestore for the backend database.</li>
-                    <li>Satisfied Progressive Web App <a href="https://web.dev/explore/progressive-web-apps">(PWA)</a> requirements so Fone can be downloaded as an application, and integrated Google Authentication for users. </li> */}
-
+                    <li>All of our 3D assets, animations, and logic was created by our team, and we used public domain sound effects.</li>
+                    <li>Won <b>1st place</b> in Entertainment track, as well as the <b>Most Dandy Hack</b> at U of R's yearly Hackathon (DandyHacks '24).</li>
                     <br />
                     You can download a build of the game&nbsp;<a href="https://tdavies.itch.io/under-pressure">here</a>!
+                    <br />
 
 
                     {/* Tags: React, AWS, Firestore, Google Auth, Figma */}
                     <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
                         Tags:
-                        <span className="tag">GoDot</span>
-                        <span className="tag">Unity</span>
+                        <span className="tag">Godot</span>
+                        <span className="tag">GDscript</span>
+                        <span className="tag">Blender</span>
                         <span className="tag">3D Animation</span>
 
                         {/* <span className="tag">Firestore</span>
@@ -296,7 +314,7 @@ function Projects() {
 
             <span id = "bannerIconContainer" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} >
                 {bannerItems.map(item =>
-                    <img loading="lazy" src={item.img} className="bannerIcon" alt="project_banner" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
+                    <img loading="lazy" src={item.img} className="bannerIcon" alt="project_banner" onClick={() => { selectItem(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
                 )}
 
             </span>
