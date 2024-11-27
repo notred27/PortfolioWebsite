@@ -5,9 +5,9 @@ import Header from '../Header.js';
 
 
 export default function PublicationsMobile() {
-  const Items = Papers.map(paper => (
+  const Items = Papers.map((paper, key) => (
       
-      <div className="Paperm">
+      <div className="Paperm" key={key}>
       <img loading="lazy" className="PaperImgm" alt="paper_preview" src={require('./../images/' + paper.image)} />
 
 
@@ -20,7 +20,7 @@ export default function PublicationsMobile() {
           &nbsp;
           
           {paper.authors.map((name, idx) => 
-              { return <span style={{fontWeight:`${name === "Michael\xA0Reidy" ? "bold" : "normal"}`}}>
+              { return <span key = {`${key}_${idx}`} style={{fontWeight:`${name === "Michael\xA0Reidy" ? "bold" : "normal"}`}}>
                   {(idx ? ', ': '')}{name}
               </span>})
               }

@@ -34,11 +34,11 @@ export default function Bio() {
 
         
       <span className='BioNav'>
-        <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'><a href ="#About">About Me</a></span>
-        <span style={{textDecorationColor: "#cf5ae1"}} className='BioNavItem'><a href ="#Projects">Projects</a></span>
-        <span style={{textDecorationColor: "#EE4266"}} className='BioNavItem'><a href ="#Publications">Papers</a></span>
-        <span style={{textDecorationColor: "#fdf918"}} className='BioNavItem'><a href ="#Education">Education</a></span>
-        <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'><a href ="#Jobs">Professional Experience</a></span>
+        <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'><a href ="/#About">About Me</a></span>
+        <span style={{textDecorationColor: "#cf5ae1"}} className='BioNavItem'><a href ="/#Projects">Projects</a></span>
+        <span style={{textDecorationColor: "#EE4266"}} className='BioNavItem'><a href ="/#Publications">Papers</a></span>
+        <span style={{textDecorationColor: "#fdf918"}} className='BioNavItem'><a href ="/#Education">Education</a></span>
+        <span style={{textDecorationColor: "#9BA2FF"}} className='BioNavItem'><a href ="/#Jobs">Professional Experience</a></span>
         
         <span style={{textDecorationColor: "white"}} className='BioNavItem' onClick={() => (toggleShowContact(true))}>Contact Me</span>
 

@@ -18,12 +18,12 @@ export default function Job() {
 
 
         <ul style={{padding:"5px", marginLeft:"10px"}}>
-          {job.description.map(item => <li style={{marginBottom:"10px"}}>{item}</li>)}
+          {job.description.map((item, idx) => <li key = {`${key}_b${idx}`} style={{marginBottom:"10px"}}>{item}</li>)}
             
         </ul>
 
         <div className="tagContainer">
-          {job.skills.map(skill => <span className="jobTag" >{skill} </span>)}
+          {job.skills.map((skill, idx)=> <span key = {`${key}_s${idx}`} className="jobTag" >{skill} </span>)}
         </div>
         
       </div>

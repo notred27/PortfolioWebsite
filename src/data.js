@@ -1,18 +1,7 @@
 
 export const jobs = [
     
-    {
-        name: "MFCS 2024 Conference Reviewer",
-        subtitle:"",
-        company: "49th International Symposium on Mathematical Foundations of Computer Science",
     
-        start: "May\xA02024",
-        end: "June\xA02024",
-    
-        description: ["Served as a referee for 2 computational focused papers for MFCS 2024, providing detailed feedback and making acceptance recommendations"],
-        skills: ["Communication", "Research"],
-    
-    },
     {
     name: "Undergraduate Research Assistant",
     subtitle:"Advised by Professor Lane Hemaspaandra",
@@ -71,7 +60,20 @@ export const jobs = [
 
     skills: ["Teaching", "Communication", "Organization"],
 
-}]
+},
+{
+    name: "MFCS 2024 Conference Reviewer",
+    subtitle:"",
+    company: "49th International Symposium on Mathematical Foundations of Computer Science",
+
+    start: "May\xA02024",
+    end: "June\xA02024",
+
+    description: ["Served as a referee for 2 computational focused papers for MFCS 2024, providing detailed feedback and making acceptance recommendations"],
+    skills: ["Communication", "Research"],
+
+}
+]
 
 export const Projects = [
     {

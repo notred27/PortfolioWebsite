@@ -31,13 +31,22 @@ function ProjectsMobile() {
     let [bannerItems, setBannerItems] = useState([{ "img": catan, "idx": 3, "video":catanVideo  },{ "img": ttrouble, "idx": 4, "video":turingVideo }, { "img": twotris, "idx": 5, "video": trisVideo }, { "img": fone, "idx": 0, "video":foneVideo }, { "img": pressure, "idx": 7, "video":pressureVideo },{ "img": aigc, "idx": 1, "video":"noneYet" }, { "img": urready, "idx": 2, "video":"noneYet"  }]);   
     let [selectedIdx, setSelectedIdx] = useState(0);
 
+    const center = Math.floor(bannerItems.length / 2)
 
     function shiftItems() {
         setBannerItems((prevItems) => [...prevItems.slice(1), prevItems[0]])
+        setSelectedIdx(bannerItems[center +1]["idx"]);
+
+    }
+
+    function selectItem(idx) {
+        setSelectedIdx(idx)
     }
 
     function shiftItemsBack() {
         setBannerItems((prevItems) => [prevItems[prevItems.length - 1], ...prevItems.slice(0, -1)])
+        setSelectedIdx(bannerItems[center -1]["idx"]);
+
     }
 
     function getVideo(idx) {
@@ -63,8 +72,8 @@ function ProjectsMobile() {
 
 
                 <span id = "bannerIconContainerm" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} onAnimationIteration={shiftItems}>
-                    {bannerItems.map(item =>
-                        <img loading="lazy" src={item.img} className="bannerIconm" alt = "project_banner" onClick={() => { setSelectedIdx(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
+                    {bannerItems.map((item, idx) =>
+                        <img loading="lazy" src={item.img} ey = {idx} className="bannerIconm" alt = "project_banner" onClick={() => { selectItem(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
                     )}
 
                 </span>
@@ -123,7 +132,7 @@ function ProjectsMobile() {
                         </a>
 
                     </span>
-                    
+
                     <p>Reach the surface, but don't crack from the pressure!</p>
 
                     <li><i>Under Pressure</i> is a 3D game by myself, Tiago Davies, Caroline Li, and Rae Zhang for U of R's DandyHacks 2024</li>

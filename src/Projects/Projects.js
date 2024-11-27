@@ -30,34 +30,34 @@ import trisVideo from './../images/videos/2tris.mp4'
 
 
 function Projects() {
-    let [bannerItems, setBannerItems] = useState([{ "img": catan, "idx": 3, "video":catanVideo  },{ "img": ttrouble, "idx": 4, "video":turingVideo }, { "img": twotris, "idx": 5, "video": trisVideo }, { "img": fone, "idx": 0, "video":foneVideo }, { "img": pressure, "idx": 7, "video":pressureVideo },{ "img": aigc, "idx": 1, "video":"noneYet" }, { "img": urready, "idx": 2, "video":"noneYet"  }]);
+    let [bannerItems, setBannerItems] = useState([{ "img": catan, "idx": 3, "video":catanVideo  },
+                                                  { "img": ttrouble, "idx": 4, "video":turingVideo },
+                                                   { "img": twotris, "idx": 5, "video": trisVideo }, 
+                                                   { "img": fone, "idx": 0, "video":foneVideo }, 
+                                                   { "img": pressure, "idx": 7, "video":pressureVideo },
+                                                   { "img": aigc, "idx": 1, "video":"noneYet" }, 
+                                                   { "img": urready, "idx": 2, "video":"noneYet"  }]);
     let [selectedIdx, setSelectedIdx] = useState(0);
 
 
     const center = Math.floor(bannerItems.length / 2)
-    // console.log(center))
+    // console.log(center)
 
     function shiftItems() {
         setBannerItems((prevItems) => [...prevItems.slice(1), prevItems[0]])
         // setSelectedIdx((prevIdx) => (prevIdx + 1));
+        setSelectedIdx(bannerItems[center +1]["idx"]);
+
     }
 
     function selectItem(idx) {
-        // let curIdx = -1
-        // for(let i = 0; i < bannerItems.length; i++) {
-        //     if(idx === bannerItems[i]["idx"]) {
-        //         curIdx = i
-        //     }
-        // }
-
-        // console.log(curIdx)
         setSelectedIdx(idx)
-
-
     }
 
     function shiftItemsBack() {
         setBannerItems((prevItems) => [prevItems[prevItems.length - 1], ...prevItems.slice(0, -1)])
+        setSelectedIdx(bannerItems[center -1]["idx"]);
+
     }
 
     function getVideo(idx) {
@@ -72,7 +72,7 @@ function Projects() {
         <div id = "ProjectContainer">
             <div  style={{ display:"flex", flexDirection:"row", justifyContent:"center", flexWrap:"wrap"}}>
 
-                <div className="infoVideo" style={{ alignSelf: "center", height:"auto" }}>
+                <div className="infoVideo" style={{ alignSelf: "center", height:"300px",width:"530px" }}>
 
                 <video style={{borderRadius:"20px"}} width="auto" height="300px" autoPlay muted loop src={getVideo(selectedIdx)} type="video/mp4" />
             
@@ -93,8 +93,8 @@ function Projects() {
 
                     <p>Reach the surface, but don't crack from the pressure!</p>
 
-                    <li><i>Under Pressure</i> is a 3D game by myself, Tiago Davies, Caroline Li, and Rae Zhang for U of R's DandyHacks 2024</li>
-                    <li>There are 6 unique components that may break at any time, so keep an eye for things you need to fix.</li>
+                    <li><i>Under Pressure</i> is a 3D game by myself, Tiago Davies, Caroline Li, and Rae Zhang for U of R's DandyHacks 2024.</li>
+                    <li>There are 6 unique components that may break at any time, so keep an eye out for things to fix.</li>
 
                     <li>All of our 3D assets, animations, and logic was created by our team, and we used public domain sound effects.</li>
                     <li>Won <b>1st place</b> in Entertainment track, as well as the <b>Most Dandy Hack</b> at U of R's yearly Hackathon (DandyHacks '24).</li>
@@ -290,7 +290,7 @@ function Projects() {
 
                     </span>
 
-                    <p>As a reimagining of Tetris as a two-person shooter, 2-Tris brings a new twist to a classic game! Play with a friend and try to time your shots to push and rotate the pieces into place!</p>
+                    <p>As a re-imagining of Tetris as a two-person shooter, 2-Tris brings a new twist to a classic game!</p>
 
 
 
@@ -313,8 +313,8 @@ function Projects() {
 
 
             <span id = "bannerIconContainer" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }} >
-                {bannerItems.map(item =>
-                    <img loading="lazy" src={item.img} className="bannerIcon" alt="project_banner" onClick={() => { selectItem(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
+                {bannerItems.map((item, idx) =>
+                    <img loading="lazy" src={item.img} key={idx} className="bannerIcon" alt="project_banner" onClick={() => { selectItem(item.idx) }} style={{ opacity: `${selectedIdx === item.idx ? "1" : "0.4"}` }} />
                 )}
 
             </span>

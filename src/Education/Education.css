@@ -5,3 +5,18 @@
   padding-top: 40px;
   color:white;
 }
+
+#EducationContainer ul {
+  margin: 5px;
+}
+
+.subsectionTitle {
+text-align:center;
+text-decoration:underline;
+text-decoration-color:#fdf918;
+margin-bottom: 5px;
+}
+
+.courseGrade{
+  text-align: left;
+}

@@ -46,13 +46,18 @@
 .PaperInfom button{
   color: white;
   background-color: #1e1e1e;
-  border: none;
+  border: #EE4266 solid 3px;
   font-size: 16px;
   padding: 5px;
   border-radius: 10px;
-  box-shadow: -4px 4px #EE4266;
+  /* box-shadow: -4px 4px #EE4266; */
 }
 
+/* 
+.PaperInfom button:hover {
+  background-color: #3b3b3b;
+
+} */
 
 .PaperImgm {
 
