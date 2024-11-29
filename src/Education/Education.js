@@ -37,13 +37,36 @@ export default function Education() {
 
       <Header title = {"Awards"} color = {"#fdf918"}/>
 
-       <ul>
-       <li>Xerox Technology Scholarship</li>
-        <li>Dean's List (6 semesters)</li>
-        <li>Undergraduate Research Grant</li>
-        <li>Dandyhacks 1st Place (3yrs)</li>
 
-      </ul>
+      <div style={{display:"flex", flexDirection:"row", flexWrap:"wrap", justifyContent:"space-evenly", margin:"20px 0px 20px 0px"}}>
+
+        <div className='achievementContainer' >
+          <h3>Xerox Award for Innovation and Information Technology</h3>
+
+            Scholarship awarded for a strong interest and achievement in information technology and computer science.
+        </div>
+
+        <div className='achievementContainer' >
+          <h3>Dean's List (6 semesters)</h3>
+    
+            Achieved a semester period GPA of at least 3.4 while taking at least 16 credits.
+          
+        </div>
+
+        <div className='achievementContainer' >
+          <h3>Undergraduate Research Grant</h3>
+ 
+          Received an academic grant to fund the submission and publication of an IEEE paper.
+          
+        </div>
+
+        <div className='achievementContainer' >
+          <h3>Dandyhacks 1st Place (3yrs)</h3>
+ 
+          
+        </div>
+
+      </div>
 
 
       {/* <a name = "Coursework"/> */}
