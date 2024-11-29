@@ -37,6 +37,7 @@ function Projects() {
                                                    { "img": pressure, "idx": 7, "video":pressureVideo },
                                                    { "img": aigc, "idx": 1, "video":"noneYet" }, 
                                                    { "img": urready, "idx": 2, "video":"noneYet"  }]);
+
     let [selectedIdx, setSelectedIdx] = useState(0);
 
 
@@ -52,6 +53,7 @@ function Projects() {
 
     function selectItem(idx) {
         setSelectedIdx(idx)
+        
     }
 
     function shiftItemsBack() {

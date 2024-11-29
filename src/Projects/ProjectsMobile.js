@@ -41,6 +41,9 @@ function ProjectsMobile() {
 
     function selectItem(idx) {
         setSelectedIdx(idx)
+
+        // setBannerItems((prevItems) => [...prevItems.slice(1), prevItems[0]])
+
     }
 
     function shiftItemsBack() {
@@ -135,7 +138,7 @@ function ProjectsMobile() {
 
                     <p>Reach the surface, but don't crack from the pressure!</p>
 
-                    <li><i>Under Pressure</i> is a 3D game by myself, Tiago Davies, Caroline Li, and Rae Zhang for U of R's DandyHacks 2024</li>
+                    <li><i>Under Pressure</i> is a 3D game by myself, Tiago Davies, Caroline Li, and Rae Zhang for U of R's DandyHacks 2024.</li>
                     <li>There are 6 unique components that may break at any time, so keep an eye for things you need to fix.</li>
 
                     <li>All of our 3D assets, animations, and logic was created by our team, and we used public domain sound effects.</li>
@@ -143,22 +146,17 @@ function ProjectsMobile() {
                     <br />
                     You can download a build of the game&nbsp;<a href="https://tdavies.itch.io/under-pressure">here</a>!
                     <br />
+                    <br />
 
 
                     {/* Tags: React, AWS, Firestore, Google Auth, Figma */}
                     <div style={{ position: "absolute", bottom: "-10px", left: "20px" }}>
                         Tags:
-                        <span className="tag">GoDot</span>
-                        <span className="tag">GDscript</span>
-                        <span className="tag">Blender</span>
-                        <span className="tag">3D Animation</span>
-
-                        {/* <span className="tag">Firestore</span>
-                        <span className="tag">Google Auth</span>
-                        <span className="tag">Figma</span> */}
+                        <span className="tagm">GoDot</span>
+                        <span className="tagm">GDscript</span>
+                        <span className="tagm">Blender</span>
+                        <span className="tagm">3D Animation</span>
                     </div>
-
-
                 </div>
 
 

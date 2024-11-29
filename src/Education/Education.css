@@ -17,6 +17,29 @@ text-decoration-color:#fdf918;
 margin-bottom: 5px;
 }
 
-.courseGrade{
-  text-align: left;
+.courseGrade {
+  color: rgb(253, 255, 185); /* Style for mobile devices */
+  font-weight: bold;
+  align-self:center;
+  text-align: left; 
+}
+
+.courseGradeContainer{
+  display:grid;
+  grid-template-columns:90% 10%;
+  row-gap:4px;
+}
+
+
+@media (max-width: 768px) {
+  .courseTitle{
+    font-size: small;
+  }
+
+  .courseGradeContainer{
+    display:grid;
+    grid-template-columns:90% 10%;
+    row-gap:4px;
+    column-gap: 10px;;
+  }
 }

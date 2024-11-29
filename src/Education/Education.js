@@ -54,14 +54,8 @@ export default function Education() {
       <div style={{display:"flex", justifyContent:"space-evenly", alignItems:"baseline", flexWrap:"wrap"}}>
       <span>
 
-        {/* maybe make these grids, with the classes left aligned and a grade on the right? */}
-        {/* DS&A        A+ */}
-        {/* Comp Clx    A  */}
-        {/* Theory      A  */}
-
-
         <h3 className='subsectionTitle'>CS Courses</h3>
-        <div style={{display:"grid", gridTemplateColumns:"90% 10%", rowGap:"4px"}}>
+        <div className='courseGradeContainer'>
           <span className='courseTitle'>End-to-End Deep Learning</span>
           <span className='courseGrade'>TBD</span>
 
@@ -93,7 +87,7 @@ export default function Education() {
       
       <span>
         <h3 className='subsectionTitle'>Math Courses</h3>
-        <div style={{display:"grid", gridTemplateColumns:"90% 10%", rowGap:"4px"}}>
+        <div className='courseGradeContainer'>
           
           <span className='courseTitle'>Graph Theory</span>
           <span className='courseGrade'>TBD</span>
@@ -126,7 +120,7 @@ export default function Education() {
       <span>
         <h3 className='subsectionTitle'>Other Courses</h3>
 
-        <div style={{display:"grid", gridTemplateColumns:"90% 10%", rowGap:"4px"}}>
+        <div className='courseGradeContainer'>
           
           <span className='courseTitle'>Science and Reason</span>
           <span className='courseGrade'>A</span>
