@@ -41,14 +41,14 @@ export default function Publications() {
     <div id = "PublicationContainer">
 
 
-      <Header title = {"Publications!"} color = {"#EE4266"} side={"left"}/>
+      <Header title = {"Publications!"} color = {"#EE4266"}/>
 
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly"}}>
         {Items[0]}
       </span>
 
 
-      <Header title = {"Other Papers!"} color = {"#EE4266"} side={"left"}/>
+      <Header title = {"Other Papers!"} color = {"#EE4266"}/>
 
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", flexWrap:"wrap"}}>
         {Items[1]}
@@ -56,7 +56,7 @@ export default function Publications() {
       </span> 
 
 
-      <Header title = {"In Progress..."} color = {"#EE4266"} side={"left"}/>
+      <Header title = {"In Progress..."} color = {"#EE4266"}/>
 
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", flexWrap:"wrap"}}>
         {Items[3]}

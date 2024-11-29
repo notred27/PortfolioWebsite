@@ -11,9 +11,9 @@ export default function Education() {
     <div id = "EducationContainer">
         {/* <a name = "Education"/> */}
 
-      <Header title = {"Degree"} color = {"#fdf918"} side = {"left"}/>
+      <Header title = {"Degree"} color = {"#fdf918"}/>
 
-      <div style={{display:"flex", justifyContent:"space-evenly", alignContent:"center", flexWrap:"wrap"}}>
+      <div style={{display:"flex", justifyContent:"space-evenly", alignContent:"center", alignItems:"center", flexWrap:"wrap"}}>
         <span style={{textAlign:"center"}}>
           <img loading='lazy' src={logo} style={{width:"35vw", minWidth:"350px"}} alt = "UR_logo"/>
           <h2 style={{margin:"0px"}}>Hajim School of Engineering</h2>
@@ -35,7 +35,7 @@ export default function Education() {
        
       {/* <a name = "Awards"/> */}
 
-      <Header title = {"Awards"} color = {"#fdf918"} side = {"left"}/>
+      <Header title = {"Awards"} color = {"#fdf918"}/>
 
        <ul>
        <li>Xerox Technology Scholarship</li>
@@ -48,7 +48,7 @@ export default function Education() {
 
       {/* <a name = "Coursework"/> */}
 
-      <Header title = {"Relevant Coursework"} color = {"#fdf918"} side = {"left"}/>
+      <Header title = {"Relevant Coursework"} color = {"#fdf918"}/>
 
 
       <div style={{display:"flex", justifyContent:"space-evenly", alignItems:"baseline", flexWrap:"wrap"}}>

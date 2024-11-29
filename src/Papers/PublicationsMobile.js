@@ -40,7 +40,7 @@ export default function PublicationsMobile() {
   return (
     <div id = "PublicationContainerm">
       <a name = "Publications"/>
-      <Header title = {"Publications!"} color = {"#EE4266"} side={"left"}/>
+      <Header title = {"Publications!"} color = {"#EE4266"}/>
 
 
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly"}}>
@@ -49,7 +49,7 @@ export default function PublicationsMobile() {
       </span>
 
       <a name = "OtherPaper"/>
-      <Header title = {"Other Papers!"} color = {"#EE4266"} side={"left"}/>
+      <Header title = {"Other Papers!"} color = {"#EE4266"}/>
 
 
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", flexWrap:"wrap"}}>
@@ -58,7 +58,7 @@ export default function PublicationsMobile() {
       </span> 
 
       <a name = "WipPaper"/>
-      <Header title = {"In Progress..."} color = {"#EE4266"} side={"left"}/>
+      <Header title = {"In Progress..."} color = {"#EE4266"}/>
 
 
       <span style={{display:"flex", flexDirection:"row", justifyContent:"space-evenly", flexWrap:"wrap"}}>

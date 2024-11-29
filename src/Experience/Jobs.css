@@ -2,7 +2,7 @@
     padding-bottom: 40px;
     background-image:radial-gradient(circle at 20px 20px, #9BA2FF59 1px, transparent 0);
     background-size: 40px 40px;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     color:white;
 }
 
@@ -95,9 +95,9 @@
     .jobContainer {
         display: flex;
         justify-content: space-evenly;
-        flex-wrap:wrap ;
         flex-direction: column;
-        width: 95vw;
+        column-gap: 10px;
+        width: 90vw;
     }
 
 
@@ -108,21 +108,23 @@
         box-shadow: -6px 6px #9BA2FF;
         background-color:#121212;
       
-        max-width: 80vw;
-        width:80vw;
+        min-width: 0px;
+        width:90vw;
         margin:2vw;
         border-radius: 10px; 
         margin:15px;
-        padding:0px 4px 4px 4px;
+        padding:0px 10px 10px 4px;
     
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        
       
     }
 
     .Job .tagContainer{
-        width: 80vw;
+        width: 100%;
     }
 
     .Job h3{
@@ -130,14 +132,19 @@
         font-style: italic;
         font-weight: 400;
         padding-bottom:5px;
-        margin:0px;
+        margin: 8px 10% 0px 10%;
         color:#d2d2d2;
         font-size: smaller;
+        width: 80%;
+        text-align: center;
+
     }
 
 
     .Job ul{
         width: 80vw;
+        padding: 0px;
+        align-items: center;
     }
 
 }
