@@ -38,6 +38,16 @@ margin-bottom: 5px;
   border-radius:20px;
   text-align:center;
   padding:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  color: #cccccc;
+  margin: 10px 0px 10px 0px;
+}
+
+.achievementContainer h3 {
+  margin-top: 0px;
+  color: white;
 }
 
 

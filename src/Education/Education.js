@@ -47,7 +47,7 @@ export default function Education() {
         </div>
 
         <div className='achievementContainer' >
-          <h3>Dean's List (6 semesters)</h3>
+          <h3>Dean's List <br/>(6 semesters)</h3>
     
             Achieved a semester period GPA of at least 3.4 while taking at least 16 credits.
           
@@ -61,7 +61,13 @@ export default function Education() {
         </div>
 
         <div className='achievementContainer' >
-          <h3>Dandyhacks 1st Place (3yrs)</h3>
+          <h3>MLH Hackathon 1st Place</h3>
+
+          Awarded 3 first place entertainment track prizes for
+          <br/>
+          2-Tris&nbsp;(2022), Turing&nbsp;Trouble&nbsp;(2023), Under&nbsp;Pressure&nbsp;(2024) 
+          <br/>
+          at U of R's yearly MLH sponsored hackathons.
  
           
         </div>
