@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals.js';
-import Desktop from './Desktop.js';
+import App from './App.js';
 
-
+import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
-
-    <Desktop />
-
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
