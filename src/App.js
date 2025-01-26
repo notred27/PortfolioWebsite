@@ -25,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Desktop />} />
         <Route path="/wrapped2024" element={<RedirectToRiftingWrapped />} />
+        <Route path="/maggle" element={<RedirectToMaggle />} />
       </Routes>
     </div>
   );
