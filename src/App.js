@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom"; // Import necessary components
 import Desktop from "./Desktop.js";
 import RedirectToRiftingWrapped from './RedirectToRiftingWrapped.js'
-
+import RedirectToMaggle from './RedirectToMaggle.js'
 
 function App() {
   return (
